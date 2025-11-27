@@ -1,4 +1,5 @@
 ﻿using DigitalRuby.Tween;
+using FMODUnity;
 using System.Collections;
 using UnityEngine;
 
@@ -102,7 +103,7 @@ public class CutsceneInteractable : Interactable
         foreach (var step in sequence.steps)
         {
             SubtitleUI.Instance.Show(step.subtitleText);
-            PlayFMOD(step.fmodEventPath);
+            PlayFMOD(step.fmodEventRef);
 
             yield return new WaitForSeconds(step.duration);
         }
@@ -188,12 +189,12 @@ public class CutsceneInteractable : Interactable
         );
     }
 
-    private void PlayFMOD(string eventPath)
+    private void PlayFMOD(EventReference eventRef)
     {
-        if (string.IsNullOrEmpty(eventPath))
+        if (eventRef.IsNull)
             return;
 
-        FMODUnity.RuntimeManager.PlayOneShot(eventPath);
+        FMODUnity.RuntimeManager.PlayOneShot(eventRef);
     }
 }
 
