@@ -73,3 +73,14 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# ================================
+# FMOD
+# ================================
+
+fmod/AD_Exitgame/Build/
+fmod/AD_Exitgame/Cache/
+fmod/AD_Exitgame/Logs/
+
+fmod/AD_Exitgame/**/*.tmp
+fmod/AD_Exitgame/**/*.lock
