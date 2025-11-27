@@ -1,3 +1,4 @@
+using FMODUnity;
 using UnityEngine;
 
 [System.Serializable]
@@ -9,4 +10,5 @@ public class CutsceneStep
 
     [Header("FMOD Audio - example: event:/Dialogue/Narrator_01")]
     public string fmodEventPath;
+    public EventReference startMusic;
 }
