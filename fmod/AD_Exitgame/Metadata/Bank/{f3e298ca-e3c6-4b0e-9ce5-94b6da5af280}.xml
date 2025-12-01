@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="Bank" id="{f3e298ca-e3c6-4b0e-9ce5-94b6da5af280}">
+		<property name="name">
+			<value>Level 3 DIA</value>
+		</property>
+		<relationship name="folder">
+			<destination>{c20cd0c3-d316-40e7-9366-ab7fdec17374}</destination>
+		</relationship>
+	</object>
+</objects>
