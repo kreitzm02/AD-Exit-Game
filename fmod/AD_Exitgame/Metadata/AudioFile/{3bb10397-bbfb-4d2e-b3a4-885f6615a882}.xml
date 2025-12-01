@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
-<<<<<<<< HEAD:fmod/AD_Exitgame/Metadata/AudioFile/{4f626051-e5dc-4036-9501-a96da0749f29}.xml
-	<object class="AudioFile" id="{4f626051-e5dc-4036-9501-a96da0749f29}">
-		<property name="assetPath">
-			<value>MC 1.1.4.wav</value>
-========
 	<object class="AudioFile" id="{3bb10397-bbfb-4d2e-b3a4-885f6615a882}">
 		<property name="assetPath">
 			<value>Music/2025-11-03 Level 1 109bpm Dis minor.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>
->>>>>>>> pr/3:fmod/AD_Exitgame/Metadata/AudioFile/{3bb10397-bbfb-4d2e-b3a4-885f6615a882}.xml
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>
@@ -20,11 +14,7 @@
 			<value>2</value>
 		</property>
 		<property name="length">
-<<<<<<<< HEAD:fmod/AD_Exitgame/Metadata/AudioFile/{4f626051-e5dc-4036-9501-a96da0749f29}.xml
-			<value>10.027333333333333</value>
-========
 			<value>146.72591836734694</value>
->>>>>>>> pr/3:fmod/AD_Exitgame/Metadata/AudioFile/{3bb10397-bbfb-4d2e-b3a4-885f6615a882}.xml
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{8df95a15-10a1-4de4-a352-82e3faeba350}</destination>
