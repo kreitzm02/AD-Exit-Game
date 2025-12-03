@@ -29,6 +29,9 @@ public class CutsceneInteractable : Interactable
     [SerializeField] private GameObject jekkoGO;
     [SerializeField] private float jekkoFlyTime = 0.5f;
 
+    [Header("CUTSCENE DELAY")]
+    [SerializeField] private float cutsceneStartDelay = 0f;
+
     [Header("TRIGGER ID")]
     [SerializeField] private string levelTriggerId;
 
@@ -88,6 +91,9 @@ public class CutsceneInteractable : Interactable
     {
         isPlaying = true;
 
+        if (cutsceneStartDelay > 0f)
+            yield return new WaitForSeconds(cutsceneStartDelay);
+
         PlayerController player = FindFirstObjectByType<PlayerController>();
         PlayerCamera cam = FindFirstObjectByType<PlayerCamera>();
 
@@ -97,19 +103,28 @@ public class CutsceneInteractable : Interactable
 
         yield return new WaitForSeconds(zoomDuration * 0.3f);
 
-        if (useJekko)
-            SpawnSideCharacter();
-
         foreach (var step in sequence.steps)
         {
-            SubtitleUI.Instance.Show(step.subtitleText);
-            PlayFMOD(step.fmodEventRef);
+            switch (step.stepType)
+            {
+                case CutsceneStepType.JEKKOSPAWN:
+                    SpawnSideCharacter();
+                    PlayFMOD(step.fmodEventRef);
+                    break;
+
+                case CutsceneStepType.JEKKODESPAWN:
+                    DespawnSideCharacter();
+                    PlayFMOD(step.fmodEventRef);
+                    break;
+
+                case CutsceneStepType.DIALOGUE:
+                    SubtitleUI.Instance.Show(step.subtitleText);
+                    PlayFMOD(step.fmodEventRef);
+                    break;
+            }
 
             yield return new WaitForSeconds(step.duration);
         }
-
-        if (useJekko)
-            DespawnSideCharacter();
 
         SubtitleUI.Instance.Hide();
         cam.ResetZoom(smoothZoom, zoomDuration);
@@ -194,7 +209,7 @@ public class CutsceneInteractable : Interactable
         if (eventRef.IsNull)
             return;
 
-        FMODUnity.RuntimeManager.PlayOneShot(eventRef);
+        FMODUnity.RuntimeManager.PlayOneShot(eventRef, Camera.main.transform.position);
     }
 }
 

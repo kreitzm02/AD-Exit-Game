@@ -105,7 +105,7 @@ public class AudioManager : MonoBehaviour
         if (sound.IsNull)
             return;
 
-        RuntimeManager.PlayOneShot(sound);
+        RuntimeManager.PlayOneShot(sound, Camera.main.transform.position);
     }
 
     public void StartSnapshot(EventReference snapshot)
