@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ReadableInteractable : Interactable
 {
@@ -10,6 +11,9 @@ public class ReadableInteractable : Interactable
 
     [Header("TRIGGER ID")]
     [SerializeField] private string levelTriggerId;
+
+    [Header("CLOSE BUTTON")]
+    [SerializeField] private Button closeButton;
 
     private bool isReading;
 
@@ -46,11 +50,16 @@ public class ReadableInteractable : Interactable
         OnExitRange();
 
         ReadableUI.Instance.Open(pages);
+
+        closeButton = GameObject.FindWithTag("ReadableCloseButton").GetComponent<Button>();
+        closeButton.onClick.AddListener(CloseFromUI);
     }
 
     public void CloseFromUI()
     {
         isReading = false;
+
+        closeButton.onClick.RemoveListener(CloseFromUI);
 
         if (!string.IsNullOrEmpty(levelTriggerId))
         {

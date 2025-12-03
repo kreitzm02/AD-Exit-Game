@@ -19,6 +19,6 @@ public class JekkoFloat : MonoBehaviour
         t += Time.deltaTime * floatSpeed;
 
         float yOffset = Mathf.Sin(t) * floatAmplitude;
-        transform.position = startPos + new Vector3(0f, yOffset, 0f);
+        transform.position += new Vector3(0f, yOffset * Time.deltaTime, 0.0f);
     }
 }
