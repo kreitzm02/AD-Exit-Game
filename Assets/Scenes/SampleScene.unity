@@ -4203,7 +4203,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &571352737
 Transform:
   m_ObjectHideFlags: 0
@@ -8797,7 +8797,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.size
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[0].duration
@@ -8825,7 +8825,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[4].duration
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[4].stepType
@@ -8833,7 +8833,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[5].duration
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[5].stepType
@@ -8841,7 +8841,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[6].duration
-      value: 2
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[6].stepType
@@ -8849,10 +8849,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[7].duration
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[7].stepType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[0].steps.Array.data[8].duration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[0].steps.Array.data[8].stepType
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
@@ -8873,26 +8881,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[3].subtitleText
-      value: "KARA: Keine Ahnung. Es spart halt Stromverbrauch oder so. Au\xDFerdem
-        ruft eh nie jemand an, es macht keinen Unterschied, ob es eingesteckt ist
-        oder nicht."
+      value: 'KARA: Keine Ahnung. Es spart halt Stromverbrauch oder so. .'
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[4].subtitleText
+      value: "KARA: Au\xDFerdem ruft eh nie jemand an, es macht keinen Unterschied,
+        ob es eingesteckt ist oder nicht"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[0].steps.Array.data[5].subtitleText
       value: "JEKKO: Ja, aber jetzt m\xFCssen wir auch noch das verdammte Kabel daf\xFCr
         finden. Du bist auch das einzige Kind, was ich kenne, welches kein Handy
         besitzt."
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
-      propertyPath: sequences.Array.data[0].steps.Array.data[5].subtitleText
+      propertyPath: sequences.Array.data[0].steps.Array.data[6].subtitleText
       value: "KARA: Brauch halt keins. Es ruft niemand an, es w\xFCrde keinen Unterschied
         machen. Au\xDFerdem, wie viele Kinder kennst du denn noch?"
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
-      propertyPath: sequences.Array.data[0].steps.Array.data[6].subtitleText
-      value: 'JEKKO: (betroffen) Nun such einfach das
-
-        verdammte Kabel.'
+      propertyPath: sequences.Array.data[0].steps.Array.data[7].subtitleText
+      value: 'JEKKO: (betroffen) Nun such einfach das verdammte Kabel.'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[0].steps.Array.data[8].subtitleText
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[1].fmodEventRef.Path
@@ -8908,6 +8921,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[5].fmodEventRef.Path
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[0].steps.Array.data[6].fmodEventRef.Path
       value: event:/MC 1.1/MC 1.1.6
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
@@ -8960,18 +8977,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[5].fmodEventRef.Guid.Data1
-      value: -783436953
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[5].fmodEventRef.Guid.Data2
-      value: 1281200938
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[5].fmodEventRef.Guid.Data3
-      value: -505420108
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[5].fmodEventRef.Guid.Data4
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[0].steps.Array.data[6].fmodEventRef.Guid.Data1
+      value: -783436953
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[0].steps.Array.data[6].fmodEventRef.Guid.Data2
+      value: 1281200938
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[0].steps.Array.data[6].fmodEventRef.Guid.Data3
+      value: -505420108
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[0].steps.Array.data[6].fmodEventRef.Guid.Data4
       value: -970315525
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -10235,7 +10268,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.size
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[1].steps.Array.size
@@ -10271,11 +10304,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[7].duration
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[8].duration
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[9].duration
@@ -10299,6 +10332,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[10].duration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[0].steps.Array.data[10].stepType
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
@@ -10384,12 +10421,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[10].subtitleText
-      value: 'JEKKO: Aargh, ja dann mach aber auch!
+      value: '
 
-        Die liegt bestimmt beim
-        Telefon
 
-        oder so'
+'
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[11].subtitleText
@@ -14118,7 +14153,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2138959243
 Transform:
   m_ObjectHideFlags: 0
