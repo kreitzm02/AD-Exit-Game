@@ -64,6 +64,16 @@ public class LevelManager : MonoBehaviour
         foreach (var go in step.deactivateObjects)
             if (go) go.SetActive(false);
 
+        if (step.updateQuestText && !string.IsNullOrEmpty(step.newQuestText))
+        {
+            QuestCollapse qc = FindFirstObjectByType<QuestCollapse>();
+            if (qc != null)
+            {
+                qc.SetQuestText(step.newQuestText);
+                qc.ShowQuestBar();
+            }
+        }
+
         Debug.Log("[LevelManager] Step Activated: " + step.stepName);
     }
 

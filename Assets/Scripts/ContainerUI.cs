@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -33,6 +34,7 @@ public class ContainerUI : MonoBehaviour
     {
         currentContainer = container;
         player.LockInput(true);
+        Time.timeScale = 0.0f;
 
         root.SetActive(true);
         RefreshUI();
@@ -43,17 +45,23 @@ public class ContainerUI : MonoBehaviour
         root.SetActive(false);
         player.LockInput(false);
         currentContainer = null;
+        Time.timeScale = 1.0f;
     }
 
     private void RefreshUI()
     {
         for (int i = 0; i < slotIcons.Length; i++)
         {
-            var slot = currentContainer.Slots[i];
+            ContainerSlot slot = currentContainer.Slots[i];
 
             if (slot.item != null)
             {
                 slotIcons[i].sprite = slot.item.icon;
+                slotIcons[i].enabled = true;
+            }
+            else if (slot.HasReadable)
+            {
+                slotIcons[i].sprite = slot.readableIcon;
                 slotIcons[i].enabled = true;
             }
             else
@@ -68,9 +76,15 @@ public class ContainerUI : MonoBehaviour
         if (currentContainer == null)
             return;
 
-        var slot = currentContainer.Slots[index];
+        ContainerSlot slot = currentContainer.Slots[index];
 
-        if (slot.item == null)
+        if (!slot.HasItem && slot.HasReadable)
+        {
+            OpenReadableFromContainer(slot.readablePages);
+            return;
+        }
+
+        if (!slot.HasItem)
             return;
 
         bool collected = PlayerInventory.Instance.AddItem(slot.item);
@@ -80,5 +94,22 @@ public class ContainerUI : MonoBehaviour
             slot.item = null;
             RefreshUI();
         }
+    }
+
+    private void OpenReadableFromContainer(ReadablePage[] pages)
+    {
+        root.SetActive(false);
+
+        ReadableUI.Instance.Closed += OnReadableClosed;
+
+        ReadableUI.Instance.Open(pages, false);
+    }
+
+    private void OnReadableClosed()
+    {
+        ReadableUI.Instance.Closed -= OnReadableClosed;
+
+        if (currentContainer != null)
+            root.SetActive(true);
     }
 }
