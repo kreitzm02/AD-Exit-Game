@@ -86,6 +86,7 @@ GameObject:
   - component: {fileID: 150910173122881294}
   - component: {fileID: 4849837408838174860}
   - component: {fileID: 5172459136955029710}
+  - component: {fileID: 5797112500871498315}
   m_Layer: 0
   m_Name: InventoryItemBox
   m_TagString: Untagged
@@ -151,3 +152,16 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5797112500871498315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998682284609361767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f690cd70559c4c84db2e70e7c0f0886b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InventoryItem
+  itemPreview: {fileID: 7918745387211636235}

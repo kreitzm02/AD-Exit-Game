@@ -219,7 +219,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 876252101412659270, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
       propertyPath: m_Name
-      value: DoorInteractable (1)
+      value: DoorInteractable_PlayerDoor
       objectReference: {fileID: 0}
     - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
       propertyPath: targetRoomId
@@ -343,6 +343,8 @@ Transform:
   - {fileID: 39692127}
   - {fileID: 1864728223}
   - {fileID: 68242936}
+  - {fileID: 1806242502}
+  - {fileID: 128370672}
   m_Father: {fileID: 1789982679}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &27277397
@@ -1526,6 +1528,38 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 244591142335918563, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
   m_PrefabInstance: {fileID: 209920955}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &128370671
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 128370672}
+  m_Layer: 0
+  m_Name: EntryPoint_A
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &128370672
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128370671}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 35.61, y: -2.37, z: -10}
+  m_LocalScale: {x: 8.58, y: 8.58, z: 8.58}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 1800758524}
+  m_Father: {fileID: 25656541}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &131041231 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2007132730104108911, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
@@ -4150,6 +4184,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 385029191}
   m_CullTransparentMesh: 1
+--- !u!1 &398981393
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 398981394}
+  m_Layer: 0
+  m_Name: EntryPoint_A (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &398981394
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398981393}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 14.9, y: -2.37, z: -10}
+  m_LocalScale: {x: 8.58, y: 8.58, z: 8.58}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 426288995}
+  m_Father: {fileID: 1081335539}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &403195782
 GameObject:
   m_ObjectHideFlags: 0
@@ -4885,6 +4951,96 @@ Transform:
   - {fileID: 737500372}
   m_Father: {fileID: 2138959243}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &426288994
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 426288995}
+  - component: {fileID: 426288996}
+  m_Layer: 0
+  m_Name: Debug
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &426288995
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 426288994}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 398981394}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &426288996
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 426288994}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.2, y: 0.2}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1001 &432034907
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4960,6 +5116,10 @@ PrefabInstance:
       value: ContainerInteractable_Storage
       objectReference: {fileID: 0}
     - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: isStorageRoom
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
       propertyPath: slots.Array.data[1].item
       value: 
       objectReference: {fileID: 0}
@@ -4971,6 +5131,49 @@ PrefabInstance:
       propertyPath: slots.Array.data[4].item
       value: 
       objectReference: {fileID: 11400000, guid: 9d04ee381396cba4797e472afe2a3ce5, type: 2}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: slots.Array.data[3].readableIcon
+      value: 
+      objectReference: {fileID: 4815476061570213978, guid: 60c02e7ffb9e9cc49a43a39aa605704d, type: 3}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: slots.Array.data[3].readablePages.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: slots.Array.data[3].readablePages.Array.data[0].text
+      value: "26. Juni 2009\n\nMama ist ein Arschloch. W\xE4hrend ich mit Papa den
+        zweiten Star Wars Film geguckt hab, hat sie heimlich mein Tagebuch gelesen.\xB4
+        UND SIE IST SAUER AUF MICH. DABEI BIN ICH DIE PERSON DIE SAUER SEIN SOLLTE.
+        Ich scheine sie wohl \u201Eso schlecht\u201C dargestellt zu haben. Deshalb
+        hat sie gestern nicht mit mir geredet. Heute hat sie mich dann zu Hause nur
+        angeschrien. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: slots.Array.data[3].readablePages.Array.data[1].text
+      value: "Sie hat mir gesagt, dass ich ja so undankbar w\xE4re und dass alles
+        was ich \xFCber sie schreiben w\xFCrde gelogen w\xE4re. Dabei hab ich doch
+        gar nichts Schlimmes geschrieben. Ich wei\xDF nicht, warum sie so w\xFCtend
+        ist. Ich hab angefangen zu weinen und ihr gesagt, dass ich das nicht ok finde,
+        dass sie mein Tagebuch liest, obwohl ich ganz genau gesagt habe, dass sie
+        das nicht tun soll. Danach wurde sie nur noch lauter, hat die Hand gehoben,
+        als wolle sie "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: slots.Array.data[3].readablePages.Array.data[2].text
+      value: "mich schlagen und mir gesagt, dass wenn ich nicht aufh\xF6re, sie mir
+        gleich nen vern\xFCnftigen Grund geben wird zu weinen. Daraufhin bin ich
+        in mein Zimmer gerannt. Papa kam abends zu mir ins Zimmer und hat mir Abendbrot
+        gebracht, weil ich nicht im Esszimmer erschienen bin. Ich hab vorher aber
+        schon Mama geh\xF6rt, wie sie im Nebenraum \u201Ejetzt bringst du dem kleinen
+        Pisser auch noch was zu essen?\u201C laut gesagt hat. Ich glaub sie wollte,
+        dass ich sie h\xF6re."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: slots.Array.data[3].readablePages.Array.data[3].text
+      value: "Als Papa mir das Essen gebracht hat, hab ich ihm gesagt, dass ich lieber
+        ein Schloss f\xFCr mein Tagebuch haben m\xF6chte, als ein Raumschiff. Papa
+        hat nichts gesagt."
+      objectReference: {fileID: 0}
     - target: {fileID: 8339423539369142506, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.82
@@ -6493,7 +6696,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &578804847
 Transform:
   m_ObjectHideFlags: 0
@@ -6627,7 +6830,7 @@ MonoBehaviour:
   m_LightType: 4
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 0.6698113, g: 0.62498236, b: 0.5213154, a: 1}
+  m_Color: {r: 1, g: 0.95818096, b: 0.8349056, a: 1}
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
@@ -6794,15 +6997,47 @@ PrefabInstance:
       objectReference: {fileID: 4815476061570213978, guid: 60c02e7ffb9e9cc49a43a39aa605704d, type: 3}
     - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
       propertyPath: slots.Array.data[0].readablePages.Array.size
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
       propertyPath: slots.Array.data[0].readablePages.Array.data[0].text
-      value: Test Page 1
+      value: "23. Juni 2009\n\nDie Schule war heute echt langweilig. Ich freue mich
+        schon n\xE4chstes Jahr auf den neuen Stundenplan. Wer kommt auf die Idee
+        2 Stunden Deutsch und 2 Stunden Mathe hintereinander zu legen. Da kann man
+        sich doch \xFCberhaupt nicht konzentrieren. Vor allem Mathe f\xFChlt sich
+        dann immer sooo lang an. Immerhin sitze ich seit ein paar Wochen neben Leonie,"
       objectReference: {fileID: 0}
     - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
       propertyPath: slots.Array.data[0].readablePages.Array.data[1].text
-      value: Test Page 2
+      value: "wodurch sich der Unterricht nicht so stark zieht.  Ich habs vermisst
+        neben meinen Freunden zu sitzen. Davor musste ich ein halbes Jahr neben Torben
+        sitzen und den mag ich nicht. Torben hat sich immer nur \xFCber mich lustig
+        gemacht, weil ich als Junge mit Leonie befreundet bin. Ich versteh wirklich
+        sein Problem damit nicht, dass ich Jungs und M\xE4dchen mag, aber Torben
+        ist nun mal ein Idiot. Immerhin sitzt er jetzt in der"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: slots.Array.data[0].readablePages.Array.data[2].text
+      value: "ganz anderen Ecke vom Klassenraum. Zur Nachmittagsbetreuung musste
+        ich heute auch nicht, weil Papa fr\xFCher von der Arbeit gehen durfte und
+        mich direkt eingesammelt hat. Papa hatte mich gar nicht erst gefragt, wie
+        die Schule war, er wei\xDF genau, dass ich den Unterricht dienstags nicht
+        mag, aber er hatte mich gefragt, ob ich mit ihm den zweiten Star Wars Teil
+        gucken m\xF6chte. \n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: slots.Array.data[0].readablePages.Array.data[3].text
+      value: "Selbstverst\xE4ndlich hab ich sofort ja gesagt und er hat mir versprochen,
+        dass wir ihn morgen Abend zusammen gucken. Komischerweise hat Papa mich auch
+        gefragt, ob Mama mal mein Tagebuch lesen d\xFCrfte. Mama soll wohl zu ihm
+        gegangen sein und ihn gefragt haben, ob er mich mal fragen k\xF6nnte. ich
+        hab auch Papa gesagt, dass ich nicht m\xF6chte, dass irgendjemand mein Tagebuch
+        liest, weil ich das f\xFCr mich schreibe,"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: slots.Array.data[0].readablePages.Array.data[4].text
+      value: " Ich wei\xDF nicht, warum Mama so neugierig ist. Ich wei\xDF nicht,
+        wann ich sie das letzte Mal so interessiert an meinen Hobbys gesehen habe."
       objectReference: {fileID: 0}
     - target: {fileID: 8339423539369142506, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6875,6 +7110,14 @@ PrefabInstance:
       propertyPath: slots.Array.data[1].item
       value: 
       objectReference: {fileID: 11400000, guid: 58c86a98b4189444c81a5fd09ed2ee45, type: 2}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: slots.Array.data[4].readableIcon
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: slots.Array.data[4].readablePages.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8339423539369142506, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -30.42
@@ -7160,7 +7403,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 244591142335918563, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: m_Name
-      value: StoryInteractable (1)
+      value: StoryInteractable_BathroomLocked
+      objectReference: {fileID: 0}
+    - target: {fileID: 244591142335918563, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7928176150159718270, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8091,7 +8338,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 876252101412659270, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
       propertyPath: m_Name
-      value: DoorInteractable
+      value: DoorInteractable_1F
       objectReference: {fileID: 0}
     - target: {fileID: 2794829585633513166, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8301,7 +8548,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 244591142335918563, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: m_Name
-      value: StoryInteractable
+      value: StoryInteractable_ParentClosed
+      objectReference: {fileID: 0}
+    - target: {fileID: 244591142335918563, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7928176150159718270, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8741,6 +8992,80 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7928176150159718270, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
   m_PrefabInstance: {fileID: 830104813}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &849326332
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1081335539}
+    m_Modifications:
+    - target: {fileID: 876252101412659270, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_Name
+      value: DoorInteractable (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794829585633513166, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: targetRoomId
+      value: 2F_Corridor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: targetEntryPoint
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -20.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+--- !u!4 &849326333 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+  m_PrefabInstance: {fileID: 849326332}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &872788102
 GameObject:
   m_ObjectHideFlags: 0
@@ -9047,6 +9372,80 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 966233409}
   m_CullTransparentMesh: 1
+--- !u!1001 &969210271
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1608363420}
+    m_Modifications:
+    - target: {fileID: 876252101412659270, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_Name
+      value: DoorInteractable_ParentDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794829585633513166, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: targetRoomId
+      value: 2F_Parents
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: targetEntryPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -29.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+--- !u!4 &969210272 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+  m_PrefabInstance: {fileID: 969210271}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &973040762
 GameObject:
   m_ObjectHideFlags: 0
@@ -9664,6 +10063,16 @@ MonoBehaviour:
     - {fileID: 414737954}
     - {fileID: 1128377793}
     - {fileID: 1919213341}
+  - roomId: 2F_Bathroom
+    roomParent: {fileID: 1081335538}
+    cameraBounds: {fileID: 360698889}
+    entryPoints:
+    - {fileID: 398981394}
+  - roomId: 2F_Parents
+    roomParent: {fileID: 25656540}
+    cameraBounds: {fileID: 1864728224}
+    entryPoints:
+    - {fileID: 128370672}
   player: {fileID: 775865287}
   playerCamera: {fileID: 519420033}
   fadeImage: {fileID: 119715851}
@@ -9844,7 +10253,7 @@ MonoBehaviour:
     activateObjects: []
     deactivateObjects: []
     requiredItemId: PIZZA_NUMBER
-    requiredTriggerId: KEY_STORAGE
+    requiredTriggerId: 
     updateQuestText: 0
     newQuestText: 
   - stepName: 2F CHILDREN PIZZA FLYER CUTSCENE 1
@@ -9970,6 +10379,27 @@ PrefabInstance:
       propertyPath: slots.Array.data[4].item
       value: 
       objectReference: {fileID: 11400000, guid: b0b1a4105c9feda4a8e922cc7ec19166, type: 2}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: slots.Array.data[3].readableIcon
+      value: 
+      objectReference: {fileID: 4815476061570213978, guid: 60c02e7ffb9e9cc49a43a39aa605704d, type: 3}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: slots.Array.data[3].readablePages.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: slots.Array.data[3].readablePages.Array.data[0].text
+      value: "24. Juni 2009\n\nPapa und ich haben endlich den zweiten Star Wars Film
+        geguckt! Ich hab zwar immer noch nicht ganz verstanden, warum der zweite
+        Teil \u201EEpisode 5\u201C hei\xDFt, aber es wird schon stimmen, wenn Papa
+        das sagt. Den Film fand ich sogar noch besser als den Ersten und Papa hat
+        mir versprochen, dass wir am Wochenende zusammen in die Stadt fahren und
+        ich mir ein Spielzeug "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: slots.Array.data[3].readablePages.Array.data[1].text
+      value: "Raumschiff aussuchen darf. Ich kann\u2019s kaum erwarten :)))"
+      objectReference: {fileID: 0}
     - target: {fileID: 8339423539369142506, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.47
@@ -10206,6 +10636,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 849326333}
+  - {fileID: 398981394}
   - {fileID: 665308372}
   - {fileID: 442431862}
   - {fileID: 360698888}
@@ -10397,6 +10829,80 @@ Transform:
   - {fileID: 196718931}
   m_Father: {fileID: 1608363420}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1129274078
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1608363420}
+    m_Modifications:
+    - target: {fileID: 876252101412659270, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_Name
+      value: DoorInteractable_BathroomDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794829585633513166, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: targetRoomId
+      value: 2F_Bathroom
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: targetEntryPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -47.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+--- !u!4 &1129274079 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+  m_PrefabInstance: {fileID: 1129274078}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1132660479
 GameObject:
   m_ObjectHideFlags: 0
@@ -11218,9 +11724,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1198536275}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48ee903922f245b4e8fc0b8ce41013b4, type: 3}
+  m_Script: {fileID: 11500000, guid: 81f0fddabc534f34b925f787521963d5, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ContainerUI
+  m_EditorClassIdentifier: Assembly-CSharp::StorageRoomUI
   root: {fileID: 1198536275}
   slotButtons:
   - {fileID: 1918469098}
@@ -11648,6 +12154,75 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2007132730104108911, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
   m_PrefabInstance: {fileID: 1984117967}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1326634559
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 25656541}
+    m_Modifications:
+    - target: {fileID: 876252101412659270, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_Name
+      value: DoorInteractable (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2794829585633513166, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: targetRoomId
+      value: 2F_Corridor
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: targetEntryPoint
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
 --- !u!1 &1367377003
 GameObject:
   m_ObjectHideFlags: 0
@@ -12408,11 +12983,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[1].fmodEventRef.Path
-      value: 
+      value: event:/SC 1/SC 1.5.1
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[3].fmodEventRef.Path
-      value: event:/MC 1.1/MC 1.1.5
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[4].fmodEventRef.Path
@@ -12428,35 +13003,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[1].fmodEventRef.Guid.Data1
-      value: 0
+      value: -1605210236
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[1].fmodEventRef.Guid.Data2
-      value: 0
+      value: 1315786810
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[1].fmodEventRef.Guid.Data3
-      value: 0
+      value: -64977248
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[1].fmodEventRef.Guid.Data4
-      value: 0
+      value: 557961624
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[3].fmodEventRef.Guid.Data1
-      value: -219839703
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[3].fmodEventRef.Guid.Data2
-      value: 1167725825
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[3].fmodEventRef.Guid.Data3
-      value: -1010489680
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[3].fmodEventRef.Guid.Data4
-      value: 671603156
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[4].fmodEventRef.Guid.Data1
@@ -13538,6 +14113,8 @@ Transform:
   - {fileID: 1128377793}
   - {fileID: 1919213341}
   - {fileID: 801138666}
+  - {fileID: 1129274079}
+  - {fileID: 969210272}
   - {fileID: 15742376}
   - {fileID: 1840615344}
   - {fileID: 811770735}
@@ -13675,17 +14252,18 @@ PrefabInstance:
         warum. Sie wird, immer einfach nur laut. Ich mag es nicht, wenn Mama laut
         wird und w\xFCrde gerne wissen, warum sie b\xF6se auf mich wird, damit das
         aufh\xF6rt. Aber als ich sie vorgestern gefragt habe, was ich denn falsch
-        gemacht habe, wurde sie nur noch b\xF6ser und noch lauter."
+        gemacht habe, wurde sie nur noch b\xF6ser und noch lauter. Der Rest des Tages
+        ist aber nicht viel passiert."
       objectReference: {fileID: 0}
     - target: {fileID: 2302781328012531520, guid: 310aa630cae04f4458e5fdd72ca143b1, type: 3}
       propertyPath: pages.Array.data[2].text
-      value: "Der Rest des Tages ist aber nicht viel passiert. Ich hab\r\ngespielt
-        und durfte Fernsehen gucken. Abends hab ich dann noch mit Papa einen Film
-        geguckt. Papa und ich haben Star Wars geguckt, das war lustig. Papa hat mir
-        die ganze Zeit beim Schauen unn\xFCtze Fakten zum Film genannt und ich konnte
-        mich fast nicht darauf konzentrieren, was eigentlich passiert ist. Er scheint
-        den Film wohl schon zu kennen. Jedenfalls sind die Raumschiffe super cool.
-        Ich w\xFCnschte, ich h\xE4tte auch so eins zum Spielen."
+      value: "Ich hab\r               gespielt und durfte Fernsehen gucken. Abends
+        hab ich dann noch mit Papa einen Film geguckt. Papa und ich haben Star Wars
+        geguckt, das war lustig. Papa hat mir die ganze Zeit beim Schauen unn\xFCtze
+        Fakten zum Film genannt und ich konnte mich fast nicht darauf konzentrieren,
+        was eigentlich passiert ist. Er scheint den Film wohl schon zu kennen. Jedenfalls
+        sind die Raumschiffe super cool. Ich w\xFCnschte, ich h\xE4tte auch so eins
+        zum Spielen."
       objectReference: {fileID: 0}
     - target: {fileID: 6420676259836214440, guid: 310aa630cae04f4458e5fdd72ca143b1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14247,12 +14825,36 @@ PrefabInstance:
 '
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[0].steps.Array.data[1].fmodEventRef.Path
+      value: event:/SC 1/SC 1.4.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[3].fmodEventRef.Path
-      value: event:/MC 1.1/MC 1.1.3
+      value: event:/MC 1/MC 1.3.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[0].steps.Array.data[5].fmodEventRef.Path
+      value: event:/SC 1/SC 1.5.1
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[7].fmodEventRef.Path
       value: event:/MC 1.1/MC 1.1.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[0].steps.Array.data[1].fmodEventRef.Guid.Data1
+      value: 2073593543
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[0].steps.Array.data[1].fmodEventRef.Guid.Data2
+      value: 1267969020
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[0].steps.Array.data[1].fmodEventRef.Guid.Data3
+      value: -1370236530
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[0].steps.Array.data[1].fmodEventRef.Guid.Data4
+      value: 1685976130
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[3].fmodEventRef.Guid.Data1
@@ -14269,6 +14871,22 @@ PrefabInstance:
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[3].fmodEventRef.Guid.Data4
       value: 1405602733
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[0].steps.Array.data[5].fmodEventRef.Guid.Data1
+      value: -1605210236
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[0].steps.Array.data[5].fmodEventRef.Guid.Data2
+      value: 1315786810
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[0].steps.Array.data[5].fmodEventRef.Guid.Data3
+      value: -64977248
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[0].steps.Array.data[5].fmodEventRef.Guid.Data4
+      value: 557961624
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[7].fmodEventRef.Guid.Data1
@@ -15179,6 +15797,101 @@ Transform:
   - {fileID: 1081335539}
   m_Father: {fileID: 419119984}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1800758523
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1800758524}
+  - component: {fileID: 1800758525}
+  m_Layer: 0
+  m_Name: Debug
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1800758524
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800758523}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 128370672}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1800758525
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800758523}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.2, y: 0.2}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1806242502 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+  m_PrefabInstance: {fileID: 1326634559}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1814316069
 GameObject:
   m_ObjectHideFlags: 0
@@ -15571,11 +16284,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[3].fmodEventRef.Path
-      value: 
+      value: event:/SC 1/SC 1.1.1
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[4].fmodEventRef.Path
-      value: event:/MC 1.1/MC 1.1.1
+      value: event:/MC 1/MC 1.1.1
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[2].fmodEventRef.Guid.Data1
@@ -15595,19 +16308,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[3].fmodEventRef.Guid.Data1
-      value: 0
+      value: -1452636838
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[3].fmodEventRef.Guid.Data2
-      value: 0
+      value: 1298450189
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[3].fmodEventRef.Guid.Data3
-      value: 0
+      value: 15986323
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[3].fmodEventRef.Guid.Data4
-      value: 0
+      value: -1749297743
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[4].fmodEventRef.Guid.Data1
@@ -15815,12 +16528,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[0].steps.Array.data[2].fmodEventRef.Path
+      value: event:/SC 1/SC 1.2.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[3].fmodEventRef.Path
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[4].fmodEventRef.Path
-      value: event:/MC 1.1/MC 1.1.2
+      value: event:/MC 1/MC 1.2.1
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[5].fmodEventRef.Path
@@ -15841,6 +16558,22 @@ PrefabInstance:
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[1].fmodEventRef.Guid.Data4
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[0].steps.Array.data[2].fmodEventRef.Guid.Data1
+      value: 671244686
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[0].steps.Array.data[2].fmodEventRef.Guid.Data2
+      value: 1162840371
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[0].steps.Array.data[2].fmodEventRef.Guid.Data3
+      value: -1819832897
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[0].steps.Array.data[2].fmodEventRef.Guid.Data4
+      value: 219403561
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[3].fmodEventRef.Guid.Data1
@@ -16797,6 +17530,26 @@ PrefabInstance:
       propertyPath: sequences.Array.data[0].steps.Array.data[5].subtitleText
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[0].steps.Array.data[2].fmodEventRef.Path
+      value: event:/SC 1/SC 1.3.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[0].steps.Array.data[2].fmodEventRef.Guid.Data1
+      value: 79926327
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[0].steps.Array.data[2].fmodEventRef.Guid.Data2
+      value: 1331947371
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[0].steps.Array.data[2].fmodEventRef.Guid.Data3
+      value: -818585713
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[0].steps.Array.data[2].fmodEventRef.Guid.Data4
+      value: -1357591696
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16891,7 +17644,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1198536277}
-        m_TargetAssemblyTypeName: ContainerUI, Assembly-CSharp
+        m_TargetAssemblyTypeName: StorageRoomUI, Assembly-CSharp
         m_MethodName: Close
         m_Mode: 1
         m_Arguments:
@@ -18114,6 +18867,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: zoomSize
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: levelTriggerId
       value: LVL01_CHILDREN_DOOR_LOCKED
       objectReference: {fileID: 0}
@@ -18702,7 +19459,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2138959243
 Transform:
   m_ObjectHideFlags: 0
@@ -18891,21 +19648,103 @@ PrefabInstance:
       objectReference: {fileID: 4815476061570213978, guid: 60c02e7ffb9e9cc49a43a39aa605704d, type: 3}
     - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
       propertyPath: slots.Array.data[2].readablePages.Array.size
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
       propertyPath: slots.Array.data[3].readablePages.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
       propertyPath: slots.Array.data[4].readablePages.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
       propertyPath: slots.Array.data[2].readablePages.Array.data[0].text
-      value: "4. Juli 2009\n\nWir sind heute nicht nach Spanien geflogen. Mama ist
-        seit gestern weg und ich wei\xDF nicht wohin. Papa wei\xDF es auch nicht,
-        sagt er zumindest. Ich glaub Mama kommt nicht mehr wieder."
+      value: "28. Juni 2009\n\nMama hat heute so getan, als w\xE4re nie was gewesen.
+        Sie hat wieder ganz normal mit mir geredet, sich aber nicht entschuldigt.
+        Das hat Mama schon immer so gemacht, wenn irgendwie etwas vorgefallen ist.
+        Ich hab noch nie mitbekommen, wie sich Mama bei Papa oder mir entschuldigt
+        hat. Sie tut immer so, als w\xE4re nie etwas passiert. Ich wei\xDF nicht,
+        warum sie das tut.\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: slots.Array.data[2].readablePages.Array.data[1].text
+      value: "Vielleicht ist das ihre Art sich einzugestehen, dass sie etwas falsch
+        gemacht hat, vielleicht ist das ihre Art zu verdr\xE4ngen, dass sie etwas
+        falsch gemacht hat. Heute wollte ich das aber nicht einfach nur hinnehmen.
+        Ich hab Mama gefragt, warum sie die Hand gehoben hat und mich schlagen wollte.
+        Warum sie mich angeschrien hat. Ich wollte eine Reaktion. Ich wollte einfach
+        wissen, warum sie manchmal ist, wie sie ist."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: slots.Array.data[2].readablePages.Array.data[2].text
+      value: "Mama hat mich komisch angeguckt, als ich das gefragt hab. Sie hat gesagt,
+        dass das nie passiert ist, dass sie nie die Hand gehoben h\xE4tte, mich nie
+        schlagen h\xE4tte wollen. Sie hat nicht geschrien, aber ruhig hat sie auch
+        nicht gesprochen. Sie war einfach unruhig, als h\xE4tte Mama niemals damit
+        gerechnet, dass ich nicht auch so tue, als w\xE4re nichts gewesen."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: slots.Array.data[2].readablePages.Array.data[3].text
+      value: "Ich hab Mama gesagt, dass sie l\xFCgt, dass sie mich wohl schlagen
+        wollte. Pl\xF6tzlich hat Mama angefangen mich anzuschreien. Ich w\xFCrde
+        mich immer als Opfer darstellen, dass sie ja die schlimmste Mutter der Welt
+        w\xE4re und alles nur falsch machen w\xFCrde. Dass sie bei mir und meiner
+        Erziehung alles falsch gemacht hat und dass ich ein undankbares, freches
+        Kind sei."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: slots.Array.data[3].readablePages.Array.data[0].text
+      value: "1. Juli 2009\n\nHeute war der letzte Schultag vor den Ferien. JUHUU!!!
+        In 3 Tagen ist unser Flug nach Spanien, ich kann\u2019s kaum abwarten. Papa
+        hat mich um 12 von der Schule abgeholt und ich hab ihm stolz mein Zeugnis
+        gezeigt."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: slots.Array.data[3].readablePages.Array.data[1].text
+      value: "Ich hab nur eine 3 in Mathe, in allen anderen F\xE4chern hab ich eine
+        2, in Englisch und Kunst sogar eine 1. Mama hat auch die letzten Tage so
+        getan, als w\xE4re nichts passiert. Es ist alles wieder zum Normalzustand
+        zur\xFCck. Glaub ich jedenfalls. Papa ist mit mir als Belohnung in die Stadt
+        gefahren und ich durfte mir im Spielzeugladen doch noch ein Raumschiff und
+        eine kleine Stoffkatze aussuchen."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: slots.Array.data[3].readablePages.Array.data[2].text
+      value: "Als wir nach Hause gefahren sind, hat Mama in der Haust\xFCr auf mich
+        gewartet. Sie hat sich mein Zeugnis angeguckt und mir gesagt, wie stolz sie
+        auf mich ist und wie stolz sie ist, dass ich ihr Sohn sei. Daraufhin hat
+        sie mich umarmt. Abends sind wir sogar zusammen ins Restaurant gegangen und
+        ich habe Schnitzel mit Pommes bestellt."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: slots.Array.data[3].readablePages.Array.data[3].text
+      value: "Als wir nach Hause gefahren sind, hat Mama in der Haust\xFCr auf mich
+        gewartet. Sie hat sich mein Zeugnis angeguckt und mir gesagt, wie stolz sie
+        auf mich ist und wie stolz sie ist, dass ich ihr Sohn sei. Daraufhin hat
+        sie mich umarmt. Abends sind wir sogar zusammen ins Restaurant gegangen und
+        ich habe Schnitzel mit Pommes bestellt."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: slots.Array.data[4].readablePages.Array.data[0].text
+      value: "27. Juni 2009\n\nPapa hat mir mein Schloss f\xFCr das Tagebuch gekauft.
+        Heute\nwar Papa irgendwie still. Er hat zwar, als wir zusammen im\nBaumarkt
+        waren und wir die kleinen Scharniere und das kleine\nSchloss gekauft haben,
+        mich mehrmals gefragt, ob ich mir\nsicher sei, dass ich dieses Schloss wirklich
+        m\xF6chte. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: slots.Array.data[4].readablePages.Array.data[1].text
+      value: "Doch nach mehrfachem versichern, dass ich dieses Schloss wirklich m\xF6chte,
+        hat er nachgegeben. Sonst war er aber wirklich.. ruhig. Aber irgendwie traurig
+        ruhig. Er hat mich mit einem Blick angesehen, den ich noch nie bei ihm gesehen
+        habe. Als h\xE4tte er Mitleid mit mir, ohne die Kraft zu haben, mir das sagen
+        zu k\xF6nnen."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: slots.Array.data[4].readablePages.Array.data[2].text
+      value: "Ich hab heute wieder alleine in meinem Zimmer gegessen. Papa hat mir
+        eine gute Nacht gew\xFCnscht."
       objectReference: {fileID: 0}
     - target: {fileID: 8339423539369142506, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
       propertyPath: m_LocalPosition.x

@@ -11,6 +11,9 @@ public class ContainerInteractable : Interactable
     [Header("TRIGGER ID")]
     [SerializeField] private string levelTriggerId;
 
+    [Header("SETINGS")]
+    [SerializeField] private bool isStorageRoom = false;
+
     public ContainerSlot[] Slots => slots;
 
     private bool isOpen;
@@ -39,7 +42,8 @@ public class ContainerInteractable : Interactable
         isOpen = true;
         OnExitRange();
 
-        ContainerUI.Instance.Open(this);
+        if (!isStorageRoom) ContainerUI.Instance.Open(this);
+        else StorageRoomUI.Instance.Open(this);
     }
 
     public void CloseFromUI()
