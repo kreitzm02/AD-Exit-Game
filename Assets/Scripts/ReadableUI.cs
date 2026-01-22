@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -5,6 +6,8 @@ using UnityEngine.UI;
 public class ReadableUI : MonoBehaviour
 {
     public static ReadableUI Instance;
+
+    public event Action Closed;
 
     [Header("ROOT")]
     [SerializeField] private GameObject root;
@@ -16,6 +19,8 @@ public class ReadableUI : MonoBehaviour
     [SerializeField] private Button nextButton;
     [SerializeField] private Button prevButton;
     [SerializeField] private Button closeButton;
+
+    private bool lockPlayer = true;
 
     private ReadablePage[] pages;
     private int currentPage;
@@ -37,15 +42,16 @@ public class ReadableUI : MonoBehaviour
             closeButton.onClick.AddListener(Close);
     }
 
-    public void Open(ReadablePage[] newPages)
+    public void Open(ReadablePage[] newPages, bool lockPl = true)
     {
         pages = newPages;
         currentPage = 0;
+        lockPlayer = lockPl;
 
         if (player == null)
             player = FindObjectOfType<PlayerController>();
 
-        player.LockInput(true);
+        if (lockPlayer) player.LockInput(true);
 
         root.SetActive(true);
         UpdatePage();
@@ -58,7 +64,9 @@ public class ReadableUI : MonoBehaviour
         if (player == null)
             player = FindObjectOfType<PlayerController>();
 
-        player.LockInput(false);
+        if (lockPlayer) player.LockInput(false);
+
+        Closed?.Invoke();
     }
 
     public void NextPage()

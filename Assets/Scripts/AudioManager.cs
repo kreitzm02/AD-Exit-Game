@@ -42,9 +42,18 @@ public class AudioManager : MonoBehaviour
     {
         StopMusicImmediate();
 
+        Debug.Log("Play Music");
+
+        //currentMusic = RuntimeManager.CreateInstance(musicEvent);
+        //currentMusic.setVolume(0.5f);
+        //currentMusic.start();
+
+        //RuntimeManager.PlayOneShot(musicEvent, Camera.main.transform.position);
+
         currentMusic = RuntimeManager.CreateInstance(musicEvent);
-        currentMusic.setVolume(1f);
+        RuntimeManager.AttachInstanceToGameObject(currentMusic, Camera.main.transform, Camera.main.GetComponent<Rigidbody>());
         currentMusic.start();
+        currentMusic.setVolume(0.1f);
     }
 
     public void CrossfadeMusic(EventReference newMusic)

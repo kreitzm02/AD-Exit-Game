@@ -15,4 +15,4 @@ MonoBehaviour:
   itemId: KEY_CHILDREN
   displayName: Key for Karas Bedroom
   description: '[KEY CHILDREN DESCRIPTION]'
-  icon: {fileID: 274040764442999228, guid: 79372855e8c76f34fb92556562a9155c, type: 3}
+  icon: {fileID: 21300000, guid: aa321bbe31280d1498677593466e3473, type: 3}

@@ -1,9 +1,12 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System;
 
 public class PlayerInventory : MonoBehaviour
 {
     public static PlayerInventory Instance;
+
+    public event Action InventoryChanged;
 
     private HashSet<string> collectedItemIds = new HashSet<string>();
     private List<UniqueItem_SO> collectedItems = new List<UniqueItem_SO>();
@@ -30,6 +33,8 @@ public class PlayerInventory : MonoBehaviour
         collectedItems.Add(item);
 
         Debug.Log("[PlayerInventory] Collected Item: " + item.displayName);
+
+        InventoryChanged?.Invoke();
         return true;
     }
 

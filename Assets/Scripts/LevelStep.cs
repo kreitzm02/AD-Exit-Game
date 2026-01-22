@@ -17,4 +17,10 @@ public class LevelStep
 
     [Header("OPTIONAL TRIGGER REQUIREMENT")]
     public string requiredTriggerId;
+
+    [Header("OPTIONAL QUEST TEXT")]
+    public bool updateQuestText = false;
+
+    [TextArea(2, 3)]
+    public string newQuestText;
 }

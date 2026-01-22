@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="Event" id="{dc048296-b696-4a1b-9178-90d43188b27f}">
 		<property name="name">
-			<value>MC 1.1.10</value>
+			<value>MC 1.10.1</value>
 		</property>
 		<property name="outputFormat">
 			<value>2</value>
@@ -84,7 +84,7 @@
 	</object>
 	<object class="MultiSound" id="{a9cf80f3-db59-47c8-9649-12aea0a149d6}">
 		<relationship name="sounds">
-			<destination>{74b1600a-ff08-4157-b792-8fbac6130778}</destination>
+			<destination>{342f59aa-a127-49b8-8d91-97433316a96a}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{534aa481-3680-4e13-ad5d-c4ce278091bd}">
@@ -100,9 +100,9 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{ff77c1d7-f570-4790-8f4e-e3f479b8af06}" />
-	<object class="SingleSound" id="{74b1600a-ff08-4157-b792-8fbac6130778}">
+	<object class="SingleSound" id="{342f59aa-a127-49b8-8d91-97433316a96a}">
 		<relationship name="audioFile">
-			<destination>{17ab56ff-32ac-4c84-9121-ffe3f89db8c0}</destination>
+			<destination>{1fb1fe71-0be1-4b47-9088-645d5c321a16}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{42142d65-e485-4ba1-bbc5-fb716d8991b3}" />
