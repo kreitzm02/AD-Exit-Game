@@ -5,8 +5,19 @@ public class InventoryItem : MonoBehaviour
 {
     [SerializeField] private Image itemPreview;
 
-    private void AssignImage(Sprite itemSprite)
+    public void Bind(UniqueItem_SO item)
     {
-        itemPreview.sprite = itemSprite;
+        if (itemPreview == null)
+            return;
+
+        if (item == null || item.icon == null)
+        {
+            itemPreview.enabled = false;
+            itemPreview.sprite = null;
+            return;
+        }
+
+        itemPreview.enabled = true;
+        itemPreview.sprite = item.icon;
     }
 }
