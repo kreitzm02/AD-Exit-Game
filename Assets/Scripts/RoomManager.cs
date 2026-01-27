@@ -83,6 +83,37 @@ public class RoomManager : MonoBehaviour
         });
     }
 
+    public bool ChangeRoomNoFade(string targetRoomId, int targetEntryPointIndex)
+    {
+        if (isTransitioning)
+        {
+            Debug.LogWarning("[RoomManager] ChangeRoomNoFade ignored because RoomManager is transitioning.");
+            return false;
+        }
+
+        RoomData targetRoom = rooms.Find(r => r.roomId == targetRoomId);
+
+        if (targetRoom == null)
+        {
+            Debug.LogError("[RoomManager] Room does not exist: " + targetRoomId);
+            return false;
+        }
+
+        if (currentRoom != null && currentRoom != targetRoom)
+            currentRoom.roomParent.SetActive(false);
+
+        targetRoom.roomParent.SetActive(true);
+
+        player.position = targetRoom.entryPoints[targetEntryPointIndex].position;
+        playerCamera.SetNewBounds(targetRoom.cameraBounds);
+        playerCamera.SnapToTarget();
+
+        currentRoom = targetRoom;
+
+
+        return true;
+    }
+
     private void StartFade(float from, float to, System.Action onComplete)
     {
         fadeImage.gameObject.SetActive(true);

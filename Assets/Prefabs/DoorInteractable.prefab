@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 876252101412659270}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.3, y: 0.13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -51,6 +51,9 @@ MonoBehaviour:
   highlight: {fileID: 3922326767099323990}
   targetRoomId: 1F_Living
   targetEntryPoint: 0
+  triggerMode: 0
+  useRoomManagerFade: 1
+  levelTriggerId: 
 --- !u!61 &1845386907396055971
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -85,7 +88,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 35.73889, y: 0.08943927}
+  m_Offset: {x: 17.165073, y: 2.3046653}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -95,7 +98,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.6663818, y: 2.6099055}
+  m_Size: {x: 2.098381, y: 1.7010943}
   m_EdgeRadius: 0
 --- !u!1 &2858698320222168558
 GameObject:
@@ -122,7 +125,7 @@ Transform:
   m_GameObject: {fileID: 2858698320222168558}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 35.29, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -155,7 +158,7 @@ Transform:
   m_GameObject: {fileID: 4779284364918052415}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.47999954, y: 0.07, z: -10}
+  m_LocalPosition: {x: 17.19, y: 2.2, z: -10}
   m_LocalScale: {x: 8.58, y: 8.58, z: 8.58}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -209,7 +212,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0, g: 0.2906773, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.14352083, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -284,7 +287,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
