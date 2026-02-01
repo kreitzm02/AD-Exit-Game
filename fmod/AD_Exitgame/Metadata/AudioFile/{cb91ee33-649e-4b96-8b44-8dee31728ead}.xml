@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{cb91ee33-649e-4b96-8b44-8dee31728ead}">
 		<property name="assetPath">
-			<value>pen-writing-sfx-430839.mp3</value>
+			<value>Others/pen-writing-sfx-430839.mp3</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

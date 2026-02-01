@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{dcf6cf33-e1a3-47af-84ea-caa4491a11e5}">
 		<property name="assetPath">
-			<value>scary-sound-effect-359877.mp3</value>
+			<value>Others/scary-sound-effect-359877.mp3</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{a2dae1ec-81c9-429b-8999-ced082f1e509}">
 		<property name="assetPath">
-			<value>Chest_1_SFX.wav</value>
+			<value>Others/Chest_1_SFX.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>
