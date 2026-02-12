@@ -78,7 +78,7 @@ crashlytics-build.properties
 # FMOD
 # ================================
 
-fmod/AD_Exitgame/Build/
+#fmod/AD_Exitgame/Build/
 fmod/AD_Exitgame/Cache/
 fmod/AD_Exitgame/Logs/
 
