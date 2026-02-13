@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{53b71453-f329-4eb0-8076-d6f77dbbf76c}">
+		<property name="assetPath">
+			<value>Scratching Into The Skin Wall 6.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8df95a15-10a1-4de4-a352-82e3faeba350}</destination>
+		</relationship>
+	</object>
+</objects>
