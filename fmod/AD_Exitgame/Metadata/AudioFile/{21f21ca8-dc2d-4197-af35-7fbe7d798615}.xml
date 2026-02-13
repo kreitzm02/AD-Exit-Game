@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{21f21ca8-dc2d-4197-af35-7fbe7d798615}">
 		<property name="assetPath">
-			<value>JEKKO/Level 1/MC 1.9.1_mcroom.wav</value>
+			<value>KARA/Level 1/MC 1.9.1_mcroom.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
