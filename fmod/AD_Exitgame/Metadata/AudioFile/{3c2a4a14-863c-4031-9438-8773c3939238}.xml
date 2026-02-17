@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
-	<object class="AudioFile" id="{683b75d8-3e06-4c5c-97c4-7686580a91e4}">
+	<object class="AudioFile" id="{3c2a4a14-863c-4031-9438-8773c3939238}">
 		<property name="assetPath">
-			<value>SC 2.18.1_flur.wav</value>
-		</property>
-		<property name="isStreaming">
-			<value>true</value>
+			<value>JEKKO/Level 2/SC 2.30.1_mcroom.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
@@ -14,7 +11,7 @@
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>15.213333333333333</value>
+			<value>3.5626666666666669</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{8df95a15-10a1-4de4-a352-82e3faeba350}</destination>

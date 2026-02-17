@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
-	<object class="AudioFile" id="{164931bf-3614-4782-984d-be90585bc108}">
+	<object class="AudioFile" id="{9aa75ef7-9ac6-45ee-b635-18c81620bc0b}">
 		<property name="assetPath">
-			<value>SC 2.42.1_parents.wav</value>
+			<value>JEKKO/Level 2/SC 2.44.1_living_rev.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
@@ -11,7 +11,7 @@
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>1.7626666666666666</value>
+			<value>2.3826666666666667</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{8df95a15-10a1-4de4-a352-82e3faeba350}</destination>
