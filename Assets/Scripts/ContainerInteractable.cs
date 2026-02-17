@@ -49,5 +49,6 @@ public class ContainerInteractable : Interactable
     public void CloseFromUI()
     {
         isOpen = false;
+        //ContainerUI.Instance.Close();
     }
 }
