@@ -3386,7 +3386,6 @@ MonoBehaviour:
   - {fileID: -1855292914024428783}
   - {fileID: -4362537861772418295}
   - {fileID: -341982882837093309}
-  - {fileID: 4098056968994536344}
   - {fileID: 824134595124395357}
   - {fileID: 1844314177688224423}
   - {fileID: -4020469415185019113}
@@ -3476,13 +3475,15 @@ MonoBehaviour:
   - {fileID: -138356188429588807}
   - {fileID: -6664936339996624021}
   - {fileID: 3669277779744572556}
+  - {fileID: 8822444841817257990}
+  - {fileID: 9111756372704141865}
   EditorParameters: []
   MasterBanks:
   - {fileID: 7352589515833197727}
   StringsBanks:
   - {fileID: 1780205026478963321}
   cacheVersion: 131857
-  cacheTime: 639069261077433449
+  cacheTime: 639069295347872943
   SerializableEventsDict:
   - key: event:/SC 1/SC 1.10 living
     index: 0
@@ -3702,186 +3703,188 @@ MonoBehaviour:
     index: 107
   - key: event:/SFX/SFX_Stair_Up
     index: 108
-  - key: event:/SFX/SFX_FS_MC
-    index: 109
   - key: event:/Atmos/Atmos - Fear
-    index: 110
+    index: 109
   - key: event:/SFX/SFX_Knocking_Door
-    index: 111
+    index: 110
   - key: event:/SFX/SFX_Chest open
-    index: 112
+    index: 111
   - key: event:/Atmos/Scary Noise - Loop (140 BPM)
-    index: 113
+    index: 112
   - key: event:/Atmos/Tension - Loop 1 (140 BPM)
-    index: 114
+    index: 113
   - key: event:/SFX/SFX_Pen
-    index: 115
+    index: 114
   - key: event:/SFX/SFX_Ping
-    index: 116
+    index: 115
   - key: event:/Atmos/Scary BG Sounds - Loop (140 BPM)
-    index: 117
+    index: 116
   - key: event:/SFX/SFX_Schublade
-    index: 118
+    index: 117
   - key: event:/Atmos/Playground 2
-    index: 119
+    index: 118
   - key: event:/Atmos/Playground 3
-    index: 120
+    index: 119
   - key: event:/Atmos/Playground 1
-    index: 121
+    index: 120
   - key: event:/Atmos/Tension - Loop 2 (140 BPM)
-    index: 122
+    index: 121
   - key: event:/SFX/SFX_Chest_Close
-    index: 123
+    index: 122
   - key: event:/Atmos/Atmos - Disturbing
-    index: 124
+    index: 123
   - key: event:/SFX/SFX_Scary
-    index: 125
+    index: 124
   - key: event:/SC 2/SC 2.38.1
-    index: 126
+    index: 125
   - key: event:/MC 2/MC 2.36.1
-    index: 127
+    index: 126
   - key: event:/SC 2/SC 2.42.1
-    index: 128
+    index: 127
   - key: event:/SC 2/SC 2.15.1
-    index: 129
+    index: 128
   - key: event:/SC 2/SC 2.44.1 rev
-    index: 130
+    index: 129
   - key: event:/MC 2/MC 2.8.1
-    index: 131
+    index: 130
   - key: event:/SC 2/SC 2.6.1
-    index: 132
+    index: 131
   - key: event:/MC 2/MC 2.4.1
-    index: 133
+    index: 132
   - key: event:/MC 2/MC 2.41.1
-    index: 134
+    index: 133
   - key: event:/MC 2/MC 2.19.1
-    index: 135
+    index: 134
   - key: event:/SC 2/SC 2.5.1
-    index: 136
+    index: 135
   - key: event:/SC 2/SC 2.19.1
-    index: 137
+    index: 136
   - key: event:/SC 2/SC 2.30.1
-    index: 138
+    index: 137
   - key: event:/SC 2/SC 2.7.1
-    index: 139
+    index: 138
   - key: event:/MC 2/MC 2.26.1
-    index: 140
+    index: 139
   - key: event:/MC 2/MC 2.40.1
-    index: 141
+    index: 140
   - key: event:/MC 2/MC 2.20.1
-    index: 142
+    index: 141
   - key: event:/SC 2/SC 2.36.1
-    index: 143
+    index: 142
   - key: event:/MC 2/MC 2.31.1
-    index: 144
+    index: 143
   - key: event:/SC 2/SC 2.27.1
-    index: 145
+    index: 144
   - key: event:/MC 2/MC 2.24.1
-    index: 146
+    index: 145
   - key: event:/SC 2/SC 2.33.1
-    index: 147
+    index: 146
   - key: event:/MC 2/MC 2.42.1
-    index: 148
+    index: 147
   - key: event:/MC 2/MC 2.27.1
-    index: 149
+    index: 148
   - key: event:/MC 2/MC 2.39.1
-    index: 150
+    index: 149
   - key: event:/SC 2/SC 2.37.1
-    index: 151
+    index: 150
   - key: event:/SC 2/SC 2.10.1
-    index: 152
+    index: 151
   - key: event:/MC 2/MC 2.16.1
-    index: 153
+    index: 152
   - key: event:/SC 2/SC 2.20.1
-    index: 154
+    index: 153
   - key: event:/MC 2/MC 2.33.1
-    index: 155
+    index: 154
   - key: event:/MC 2/MC 2.34.1
-    index: 156
+    index: 155
   - key: event:/MC 2/MC 2.14.1
-    index: 157
+    index: 156
   - key: event:/SC 2/SC 2.34.1
-    index: 158
+    index: 157
   - key: event:/SC 2/SC 2.1.1
-    index: 159
+    index: 158
   - key: event:/SC 2/SC 2.24.1
-    index: 160
+    index: 159
   - key: event:/SC 2/SC 2.39.1
-    index: 161
+    index: 160
   - key: event:/MC 2/MC 2.13.1
-    index: 162
+    index: 161
   - key: event:/MC 2/MC 2.43.1
-    index: 163
+    index: 162
   - key: event:/SC 2/SC 2.40.1
-    index: 164
+    index: 163
   - key: event:/SC 2/SC 2.31.1
-    index: 165
+    index: 164
   - key: event:/SC 2/SC 2.2.1
-    index: 166
+    index: 165
   - key: event:/MC 2/MC 2.2.1
-    index: 167
+    index: 166
   - key: event:/MC 2/MC 2.44.1
-    index: 168
+    index: 167
   - key: event:/SC 2/SC 2.9.1
-    index: 169
+    index: 168
   - key: event:/SC 2/SC 2.11.1
-    index: 170
+    index: 169
   - key: event:/MC 2/MC 2.5.1
-    index: 171
+    index: 170
   - key: event:/SC 2/SC 2.12.1
-    index: 172
+    index: 171
   - key: event:/MC 2/MC 2.1.1
-    index: 173
+    index: 172
   - key: event:/SC 2/SC 2.14.1
-    index: 174
+    index: 173
   - key: event:/MC 2/MC 2.9.1
-    index: 175
+    index: 174
   - key: event:/MC 2/MC 2.11.1
-    index: 176
+    index: 175
   - key: event:/MC 2/MC 2.10.1
-    index: 177
+    index: 176
   - key: event:/SC 2/SC 2.16.1
-    index: 178
+    index: 177
   - key: event:/SC 2/SC 2.25.1
-    index: 179
+    index: 178
   - key: event:/SC 2/SC 2.35.1
-    index: 180
+    index: 179
   - key: event:/MC 2/MC 2.23.1
-    index: 181
+    index: 180
   - key: event:/SC 2/SC 2.18.1
-    index: 182
+    index: 181
   - key: event:/MC 2/MC 2.25.1
-    index: 183
+    index: 182
   - key: event:/MC 2/MC 2.22.1
-    index: 184
+    index: 183
   - key: event:/MC 2/MC 2.17.1
-    index: 185
+    index: 184
   - key: event:/SC 2/SC 2.26.1
-    index: 186
+    index: 185
   - key: event:/MC 2/MC 2.28.1
-    index: 187
+    index: 186
   - key: event:/SC 2/SC 2.3.1
-    index: 188
+    index: 187
   - key: event:/SC 2/SC 2.22.1
-    index: 189
+    index: 188
   - key: event:/SC 2/SC 2.43.1
-    index: 190
+    index: 189
   - key: event:/MC 2/MC 2.3.1
-    index: 191
+    index: 190
   - key: event:/SC 2/SC 2.44.1
-    index: 192
+    index: 191
   - key: event:/MC 2/MC 2.29.1
-    index: 193
+    index: 192
   - key: event:/SC 2/SC 2.23.1
-    index: 194
+    index: 193
   - key: event:/MC 2/MC 2.30.1
-    index: 195
+    index: 194
   - key: event:/SC 2/SC 2.13.1
-    index: 196
+    index: 195
   - key: event:/MC 2/MC 2.32.1
-    index: 197
+    index: 196
   - key: event:/SC 2/SC 2.21.1
+    index: 197
+  - key: event:/SFX/SFX_FS_MC_02
     index: 198
+  - key: event:/SFX/SFX_FS_MC_01
+    index: 199
 --- !u!114 &1003675556007509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3971,10 +3974,10 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/MC_SFX.bank
   Name: MC_SFX
   StudioPath: bank:/MC_SFX
-  lastModified: 639069244617029428
+  lastModified: 639069295347872943
   FileSizes:
   - Name: Desktop
-    Value: 37920
+    Value: 31328
   Exists: 1
 --- !u!114 &620613641857917752
 MonoBehaviour:
@@ -4746,10 +4749,10 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639069261077433449
+  lastModified: 639069295347212980
   FileSizes:
   - Name: Desktop
-    Value: 9388
+    Value: 9436
   Exists: 1
 --- !u!114 &1807061391133301315
 MonoBehaviour:
@@ -5446,33 +5449,6 @@ MonoBehaviour:
   Banks:
   - {fileID: -2798083803012553464}
   IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &4098056968994536344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/SFX_FS_MC
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/SFX/SFX_FS_MC
-  Guid:
-    Data1: 787324897
-    Data2: 1102492483
-    Data3: -738418759
-    Data4: -1906163049
-  Banks:
-  - {fileID: 485784862711996540}
-  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
@@ -6566,7 +6542,7 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639069261077423396
+  lastModified: 639069295347192588
   FileSizes:
   - Name: Desktop
     Value: 1074
@@ -7009,6 +6985,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 506
   Exists: 1
+--- !u!114 &8822444841817257990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_FS_MC_02
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/SFX_FS_MC_02
+  Guid:
+    Data1: 944465010
+    Data2: 1146495588
+    Data3: 134332561
+    Data4: -156882973
+  Banks:
+  - {fileID: 485784862711996540}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 200
 --- !u!114 &8934058221284190681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7090,6 +7093,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &9111756372704141865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_FS_MC_01
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/SFX_FS_MC_01
+  Guid:
+    Data1: 787324897
+    Data2: 1102492483
+    Data3: -738418759
+    Data4: -1906163049
+  Banks:
+  - {fileID: 485784862711996540}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 300
 --- !u!114 &9176925516330993247
 MonoBehaviour:
   m_ObjectHideFlags: 0

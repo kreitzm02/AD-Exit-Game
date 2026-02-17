@@ -1,6 +1,8 @@
+using FMOD.Studio;
 using FMODUnity;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
 {
@@ -17,6 +19,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField, Min(0.01f)] private float baseFootstepInterval = 0.35f;
     [SerializeField] private Vector2 footstepIntervalRandomMultiplier = new Vector2(0.9f, 1.1f);
     [SerializeField, Range(0f, 1f)] private float footstepInputThreshold = 0.1f;
+    [SerializeField, Min(0.01f)] private float minPitch = 0.9f;
+    [SerializeField, Min(0.01f)] private float maxPitch = 1.1f;
 
     [Header("INPUT")]
     [SerializeField] private InputActionReference moveAction;
@@ -160,18 +164,30 @@ public class PlayerController : MonoBehaviour
             PlayRandomFootstep();
             footstepTimer = 0f;
             nextFootstepInterval = ComputeNextFootstepInterval();
+            Debug.Log("FOOTSTEP AFTER INTERVALL");
+        }
+        else if (footstepTimer <= 0.1f)
+        {
+            PlayRandomFootstep();
+            footstepTimer = 0.11f;
+            Debug.Log("FOOTSTEP first");
         }
     }
 
     private void PlayRandomFootstep()
     {
+        if (footstepEvents.Length == 0) return;
+
         int idx = Random.Range(0, footstepEvents.Length);
-        EventReference ev = footstepEvents[idx];
 
-        if (ev.IsNull)
-            return;
+        EventInstance ei = RuntimeManager.CreateInstance(footstepEvents[idx]);
 
-        RuntimeManager.PlayOneShotAttached(ev, gameObject);
+        float randomPitch = Random.Range(minPitch, maxPitch);
+
+        ei.setPitch(randomPitch);
+
+        ei.start();
+        ei.release();
     }
 
     private float ComputeNextFootstepInterval()
@@ -186,7 +202,7 @@ public class PlayerController : MonoBehaviour
     private void ResetFootstepTimer()
     {
         footstepTimer = 0f;
-        nextFootstepInterval = ComputeNextFootstepInterval();
+        nextFootstepInterval = baseFootstepInterval;
     }
 
     private void HandleFlip()
