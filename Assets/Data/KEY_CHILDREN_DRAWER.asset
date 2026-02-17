@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: KEY_CHILDREN_DRAWER
   m_EditorClassIdentifier: Assembly-CSharp::UniqueItem_SO
   itemId: KEY_CHILDREN_DRAWER
-  displayName: Key for a Drawer in Karas Room
-  description: KEY CHILDREN DRAWER DESCRIPTION
+  displayName: "Schl\xFCssel f\xFCr Kommode in Karas Zimmer"
+  description: "Das ist der Schl\xFCssel f\xFCr meine Kommode. Ich habe mich schon
+    gefragt, wo der abgeblieben ist."
   icon: {fileID: 21300000, guid: 61c2878d262601b47bccec61f02d86f7, type: 3}

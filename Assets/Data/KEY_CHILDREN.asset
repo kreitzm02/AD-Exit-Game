@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: KEY_CHILDREN
   m_EditorClassIdentifier: Assembly-CSharp::UniqueItem_SO
   itemId: KEY_CHILDREN
-  displayName: Key for Karas Bedroom
-  description: '[KEY CHILDREN DESCRIPTION]'
+  displayName: "Schl\xFCssel f\xFCr Karas Zimmer"
+  description: "Das ist der Schl\xFCssel f\xFCr mein Zimmer."
   icon: {fileID: 21300000, guid: aa321bbe31280d1498677593466e3473, type: 3}

@@ -2,7 +2,6 @@ using FMOD.Studio;
 using FMODUnity;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
 {
@@ -21,6 +20,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField, Range(0f, 1f)] private float footstepInputThreshold = 0.1f;
     [SerializeField, Min(0.01f)] private float minPitch = 0.9f;
     [SerializeField, Min(0.01f)] private float maxPitch = 1.1f;
+    [SerializeField, Range(0.01f, 1.0f)] private float footstepVolume = 1.0f;
 
     [Header("INPUT")]
     [SerializeField] private InputActionReference moveAction;
@@ -185,6 +185,8 @@ public class PlayerController : MonoBehaviour
         float randomPitch = Random.Range(minPitch, maxPitch);
 
         ei.setPitch(randomPitch);
+
+        ei.setVolume(footstepVolume);
 
         ei.start();
         ei.release();
