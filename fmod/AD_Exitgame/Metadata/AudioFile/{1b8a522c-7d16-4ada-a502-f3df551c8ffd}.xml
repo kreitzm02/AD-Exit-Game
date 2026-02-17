@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
-	<object class="AudioFile" id="{d7de6717-fa2e-4d22-8900-3c3de5d36935}">
+	<object class="AudioFile" id="{1b8a522c-7d16-4ada-a502-f3df551c8ffd}">
 		<property name="assetPath">
-			<value>SFX/FS/SFX_FS_MC_Sprint_03wav</value>
+			<value>SFX/Door/DOORCreak_Wooden Door, Opening and Closing 09_RogueWaves_CreakingDoor.wav</value>
 		</property>
 		<property name="frequencyInKHz">
-			<value>48</value>
+			<value>96</value>
 		</property>
 		<property name="channelCount">
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>0.17000000000000001</value>
+			<value>8.3888020833333332</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{8df95a15-10a1-4de4-a352-82e3faeba350}</destination>
