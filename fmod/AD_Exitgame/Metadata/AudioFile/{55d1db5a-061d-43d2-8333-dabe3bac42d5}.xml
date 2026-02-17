@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
-	<object class="AudioFile" id="{d7de6717-fa2e-4d22-8900-3c3de5d36935}">
+	<object class="AudioFile" id="{55d1db5a-061d-43d2-8333-dabe3bac42d5}">
 		<property name="assetPath">
-			<value>SFX/FS/SFX_FS_MC_Sprint_03wav</value>
+			<value>SFX/Door/Door - Medieval Open 16.wav</value>
 		</property>
 		<property name="frequencyInKHz">
-			<value>48</value>
+			<value>96</value>
 		</property>
 		<property name="channelCount">
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>0.17000000000000001</value>
+			<value>5.6223229166666666</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{8df95a15-10a1-4de4-a352-82e3faeba350}</destination>
