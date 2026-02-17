@@ -505,6 +505,9 @@ MonoBehaviour:
   - Level 4 MU
   - Level 4 SFX
   - Levl 1 ATMO
+  - MC_SFX
+  - SC_SFX
+  - SFX_Enviroment
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
