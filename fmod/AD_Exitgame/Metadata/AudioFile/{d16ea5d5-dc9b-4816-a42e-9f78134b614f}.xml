@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{d16ea5d5-dc9b-4816-a42e-9f78134b614f}">
+		<property name="assetPath">
+			<value>SFX/Door/Horror Scary Gate Wooden Gate Rattle Squeak 01.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>3.9464791666666668</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8df95a15-10a1-4de4-a352-82e3faeba350}</destination>
+		</relationship>
+	</object>
+</objects>
