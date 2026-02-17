@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: PHONE_CABLE
   m_EditorClassIdentifier: Assembly-CSharp::UniqueItem_SO
   itemId: PHONE_CABLE
-  displayName: Phone Cable
-  description: PHONE_CABLE DESCRIPTION
-  icon: {fileID: 4815476061570213978, guid: c673af7dfa180a2448c103266652b0bb, type: 3}
+  displayName: Telefonkabel
+  description: Das Kabel vom Telefon. Ohne dieses Kabel wird das Telefon nicht funktionieren.
+  icon: {fileID: -4360449926242239971, guid: 34482dc3a3778234d9d50a21b2dc3f82, type: 3}

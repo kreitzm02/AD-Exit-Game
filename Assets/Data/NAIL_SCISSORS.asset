@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: NAIL_SCISSORS
   m_EditorClassIdentifier: Assembly-CSharp::UniqueItem_SO
   itemId: NAIL_SCISSORS
-  displayName: Nail Scissors
-  description: NAIL SCISSORS DESCRIPTION
-  icon: {fileID: 4815476061570213978, guid: c673af7dfa180a2448c103266652b0bb, type: 3}
+  displayName: Nagelschere
+  description: "Eine Nagelschere. Damit k\xF6nnte man etwas zerschneiden."
+  icon: {fileID: -5465438861507733107, guid: cf33af81d8441ba4eaf6caf4a38dbcda, type: 3}

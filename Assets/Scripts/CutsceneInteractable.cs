@@ -1,4 +1,5 @@
 ﻿using DigitalRuby.Tween;
+using FMOD.Studio;
 using FMODUnity;
 using System.Collections;
 using UnityEngine;
@@ -37,6 +38,7 @@ public class CutsceneInteractable : Interactable
 
     private int currentSequenceIndex = 0;
     private bool isPlaying;
+    private bool stepSkipRequested = false;
 
     private Tween<Vector3> jekkoMoveTween;
     private Tween<Vector3> jekkoScaleTween;
@@ -48,6 +50,15 @@ public class CutsceneInteractable : Interactable
         if (triggerMode == InteractionTriggerMode.AUTO)
         {
             TryPlay();
+        }
+    }
+
+    private void Update()
+    {
+        if (stepSkipRequested == false && Input.GetKeyDown(KeyCode.Space))
+        {
+            stepSkipRequested = true;
+            Debug.Log("Step Skip Requested");
         }
     }
 
@@ -105,25 +116,37 @@ public class CutsceneInteractable : Interactable
 
         foreach (var step in sequence.steps)
         {
+            EventInstance ei = new();
+            if (!step.fmodEventRef.IsNull) ei = RuntimeManager.CreateInstance(step.fmodEventRef);
             switch (step.stepType)
             {
                 case CutsceneStepType.JEKKOSPAWN:
                     SpawnSideCharacter();
-                    PlayFMOD(step.fmodEventRef);
+                    PlayFMOD(ei);
                     break;
 
                 case CutsceneStepType.JEKKODESPAWN:
                     DespawnSideCharacter();
-                    PlayFMOD(step.fmodEventRef);
+                    PlayFMOD(ei);
                     break;
 
                 case CutsceneStepType.DIALOGUE:
                     SubtitleUI.Instance.Show(step.subtitleText);
-                    PlayFMOD(step.fmodEventRef);
+                    PlayFMOD(ei);
                     break;
             }
 
-            yield return new WaitForSeconds(step.duration);
+            if (stepSkipRequested)
+            {
+                StopFMOD(ei);
+                stepSkipRequested = false;
+                continue;
+            }
+            else yield return new WaitForSeconds(step.duration);
+
+            StopFMOD(ei); 
+
+            stepSkipRequested = false;
         }
 
         SubtitleUI.Instance.Hide();
@@ -204,12 +227,17 @@ public class CutsceneInteractable : Interactable
         );
     }
 
-    private void PlayFMOD(EventReference eventRef)
+    private void PlayFMOD(EventInstance ei)
     {
-        if (eventRef.IsNull)
-            return;
+        //FMODUnity.RuntimeManager.PlayOneShot(eventRef, Camera.main.transform.position);
 
-        FMODUnity.RuntimeManager.PlayOneShot(eventRef, Camera.main.transform.position);
+        ei.start();
+    }
+
+    private void StopFMOD(EventInstance ei)
+    {
+        ei.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        ei.release();
     }
 }
 

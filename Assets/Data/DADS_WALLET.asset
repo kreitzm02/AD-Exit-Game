@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: DADS_WALLET
   m_EditorClassIdentifier: Assembly-CSharp::UniqueItem_SO
   itemId: DADS_WALLET
-  displayName: Dads Wallet
-  description: DADS_WALLET DESCRIPTION
-  icon: {fileID: 4815476061570213978, guid: c673af7dfa180a2448c103266652b0bb, type: 3}
+  displayName: Papas Brieftasche
+  description: Die Brieftasche von Papa. Viel Geld ist da nicht drin.
+  icon: {fileID: 670249401811028567, guid: c9fae976408ca6a4583cb660b363bec1, type: 3}
