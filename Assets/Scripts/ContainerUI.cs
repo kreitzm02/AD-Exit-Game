@@ -44,6 +44,7 @@ public class ContainerUI : MonoBehaviour
     {
         root.SetActive(false);
         player.LockInput(false);
+        currentContainer.CloseFromUI();
         currentContainer = null;
         Time.timeScale = 1.0f;
     }

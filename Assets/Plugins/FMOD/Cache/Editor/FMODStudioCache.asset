@@ -560,6 +560,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-7825623390498547539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Foleys/Scratching Into The Skin Wall 4
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Foleys/Scratching Into The Skin Wall 4
+  Guid:
+    Data1: -1308688566
+    Data2: 1219884223
+    Data3: 1001906584
+    Data4: -1723217317
+  Banks:
+  - {fileID: -1997330444187588906}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-7785206718756935993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -608,6 +635,33 @@ MonoBehaviour:
   Banks:
   - {fileID: -5956165803274578339}
   IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-7732412581519416497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_Enviroment/Scary Scream
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/SFX_Enviroment/Scary Scream
+  Guid:
+    Data1: -610982011
+    Data2: 1152590471
+    Data3: 506539956
+    Data4: 1686888723
+  Banks:
+  - {fileID: -4732840969234988701}
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
@@ -742,6 +796,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 506
   Exists: 1
+--- !u!114 &-6967048895347107563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_Enviroment/Scary Void
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/SFX_Enviroment/Scary Void
+  Guid:
+    Data1: -1689760901
+    Data2: 1102531120
+    Data3: 1381631872
+    Data4: -235837470
+  Banks:
+  - {fileID: -4732840969234988701}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-6940459379663602906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1025,33 +1106,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-6649623887487542379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Atmos/Scary Noise - Loop (140 BPM)
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/Atmos/Scary Noise - Loop (140 BPM)
-  Guid:
-    Data1: 587542070
-    Data2: 1254448793
-    Data3: 957116605
-    Data4: 2087945889
-  Banks:
-  - {fileID: -4732840969234988701}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &-6639590599524165431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1201,33 +1255,6 @@ MonoBehaviour:
   Banks:
   - {fileID: -5956165803274578339}
   IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-6117924655317153720
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Atmos/Playground 1
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/Atmos/Playground 1
-  Guid:
-    Data1: -1161585160
-    Data2: 1182868792
-    Data3: -1004716627
-    Data4: -1985908545
-  Banks:
-  - {fileID: -4732840969234988701}
-  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
@@ -1436,6 +1463,33 @@ MonoBehaviour:
     Data4: 2110869181
   Banks:
   - {fileID: -2798083803012553464}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-5357555302670904984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Foleys/Stomach Growling 4
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Foleys/Stomach Growling 4
+  Guid:
+    Data1: -928381970
+    Data2: 1234371302
+    Data3: 1879051698
+    Data4: 966468065
+  Banks:
+  - {fileID: -1997330444187588906}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1667,10 +1721,10 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/SFX_Enviroment.bank
   Name: SFX_Enviroment
   StudioPath: bank:/SFX_Enviroment
-  lastModified: 639069244643007603
+  lastModified: 639069411076325129
   FileSizes:
   - Name: Desktop
-    Value: 6101408
+    Value: 3818944
   Exists: 1
 --- !u!114 &-4717871736453980954
 MonoBehaviour:
@@ -1734,11 +1788,38 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/Level 3 MU.bank
   Name: Level 3 MU
   StudioPath: bank:/Level 3 MU
-  lastModified: 639069244615174443
+  lastModified: 639069411072218311
   FileSizes:
   - Name: Desktop
     Value: 1832512
   Exists: 1
+--- !u!114 &-4583540324950319010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Foleys/Scratching Into The Skin Wall 1
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Foleys/Scratching Into The Skin Wall 1
+  Guid:
+    Data1: 1325031513
+    Data2: 1164184340
+    Data3: 970609296
+    Data4: 1849734445
+  Banks:
+  - {fileID: -1997330444187588906}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-4569491830306105909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1766,7 +1847,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-4563434813346382595
+--- !u!114 &-4555067673676849933
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1776,17 +1857,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Atmos/Scary BG Sounds - Loop (140 BPM)
+  m_Name: event:/Foleys/Scratching Into The Skin Wall 2
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/Atmos/Scary BG Sounds - Loop (140 BPM)
+  Path: event:/Foleys/Scratching Into The Skin Wall 2
   Guid:
-    Data1: -1947043218
-    Data2: 1280802599
-    Data3: -1391431013
-    Data4: -1898380290
+    Data1: 1601726799
+    Data2: 1245158193
+    Data3: -64968570
+    Data4: -1388170626
   Banks:
-  - {fileID: -4732840969234988701}
-  IsStream: 1
+  - {fileID: -1997330444187588906}
+  IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
@@ -1813,6 +1894,33 @@ MonoBehaviour:
     Data4: -252803428
   Banks:
   - {fileID: -2798083803012553464}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-4399503817252897183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_Enviroment/SFX_Chest_Close
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/SFX_Enviroment/SFX_Chest_Close
+  Guid:
+    Data1: 100838651
+    Data2: 1211827320
+    Data3: -1293595742
+    Data4: 177502882
+  Banks:
+  - {fileID: -4732840969234988701}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1948,6 +2056,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 506
   Exists: 1
+--- !u!114 &-4202993447562980234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Foleys/Scratching Into The Skin Wall 6
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Foleys/Scratching Into The Skin Wall 6
+  Guid:
+    Data1: 1421707064
+    Data2: 1125911475
+    Data3: 1186795445
+    Data4: 1290631815
+  Banks:
+  - {fileID: -1997330444187588906}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-4201032887922309449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2049,33 +2184,6 @@ MonoBehaviour:
     Data4: 308955363
   Banks:
   - {fileID: -2798083803012553464}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-4020469415185019113
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/SFX_Chest open
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/SFX/SFX_Chest open
-  Guid:
-    Data1: -2013888466
-    Data2: 1287354356
-    Data3: 831448708
-    Data4: 1463464563
-  Banks:
-  - {fileID: -4732840969234988701}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -2609,33 +2717,6 @@ MonoBehaviour:
   - Name: Desktop
     Value: 5481344
   Exists: 1
---- !u!114 &-2763068460615297754
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/SFX_Schublade
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/SFX/SFX_Schublade
-  Guid:
-    Data1: 1779871610
-    Data2: 1193377456
-    Data3: 379582599
-    Data4: -1729472379
-  Banks:
-  - {fileID: -4732840969234988701}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &-2732414917718688797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2885,33 +2966,6 @@ MonoBehaviour:
   - Name: Desktop
     Value: 506
   Exists: 1
---- !u!114 &-2269355767409009839
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/SFX_Pen
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/SFX/SFX_Pen
-  Guid:
-    Data1: -854194112
-    Data2: 1276497771
-    Data3: -657686104
-    Data4: 767653934
-  Banks:
-  - {fileID: -4732840969234988701}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &-2219495127259098627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3062,10 +3116,10 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/Level 3 SFX.bank
   Name: Level 3 SFX
   StudioPath: bank:/Level 3 SFX
-  lastModified: 639069244615244936
+  lastModified: 639069411073073574
   FileSizes:
   - Name: Desktop
-    Value: 506
+    Value: 166368
   Exists: 1
 --- !u!114 &-1957492144166905008
 MonoBehaviour:
@@ -3424,6 +3478,33 @@ MonoBehaviour:
     Data4: -466648592
   Banks:
   - {fileID: -5956165803274578339}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-1561632478308958460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Foleys/Stomach Growling 1
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Foleys/Stomach Growling 1
+  Guid:
+    Data1: -1805262419
+    Data2: 1298380752
+    Data3: -2143742286
+    Data4: 1535991466
+  Banks:
+  - {fileID: -1997330444187588906}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -3890,33 +3971,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-341982882837093309
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/SFX_Stair_Up
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/SFX/SFX_Stair_Up
-  Guid:
-    Data1: -1742589541
-    Data2: 1085263506
-    Data3: -1213280623
-    Data4: -1819052743
-  Banks:
-  - {fileID: 485784862711996540}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &-334429269454138431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4079,6 +4133,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-114418158355955314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_Enviroment/Getting Key 2
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/SFX_Enviroment/Getting Key 2
+  Guid:
+    Data1: 54438006
+    Data2: 1276326490
+    Data3: -1167063398
+    Data4: -1506972993
+  Banks:
+  - {fileID: -4732840969234988701}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4221,23 +4302,8 @@ MonoBehaviour:
   - {fileID: 8934058221284190681}
   - {fileID: -2018681452762369917}
   - {fileID: -1855292914024428783}
-  - {fileID: -341982882837093309}
   - {fileID: 824134595124395357}
-  - {fileID: 1844314177688224423}
-  - {fileID: -4020469415185019113}
-  - {fileID: -6649623887487542379}
-  - {fileID: 8783243409121966566}
-  - {fileID: -2269355767409009839}
-  - {fileID: 8106198844300887218}
-  - {fileID: -4563434813346382595}
-  - {fileID: -2763068460615297754}
-  - {fileID: 3900018188553750830}
-  - {fileID: 1101964278300326402}
-  - {fileID: -6117924655317153720}
-  - {fileID: 2479181358354101036}
-  - {fileID: 6677170895491162078}
   - {fileID: -3786316535038597724}
-  - {fileID: 1256633163557102124}
   - {fileID: -6639590599524165431}
   - {fileID: -718832053062553236}
   - {fileID: -1573187238781180386}
@@ -4382,13 +4448,38 @@ MonoBehaviour:
   - {fileID: 2252233846040203287}
   - {fileID: 1756015317458784949}
   - {fileID: 4390117560959853889}
+  - {fileID: -4202993447562980234}
+  - {fileID: 1897979916203038628}
+  - {fileID: -7825623390498547539}
+  - {fileID: -4555067673676849933}
+  - {fileID: -4583540324950319010}
+  - {fileID: 275177514117144617}
+  - {fileID: 858462769157205553}
+  - {fileID: -1561632478308958460}
+  - {fileID: 7525303488332588765}
+  - {fileID: 4032966390905854552}
+  - {fileID: -5357555302670904984}
+  - {fileID: 7209398685357012076}
+  - {fileID: 558260044339540783}
+  - {fileID: 8130381403682625766}
+  - {fileID: 35976986154100079}
+  - {fileID: 474851853702429190}
+  - {fileID: 6854015715802027622}
+  - {fileID: -114418158355955314}
+  - {fileID: 1630968108937484571}
+  - {fileID: -6967048895347107563}
+  - {fileID: -7732412581519416497}
+  - {fileID: 3490098883844141292}
+  - {fileID: 4663203605828058626}
+  - {fileID: -4399503817252897183}
+  - {fileID: 8112834182698479256}
   EditorParameters: []
   MasterBanks:
   - {fileID: 7352589515833197727}
   StringsBanks:
   - {fileID: 1780205026478963321}
   cacheVersion: 131857
-  cacheTime: 639069312119139916
+  cacheTime: 639069411076325129
   SerializableEventsDict:
   - key: event:/SC 1/SC 1.10 living
     index: 0
@@ -4604,328 +4695,348 @@ MonoBehaviour:
     index: 105
   - key: event:/Music/Level_3_Background_Music
     index: 106
-  - key: event:/SFX/SFX_Stair_Up
-    index: 107
   - key: event:/Atmos/Atmos - Fear
-    index: 108
-  - key: event:/SFX/SFX_Knocking_Door
-    index: 109
-  - key: event:/SFX/SFX_Chest open
-    index: 110
-  - key: event:/Atmos/Scary Noise - Loop (140 BPM)
-    index: 111
-  - key: event:/Atmos/Tension - Loop 1 (140 BPM)
-    index: 112
-  - key: event:/SFX/SFX_Pen
-    index: 113
-  - key: event:/SFX/SFX_Ping
-    index: 114
-  - key: event:/Atmos/Scary BG Sounds - Loop (140 BPM)
-    index: 115
-  - key: event:/SFX/SFX_Schublade
-    index: 116
-  - key: event:/Atmos/Playground 2
-    index: 117
-  - key: event:/Atmos/Playground 3
-    index: 118
-  - key: event:/Atmos/Playground 1
-    index: 119
-  - key: event:/Atmos/Tension - Loop 2 (140 BPM)
-    index: 120
-  - key: event:/SFX/SFX_Chest_Close
-    index: 121
+    index: 107
   - key: event:/Atmos/Atmos - Disturbing
-    index: 122
-  - key: event:/SFX/SFX_Scary
-    index: 123
+    index: 108
   - key: event:/SC 2/SC 2.38.1
-    index: 124
+    index: 109
   - key: event:/MC 2/MC 2.36.1
-    index: 125
+    index: 110
   - key: event:/SC 2/SC 2.42.1
-    index: 126
+    index: 111
   - key: event:/SC 2/SC 2.15.1
-    index: 127
+    index: 112
   - key: event:/SC 2/SC 2.44.1 rev
-    index: 128
+    index: 113
   - key: event:/MC 2/MC 2.8.1
-    index: 129
+    index: 114
   - key: event:/SC 2/SC 2.6.1
-    index: 130
+    index: 115
   - key: event:/MC 2/MC 2.4.1
-    index: 131
+    index: 116
   - key: event:/MC 2/MC 2.41.1
-    index: 132
+    index: 117
   - key: event:/MC 2/MC 2.19.1
-    index: 133
+    index: 118
   - key: event:/SC 2/SC 2.5.1
-    index: 134
+    index: 119
   - key: event:/SC 2/SC 2.19.1
-    index: 135
+    index: 120
   - key: event:/SC 2/SC 2.30.1
-    index: 136
+    index: 121
   - key: event:/SC 2/SC 2.7.1
-    index: 137
+    index: 122
   - key: event:/MC 2/MC 2.26.1
-    index: 138
+    index: 123
   - key: event:/MC 2/MC 2.40.1
-    index: 139
+    index: 124
   - key: event:/MC 2/MC 2.20.1
-    index: 140
+    index: 125
   - key: event:/SC 2/SC 2.36.1
-    index: 141
+    index: 126
   - key: event:/MC 2/MC 2.31.1
-    index: 142
+    index: 127
   - key: event:/SC 2/SC 2.27.1
-    index: 143
+    index: 128
   - key: event:/MC 2/MC 2.24.1
-    index: 144
+    index: 129
   - key: event:/SC 2/SC 2.33.1
-    index: 145
+    index: 130
   - key: event:/MC 2/MC 2.42.1
-    index: 146
+    index: 131
   - key: event:/MC 2/MC 2.27.1
-    index: 147
+    index: 132
   - key: event:/MC 2/MC 2.39.1
-    index: 148
+    index: 133
   - key: event:/SC 2/SC 2.37.1
-    index: 149
+    index: 134
   - key: event:/SC 2/SC 2.10.1
-    index: 150
+    index: 135
   - key: event:/MC 2/MC 2.16.1
-    index: 151
+    index: 136
   - key: event:/SC 2/SC 2.20.1
-    index: 152
+    index: 137
   - key: event:/MC 2/MC 2.33.1
-    index: 153
+    index: 138
   - key: event:/MC 2/MC 2.34.1
-    index: 154
+    index: 139
   - key: event:/MC 2/MC 2.14.1
-    index: 155
+    index: 140
   - key: event:/SC 2/SC 2.34.1
-    index: 156
+    index: 141
   - key: event:/SC 2/SC 2.1.1
-    index: 157
+    index: 142
   - key: event:/SC 2/SC 2.24.1
-    index: 158
+    index: 143
   - key: event:/SC 2/SC 2.39.1
-    index: 159
+    index: 144
   - key: event:/MC 2/MC 2.13.1
-    index: 160
+    index: 145
   - key: event:/MC 2/MC 2.43.1
-    index: 161
+    index: 146
   - key: event:/SC 2/SC 2.40.1
-    index: 162
+    index: 147
   - key: event:/SC 2/SC 2.31.1
-    index: 163
+    index: 148
   - key: event:/SC 2/SC 2.2.1
-    index: 164
+    index: 149
   - key: event:/MC 2/MC 2.2.1
-    index: 165
+    index: 150
   - key: event:/MC 2/MC 2.44.1
-    index: 166
+    index: 151
   - key: event:/SC 2/SC 2.9.1
-    index: 167
+    index: 152
   - key: event:/SC 2/SC 2.11.1
-    index: 168
+    index: 153
   - key: event:/MC 2/MC 2.5.1
-    index: 169
+    index: 154
   - key: event:/SC 2/SC 2.12.1
-    index: 170
+    index: 155
   - key: event:/MC 2/MC 2.1.1
-    index: 171
+    index: 156
   - key: event:/SC 2/SC 2.14.1
-    index: 172
+    index: 157
   - key: event:/MC 2/MC 2.9.1
-    index: 173
+    index: 158
   - key: event:/MC 2/MC 2.11.1
-    index: 174
+    index: 159
   - key: event:/MC 2/MC 2.10.1
-    index: 175
+    index: 160
   - key: event:/SC 2/SC 2.16.1
-    index: 176
+    index: 161
   - key: event:/SC 2/SC 2.25.1
-    index: 177
+    index: 162
   - key: event:/SC 2/SC 2.35.1
-    index: 178
+    index: 163
   - key: event:/MC 2/MC 2.23.1
-    index: 179
+    index: 164
   - key: event:/SC 2/SC 2.18.1
-    index: 180
+    index: 165
   - key: event:/MC 2/MC 2.25.1
-    index: 181
+    index: 166
   - key: event:/MC 2/MC 2.22.1
-    index: 182
+    index: 167
   - key: event:/MC 2/MC 2.17.1
-    index: 183
+    index: 168
   - key: event:/SC 2/SC 2.26.1
-    index: 184
+    index: 169
   - key: event:/MC 2/MC 2.28.1
-    index: 185
+    index: 170
   - key: event:/SC 2/SC 2.3.1
-    index: 186
+    index: 171
   - key: event:/SC 2/SC 2.22.1
-    index: 187
+    index: 172
   - key: event:/SC 2/SC 2.43.1
-    index: 188
+    index: 173
   - key: event:/MC 2/MC 2.3.1
-    index: 189
+    index: 174
   - key: event:/SC 2/SC 2.44.1
-    index: 190
+    index: 175
   - key: event:/MC 2/MC 2.29.1
-    index: 191
+    index: 176
   - key: event:/SC 2/SC 2.23.1
-    index: 192
+    index: 177
   - key: event:/MC 2/MC 2.30.1
-    index: 193
+    index: 178
   - key: event:/SC 2/SC 2.13.1
-    index: 194
+    index: 179
   - key: event:/MC 2/MC 2.32.1
-    index: 195
+    index: 180
   - key: event:/SC 2/SC 2.21.1
-    index: 196
+    index: 181
   - key: event:/SC 3/SC 3.1.0
-    index: 197
+    index: 182
   - key: event:/MC 3/MC 3.23.1
-    index: 198
+    index: 183
   - key: event:/MC 3/MC 3.10.0
-    index: 199
+    index: 184
   - key: event:/MC 3/MC 3.5.0
-    index: 200
+    index: 185
   - key: event:/MC 3/MC 3.3.0
-    index: 201
+    index: 186
   - key: event:/MC 3/MC 3.9.0
-    index: 202
+    index: 187
   - key: event:/SC 3/SC 3.10.1
-    index: 203
+    index: 188
   - key: event:/SC 3/SC 3.17.0
-    index: 204
+    index: 189
   - key: event:/SC 3/SC 3.11.0
-    index: 205
+    index: 190
   - key: event:/SC 3/SC 3.8.1
-    index: 206
+    index: 191
   - key: event:/SC 3/SC 3.13.0
-    index: 207
+    index: 192
   - key: event:/MC 3/MC 3.24.0
-    index: 208
+    index: 193
   - key: event:/SC 3/SC 3.7.0
-    index: 209
+    index: 194
   - key: event:/MC 3/MC 3.11.0
-    index: 210
+    index: 195
   - key: event:/MC 3/MC 3.14.1
-    index: 211
+    index: 196
   - key: event:/MC 3/MC 3.8.4
-    index: 212
+    index: 197
   - key: event:/SC 3/SC 3.2.0
-    index: 213
+    index: 198
   - key: event:/SC 3/SC 3.10.0
-    index: 214
+    index: 199
   - key: event:/MC 3/MC 3.13.0
-    index: 215
+    index: 200
   - key: event:/MC 3/MC 3.6.0
-    index: 216
+    index: 201
   - key: event:/MC 3/MC 3.25.2
-    index: 217
+    index: 202
   - key: event:/MC 3/MC 3.12.0
-    index: 218
+    index: 203
   - key: event:/MC 3/MC 3.22.0
-    index: 219
+    index: 204
   - key: event:/MC 3/MC 3.8.0
-    index: 220
+    index: 205
   - key: event:/MC 3/MC 3.6.6
-    index: 221
+    index: 206
   - key: event:/SC 3/SC 3.9.0
-    index: 222
+    index: 207
   - key: event:/MC 3/MC 3.25.1
-    index: 223
+    index: 208
   - key: event:/SC 3/SC 3.16.0
-    index: 224
+    index: 209
   - key: event:/MC 3/MC 3.25.0
-    index: 225
+    index: 210
   - key: event:/MC 3/MC 3.1.0
-    index: 226
+    index: 211
   - key: event:/SC 3/SC 3.18.0
-    index: 227
+    index: 212
   - key: event:/MC 3/MC 3.10.1
-    index: 228
+    index: 213
   - key: event:/MC 3/MC 3.22.1
-    index: 229
+    index: 214
   - key: event:/MC 3/MC 3.17.0
-    index: 230
+    index: 215
   - key: event:/MC 3/MC 3.14.0
-    index: 231
+    index: 216
   - key: event:/MC 3/MC 3.15.0
-    index: 232
+    index: 217
   - key: event:/SC 3/SC 3.7.1
-    index: 233
+    index: 218
   - key: event:/MC 3/MC 3.19.0
-    index: 234
+    index: 219
   - key: event:/MC 3/MC 3.6.5
-    index: 235
+    index: 220
   - key: event:/MC 3/MC 3.10.2
-    index: 236
+    index: 221
   - key: event:/MC 3/MC 3.17.1
-    index: 237
+    index: 222
   - key: event:/SC 3/SC 3.12.0
-    index: 238
+    index: 223
   - key: event:/MC 3/MC 3.3.1
-    index: 239
+    index: 224
   - key: event:/MC 3/MC 3.6.3
-    index: 240
+    index: 225
   - key: event:/SC 3/SC 3.3.1
-    index: 241
+    index: 226
   - key: event:/SC 3/SC 3.3.2
-    index: 242
+    index: 227
   - key: event:/MC 3/MC 3.11.1
-    index: 243
+    index: 228
   - key: event:/MC 3/MC 3.8.1
-    index: 244
+    index: 229
   - key: event:/MC 3/MC 3.12.1
-    index: 245
+    index: 230
   - key: event:/SC 3/SC 3.3.0
-    index: 246
+    index: 231
   - key: event:/MC 3/MC 3.11.2
-    index: 247
+    index: 232
   - key: event:/MC 3/MC 3.9.1
-    index: 248
+    index: 233
   - key: event:/SC 3/SC 3.8.0
-    index: 249
+    index: 234
   - key: event:/MC 3/MC 3.6.1
-    index: 250
+    index: 235
   - key: event:/SC 3/SC 3.3.3
-    index: 251
+    index: 236
   - key: event:/MC 3/MC 3.21.0
-    index: 252
+    index: 237
   - key: event:/MC 3/MC 3.8.3
-    index: 253
+    index: 238
   - key: event:/MC 3/MC 3.6.4
-    index: 254
+    index: 239
   - key: event:/SC 3/SC 3.15.0
-    index: 255
+    index: 240
   - key: event:/MC 3/MC 3.24.2
-    index: 256
+    index: 241
   - key: event:/SC 3/SC 3.14.0
-    index: 257
+    index: 242
   - key: event:/MC 3/MC 3.16.0
-    index: 258
+    index: 243
   - key: event:/MC 3/MC 3.24.1
-    index: 259
+    index: 244
   - key: event:/MC 3/MC 3.15.1
-    index: 260
+    index: 245
   - key: event:/MC 3/MC 3.23.0
-    index: 261
+    index: 246
   - key: event:/MC 3/MC 3.2.0
-    index: 262
+    index: 247
   - key: event:/SFX/FS/SFX_FS_MC_Sprint_01
-    index: 263
+    index: 248
   - key: event:/SFX/FS/SFX_FS_MC_02
-    index: 264
+    index: 249
   - key: event:/SFX/FS/SFX_FS_MC_Sprint_03
-    index: 265
+    index: 250
   - key: event:/SFX/FS/SFX_FS_MC_01
-    index: 266
+    index: 251
   - key: event:/SFX/FS/SFX_FS_MC_Sprint_02
+    index: 252
+  - key: event:/Foleys/Scratching Into The Skin Wall 6
+    index: 253
+  - key: event:/Foleys/Scratching Into The Skin Wall 5
+    index: 254
+  - key: event:/Foleys/Scratching Into The Skin Wall 4
+    index: 255
+  - key: event:/Foleys/Scratching Into The Skin Wall 2
+    index: 256
+  - key: event:/Foleys/Scratching Into The Skin Wall 1
+    index: 257
+  - key: event:/Foleys/Scratching Into The Skin Wall 3
+    index: 258
+  - key: event:/Foleys/Scratching Into The Skin Wall 7
+    index: 259
+  - key: event:/Foleys/Stomach Growling 1
+    index: 260
+  - key: event:/Foleys/Stomach Growling 2
+    index: 261
+  - key: event:/Foleys/Stomach Growling 3
+    index: 262
+  - key: event:/Foleys/Stomach Growling 4
+    index: 263
+  - key: event:/SFX/FS/SFX_Stair_Up
+    index: 264
+  - key: event:/SFX/SFX_Enviroment/Basement is Changing 2
+    index: 265
+  - key: event:/SFX/SFX_Enviroment/House is Changing
+    index: 266
+  - key: event:/SFX/SFX_Enviroment/SFX_Knocking_Door
     index: 267
+  - key: event:/SFX/SFX_Enviroment/SFX_Chest open
+    index: 268
+  - key: event:/SFX/SFX_Enviroment/SFX_Pen
+    index: 269
+  - key: event:/SFX/SFX_Enviroment/Getting Key 2
+    index: 270
+  - key: event:/SFX/SFX_Enviroment/SFX_Schublade
+    index: 271
+  - key: event:/SFX/SFX_Enviroment/Scary Void
+    index: 272
+  - key: event:/SFX/SFX_Enviroment/Scary Scream
+    index: 273
+  - key: event:/SFX/SFX_Enviroment/Scary Sweep
+    index: 274
+  - key: event:/SFX/SFX_Enviroment/Getting Key 1
+    index: 275
+  - key: event:/SFX/SFX_Enviroment/SFX_Chest_Close
+    index: 276
+  - key: event:/SFX/SFX_Enviroment/SFX_Scary
+    index: 277
 --- !u!114 &1003675556007509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4946,6 +5057,33 @@ MonoBehaviour:
     Data4: 1853537536
   Banks:
   - {fileID: -2798083803012553464}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &35976986154100079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_Enviroment/SFX_Knocking_Door
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/SFX_Enviroment/SFX_Knocking_Door
+  Guid:
+    Data1: 1836402982
+    Data2: 1177334514
+    Data3: -2144470638
+    Data4: 2079196096
+  Banks:
+  - {fileID: -4732840969234988701}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -5000,6 +5138,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1074
   Exists: 1
+--- !u!114 &275177514117144617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Foleys/Scratching Into The Skin Wall 3
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Foleys/Scratching Into The Skin Wall 3
+  Guid:
+    Data1: 641307739
+    Data2: 1293866172
+    Data3: -2068287050
+    Data4: 2110068347
+  Banks:
+  - {fileID: -1997330444187588906}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &413123627807820546
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5027,6 +5192,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &474851853702429190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_Enviroment/SFX_Chest open
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/SFX_Enviroment/SFX_Chest open
+  Guid:
+    Data1: -2013888466
+    Data2: 1287354356
+    Data3: 831448708
+    Data4: 1463464563
+  Banks:
+  - {fileID: -4732840969234988701}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &485784862711996540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5042,11 +5234,38 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/MC_SFX.bank
   Name: MC_SFX
   StudioPath: bank:/MC_SFX
-  lastModified: 639069312119139916
+  lastModified: 639069411073537391
   FileSizes:
   - Name: Desktop
     Value: 30464
   Exists: 1
+--- !u!114 &558260044339540783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_Enviroment/Basement is Changing 2
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/SFX_Enviroment/Basement is Changing 2
+  Guid:
+    Data1: 101724673
+    Data2: 1333787221
+    Data3: -1533592681
+    Data4: 331231511
+  Banks:
+  - {fileID: -4732840969234988701}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &620613641857917752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5256,6 +5475,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &858462769157205553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Foleys/Scratching Into The Skin Wall 7
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Foleys/Scratching Into The Skin Wall 7
+  Guid:
+    Data1: -1020688225
+    Data2: 1238567400
+    Data3: -1455331696
+    Data4: 1872373708
+  Banks:
+  - {fileID: -1997330444187588906}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &872893041819908893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5445,33 +5691,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &1101964278300326402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Atmos/Playground 3
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/Atmos/Playground 3
-  Guid:
-    Data1: 152450473
-    Data2: 1155535779
-    Data3: -1578344542
-    Data4: 1496670467
-  Banks:
-  - {fileID: -4732840969234988701}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &1110376998149881939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5539,33 +5758,6 @@ MonoBehaviour:
     Data4: 156813124
   Banks:
   - {fileID: 1414366215898462095}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &1256633163557102124
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/SFX_Scary
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/SFX/SFX_Scary
-  Guid:
-    Data1: -77727745
-    Data2: 1170316596
-    Data3: 76912027
-    Data4: 1447108271
-  Banks:
-  - {fileID: -4732840969234988701}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -5856,6 +6048,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &1630968108937484571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_Enviroment/SFX_Schublade
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/SFX_Enviroment/SFX_Schublade
+  Guid:
+    Data1: 1779871610
+    Data2: 1193377456
+    Data3: 379582599
+    Data4: -1729472379
+  Banks:
+  - {fileID: -4732840969234988701}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &1756015317458784949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5898,10 +6117,10 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639069312118540383
+  lastModified: 639069411073149327
   FileSizes:
   - Name: Desktop
-    Value: 12008
+    Value: 12398
   Exists: 1
 --- !u!114 &1807061391133301315
 MonoBehaviour:
@@ -5930,7 +6149,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &1844314177688224423
+--- !u!114 &1897979916203038628
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5940,16 +6159,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/SFX_Knocking_Door
+  m_Name: event:/Foleys/Scratching Into The Skin Wall 5
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/SFX/SFX_Knocking_Door
+  Path: event:/Foleys/Scratching Into The Skin Wall 5
   Guid:
-    Data1: 1836402982
-    Data2: 1177334514
-    Data3: -2144470638
-    Data4: 2079196096
+    Data1: -660383422
+    Data2: 1210576390
+    Data3: 2145668262
+    Data4: -184380228
   Banks:
-  - {fileID: -4732840969234988701}
+  - {fileID: -1997330444187588906}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -6220,33 +6439,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &2479181358354101036
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Atmos/Tension - Loop 2 (140 BPM)
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/Atmos/Tension - Loop 2 (140 BPM)
-  Guid:
-    Data1: 590142457
-    Data2: 1210949784
-    Data3: 247880339
-    Data4: -821995668
-  Banks:
-  - {fileID: -4732840969234988701}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &2483840703581698983
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6491,7 +6683,7 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/Level 1 SFX.bank
   Name: Level 1 SFX
   StudioPath: bank:/Level 1 SFX
-  lastModified: 639069244573596360
+  lastModified: 639069411071935983
   FileSizes:
   - Name: Desktop
     Value: 1763360
@@ -6712,6 +6904,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &3490098883844141292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_Enviroment/Scary Sweep
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/SFX_Enviroment/Scary Sweep
+  Guid:
+    Data1: 465307600
+    Data2: 1096989185
+    Data3: -808006238
+    Data4: -1043980065
+  Banks:
+  - {fileID: -4732840969234988701}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &3514863753259196846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6847,33 +7066,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &3900018188553750830
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Atmos/Playground 2
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/Atmos/Playground 2
-  Guid:
-    Data1: 1535817884
-    Data2: 1241228239
-    Data3: -1932448872
-    Data4: -999299670
-  Banks:
-  - {fileID: -4732840969234988701}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &3953425459265918110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6921,6 +7113,33 @@ MonoBehaviour:
     Data4: -1541036733
   Banks:
   - {fileID: 1414366215898462095}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &4032966390905854552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Foleys/Stomach Growling 3
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Foleys/Stomach Growling 3
+  Guid:
+    Data1: 1854891476
+    Data2: 1302766781
+    Data3: 697561479
+    Data4: -917134466
+  Banks:
+  - {fileID: -1997330444187588906}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -7036,6 +7255,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 170
+--- !u!114 &4663203605828058626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_Enviroment/Getting Key 1
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/SFX_Enviroment/Getting Key 1
+  Guid:
+    Data1: 2053897721
+    Data2: 1134776603
+    Data3: -445323849
+    Data4: 2138961748
+  Banks:
+  - {fileID: -4732840969234988701}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &4819526344546244593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7953,33 +8199,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &6677170895491162078
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/SFX_Chest_Close
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/SFX/SFX_Chest_Close
-  Guid:
-    Data1: 100838651
-    Data2: 1211827320
-    Data3: -1293595742
-    Data4: 177502882
-  Banks:
-  - {fileID: -4732840969234988701}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &6678156109746357830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8075,6 +8294,33 @@ MonoBehaviour:
   Banks:
   - {fileID: -5956165803274578339}
   IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &6854015715802027622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_Enviroment/SFX_Pen
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/SFX_Enviroment/SFX_Pen
+  Guid:
+    Data1: -854194112
+    Data2: 1276497771
+    Data3: -657686104
+    Data4: 767653934
+  Banks:
+  - {fileID: -4732840969234988701}
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
@@ -8297,6 +8543,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &7209398685357012076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/FS/SFX_Stair_Up
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/FS/SFX_Stair_Up
+  Guid:
+    Data1: -1742589541
+    Data2: 1085263506
+    Data3: -1213280623
+    Data4: -1819052743
+  Banks:
+  - {fileID: 485784862711996540}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &7299260097596140311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8393,7 +8666,7 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639069312118540383
+  lastModified: 639069411073139021
   FileSizes:
   - Name: Desktop
     Value: 1074
@@ -8452,6 +8725,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 200
+--- !u!114 &7525303488332588765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Foleys/Stomach Growling 2
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Foleys/Stomach Growling 2
+  Guid:
+    Data1: 1685758658
+    Data2: 1150999202
+    Data3: 768718764
+    Data4: -191218223
+  Banks:
+  - {fileID: -1997330444187588906}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &7529761441662691316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8776,7 +9076,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &8106198844300887218
+--- !u!114 &8112834182698479256
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8786,14 +9086,41 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/SFX_Ping
+  m_Name: event:/SFX/SFX_Enviroment/SFX_Scary
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/SFX/SFX_Ping
+  Path: event:/SFX/SFX_Enviroment/SFX_Scary
   Guid:
-    Data1: -1746199711
-    Data2: 1287204580
-    Data3: 1014205083
-    Data4: 1394703060
+    Data1: -77727745
+    Data2: 1170316596
+    Data3: 76912027
+    Data4: 1447108271
+  Banks:
+  - {fileID: -4732840969234988701}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &8130381403682625766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/SFX_Enviroment/House is Changing
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/SFX_Enviroment/House is Changing
+  Guid:
+    Data1: -1795068642
+    Data2: 1152336702
+    Data3: 1206187705
+    Data4: -411821129
   Banks:
   - {fileID: -4732840969234988701}
   IsStream: 0
@@ -8944,33 +9271,6 @@ MonoBehaviour:
     Data4: -601575991
   Banks:
   - {fileID: -2798083803012553464}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &8783243409121966566
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Atmos/Tension - Loop 1 (140 BPM)
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/Atmos/Tension - Loop 1 (140 BPM)
-  Guid:
-    Data1: 1301214015
-    Data2: 1334579521
-    Data3: 479324817
-    Data4: -1780283661
-  Banks:
-  - {fileID: -4732840969234988701}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
