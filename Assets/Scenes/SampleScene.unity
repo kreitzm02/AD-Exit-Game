@@ -347,12 +347,32 @@ PrefabInstance:
       value: DoorInteractable_PlayerDoor
       objectReference: {fileID: 0}
     - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Path
+      value: event:/SFX/DOOR/DoorOpen
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
       propertyPath: targetRoomId
       value: 2F_Children
       objectReference: {fileID: 0}
     - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
       propertyPath: targetEntryPoint
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Guid.Data1
+      value: -289347047
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Guid.Data2
+      value: 1114336161
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Guid.Data3
+      value: 1429589943
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Guid.Data4
+      value: 2123725152
       objectReference: {fileID: 0}
     - target: {fileID: 4906421770882425302, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.size
@@ -1367,12 +1387,32 @@ PrefabInstance:
       value: -1.05
       objectReference: {fileID: 0}
     - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Path
+      value: event:/SFX/SFX_Enviroment/SFX_Knocking_Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
       propertyPath: targetRoomId
       value: 2F_Bathroom
       objectReference: {fileID: 0}
     - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
       propertyPath: targetEntryPoint
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Guid.Data1
+      value: 1836402982
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Guid.Data2
+      value: 1177334514
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Guid.Data3
+      value: -2144470638
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Guid.Data4
+      value: 2079196096
       objectReference: {fileID: 0}
     - target: {fileID: 4906421770882425302, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
@@ -3991,12 +4031,32 @@ PrefabInstance:
       value: DoorInteractable
       objectReference: {fileID: 0}
     - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Path
+      value: event:/SFX/DOOR/DoorOpen
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
       propertyPath: targetRoomId
       value: 1F_Corridor
       objectReference: {fileID: 0}
     - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
       propertyPath: targetEntryPoint
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Guid.Data1
+      value: -289347047
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Guid.Data2
+      value: 1114336161
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Guid.Data3
+      value: 1429589943
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Guid.Data4
+      value: 2123725152
       objectReference: {fileID: 0}
     - target: {fileID: 4906421770882425302, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
@@ -5836,8 +5896,28 @@ PrefabInstance:
       value: DoorInteractable (1)
       objectReference: {fileID: 0}
     - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Path
+      value: event:/SFX/DOOR/DoorOpen
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
       propertyPath: targetEntryPoint
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Guid.Data1
+      value: -289347047
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Guid.Data2
+      value: 1114336161
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Guid.Data3
+      value: 1429589943
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Guid.Data4
+      value: 2123725152
       objectReference: {fileID: 0}
     - target: {fileID: 4906421770882425302, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.size
@@ -7869,6 +7949,26 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: containerSFX.Path
+      value: event:/SFX/DOOR/DoorHeavy
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: containerSFX.Guid.Data1
+      value: 1683634209
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: containerSFX.Guid.Data2
+      value: 1222539262
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: containerSFX.Guid.Data3
+      value: 1626895755
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: containerSFX.Guid.Data4
+      value: 46596607
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
       propertyPath: slots.Array.data[1].item
       value: 
       objectReference: {fileID: 0}
@@ -7883,7 +7983,7 @@ PrefabInstance:
     - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
       propertyPath: slots.Array.data[3].readableIcon
       value: 
-      objectReference: {fileID: 4815476061570213978, guid: 60c02e7ffb9e9cc49a43a39aa605704d, type: 3}
+      objectReference: {fileID: 1266715986469135529, guid: d39f923bf8a5c8c4fa9ad591a4b4e85f, type: 3}
     - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
       propertyPath: slots.Array.data[3].readablePages.Array.size
       value: 4
@@ -7980,6 +8080,267 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 8339423539369142506, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
   m_PrefabInstance: {fileID: 434362729}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &441563550
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 767786860}
+    m_Modifications:
+    - target: {fileID: 244591142335918563, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: m_Name
+      value: StoryInteractable_Lvl3Start
+      objectReference: {fileID: 0}
+    - target: {fileID: 3318201049648963277, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: m_Size.x
+      value: 0.29753616
+      objectReference: {fileID: 0}
+    - target: {fileID: 3318201049648963277, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.47464114
+      objectReference: {fileID: 0}
+    - target: {fileID: 6631327675976444661, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
+      value: 4.5310416
+      objectReference: {fileID: 0}
+    - target: {fileID: 6631327675976444661, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].y
+      value: 6.8935676
+      objectReference: {fileID: 0}
+    - target: {fileID: 6631327675976444661, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].x
+      value: -0.6512425
+      objectReference: {fileID: 0}
+    - target: {fileID: 6631327675976444661, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].y
+      value: 6.8530226
+      objectReference: {fileID: 0}
+    - target: {fileID: 6631327675976444661, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].x
+      value: -1.2237236
+      objectReference: {fileID: 0}
+    - target: {fileID: 6631327675976444661, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].y
+      value: 4.9166
+      objectReference: {fileID: 0}
+    - target: {fileID: 6631327675976444661, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].x
+      value: 2.656036
+      objectReference: {fileID: 0}
+    - target: {fileID: 6631327675976444661, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].y
+      value: 4.2531214
+      objectReference: {fileID: 0}
+    - target: {fileID: 6631327675976444661, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[4].x
+      value: 4.809649
+      objectReference: {fileID: 0}
+    - target: {fileID: 6631327675976444661, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[4].y
+      value: 4.3818865
+      objectReference: {fileID: 0}
+    - target: {fileID: 7928176150159718270, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -31.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 7928176150159718270, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 7928176150159718270, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7928176150159718270, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7928176150159718270, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7928176150159718270, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7928176150159718270, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7928176150159718270, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7928176150159718270, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7928176150159718270, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: jekkoGO
+      value: 
+      objectReference: {fileID: 777181377}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: useJekko
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: jekkoTarget
+      value: 
+      objectReference: {fileID: 441563552}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: pocketSpawnPoint
+      value: 
+      objectReference: {fileID: 789659906}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[0].sequenceName
+      value: DEFAULT
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[1].sequenceName
+      value: FOURTH VARIANT
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[2].sequenceName
+      value: FOURTH VARIANT
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[3].sequenceName
+      value: FOURTH VARIANT
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[4].sequenceName
+      value: FOURTH VARIANT
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[0].steps.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[1].steps.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[2].steps.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[3].steps.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[4].steps.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[0].steps.Array.data[1].duration
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[0].steps.Array.data[2].duration
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[1].steps.Array.data[0].duration
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[1].steps.Array.data[1].duration
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[2].steps.Array.data[0].duration
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[2].steps.Array.data[1].duration
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[3].steps.Array.data[0].duration
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[3].steps.Array.data[1].duration
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[4].steps.Array.data[0].duration
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[4].steps.Array.data[1].duration
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[0].steps.Array.data[0].subtitleText
+      value: '[ NO TEXT - DOOR OPEN SFX]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[0].steps.Array.data[1].subtitleText
+      value: '[ Storage Door Locked Text ]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[0].steps.Array.data[2].subtitleText
+      value: "Eech, wer hat denn bitte\r\nabschlie\xDFbare Schr\xE4nke im\r\nWohnzimmer??"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[1].steps.Array.data[0].subtitleText
+      value: '[ NO TEXT - CHEST OPEN SFX]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[1].steps.Array.data[1].subtitleText
+      value: "JEKKO: (ironisch)Ich w\xFCrd dir ja raten,\r\nmach nen Arzttermin.
+        Aber selbst\r\ndas w\xFCrdest du wohl vergessen"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[2].steps.Array.data[0].subtitleText
+      value: '[ NO TEXT - CHEST OPEN SFX]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[2].steps.Array.data[1].subtitleText
+      value: "JEKKO: (ironisch)Ich w\xFCrd dir ja raten,\r\nmach nen Arzttermin.
+        Aber selbst\r\ndas w\xFCrdest du wohl vergessen"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[3].steps.Array.data[0].subtitleText
+      value: '[ NO TEXT - CHEST OPEN SFX]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[3].steps.Array.data[1].subtitleText
+      value: 'JEKKO: DAS IST SPIELZEITSTRECKUNG!!!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[4].steps.Array.data[0].subtitleText
+      value: '[ NO TEXT - CHEST OPEN SFX]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[4].steps.Array.data[1].subtitleText
+      value: 'JEKKO: DAS IST SPIELZEITSTRECKUNG!!!'
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+--- !u!4 &441563551 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7928176150159718270, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+  m_PrefabInstance: {fileID: 441563550}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &441563552 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2007132730104108911, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+  m_PrefabInstance: {fileID: 441563550}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &442431861
 GameObject:
@@ -10510,6 +10871,26 @@ PrefabInstance:
       value: ContainerInteractable_Chest
       objectReference: {fileID: 0}
     - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: containerSFX.Path
+      value: event:/SFX/DOOR/DoorClosed
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: containerSFX.Guid.Data1
+      value: 1419486007
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: containerSFX.Guid.Data2
+      value: 1178900647
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: containerSFX.Guid.Data3
+      value: 377863829
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: containerSFX.Guid.Data4
+      value: 678252719
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
       propertyPath: slots.Array.data[1].item
       value: 
       objectReference: {fileID: 0}
@@ -10683,6 +11064,26 @@ PrefabInstance:
     - target: {fileID: 4112775870333140601, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
       propertyPath: m_Name
       value: ContainerInteractable_Closet
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: containerSFX.Path
+      value: event:/SFX/SFX_Enviroment/SFX_Schublade
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: containerSFX.Guid.Data1
+      value: 1779871610
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: containerSFX.Guid.Data2
+      value: 1193377456
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: containerSFX.Guid.Data3
+      value: 379582599
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: containerSFX.Guid.Data4
+      value: -1729472379
       objectReference: {fileID: 0}
     - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
       propertyPath: slots.Array.data[1].item
@@ -11585,12 +11986,32 @@ PrefabInstance:
       value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Path
+      value: event:/SFX/SFX_Enviroment/SFX_Knocking_Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
       propertyPath: targetRoomId
       value: 2F_Corridor
       objectReference: {fileID: 0}
     - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
       propertyPath: targetEntryPoint
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Guid.Data1
+      value: 1836402982
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Guid.Data2
+      value: 1177334514
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Guid.Data3
+      value: -2144470638
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Guid.Data4
+      value: 2079196096
       objectReference: {fileID: 0}
     - target: {fileID: 4906421770882425302, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.size
@@ -11957,7 +12378,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &767786860
 Transform:
   m_ObjectHideFlags: 0
@@ -11976,6 +12397,7 @@ Transform:
   - {fileID: 1232372805}
   - {fileID: 1072970722}
   - {fileID: 1656761174}
+  - {fileID: 441563551}
   m_Father: {fileID: 25352071}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &770373574
@@ -12746,12 +13168,32 @@ PrefabInstance:
       value: -1.32
       objectReference: {fileID: 0}
     - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Path
+      value: event:/SFX/SFX_Enviroment/SFX_Knocking_Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
       propertyPath: targetRoomId
       value: 1F_Corridor
       objectReference: {fileID: 0}
     - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
       propertyPath: targetEntryPoint
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Guid.Data1
+      value: 1836402982
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Guid.Data2
+      value: 1177334514
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Guid.Data3
+      value: -2144470638
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Guid.Data4
+      value: 2079196096
       objectReference: {fileID: 0}
     - target: {fileID: 4906421770882425302, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.size
@@ -14205,7 +14647,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[0].subtitleText
-      value: '[ NO TIME FOR BED TEXT ]'
+      value: "Das ist mein Bett. Es ist nicht die richtige Zeit daf\xFCr, sich hinzulegen..."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14597,12 +15039,32 @@ PrefabInstance:
       value: -0.79
       objectReference: {fileID: 0}
     - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Path
+      value: event:/SFX/DOOR/DoorOpen
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
       propertyPath: targetRoomId
       value: 2F_Parents
       objectReference: {fileID: 0}
     - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
       propertyPath: targetEntryPoint
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Guid.Data1
+      value: -289347047
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Guid.Data2
+      value: 1114336161
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Guid.Data3
+      value: 1429589943
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Guid.Data4
+      value: 2123725152
       objectReference: {fileID: 0}
     - target: {fileID: 4906421770882425302, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
@@ -16035,6 +16497,26 @@ PrefabInstance:
       value: ContainerInteractable_KitchenDrawer
       objectReference: {fileID: 0}
     - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: containerSFX.Path
+      value: event:/SFX/SFX_Enviroment/SFX_Schublade
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: containerSFX.Guid.Data1
+      value: 1779871610
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: containerSFX.Guid.Data2
+      value: 1193377456
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: containerSFX.Guid.Data3
+      value: 379582599
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: containerSFX.Guid.Data4
+      value: -1729472379
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
       propertyPath: slots.Array.data[1].item
       value: 
       objectReference: {fileID: 0}
@@ -16045,7 +16527,7 @@ PrefabInstance:
     - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
       propertyPath: slots.Array.data[3].readableIcon
       value: 
-      objectReference: {fileID: 4815476061570213978, guid: 60c02e7ffb9e9cc49a43a39aa605704d, type: 3}
+      objectReference: {fileID: 1266715986469135529, guid: d39f923bf8a5c8c4fa9ad591a4b4e85f, type: 3}
     - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
       propertyPath: slots.Array.data[3].readablePages.Array.size
       value: 2
@@ -16835,12 +17317,32 @@ PrefabInstance:
       value: -1.05
       objectReference: {fileID: 0}
     - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Path
+      value: event:/SFX/DOOR/DoorOpen
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
       propertyPath: targetRoomId
       value: 2F_Bathroom
       objectReference: {fileID: 0}
     - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
       propertyPath: targetEntryPoint
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Guid.Data1
+      value: -289347047
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Guid.Data2
+      value: 1114336161
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Guid.Data3
+      value: 1429589943
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Guid.Data4
+      value: 2123725152
       objectReference: {fileID: 0}
     - target: {fileID: 4906421770882425302, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
@@ -27591,6 +28093,10 @@ PrefabInstance:
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
+      propertyPath: sequences.Array.data[0].steps.Array.data[0].duration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[1].duration
       value: 0.5
       objectReference: {fileID: 0}
@@ -27736,19 +28242,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[4].fmodEventRef.Guid.Data1
-      value: -2025447811
+      value: -1664316870
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[4].fmodEventRef.Guid.Data2
-      value: 1141435219
+      value: 1195243421
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[4].fmodEventRef.Guid.Data3
-      value: -2122093662
+      value: 1728732334
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[4].fmodEventRef.Guid.Data4
-      value: 992890091
+      value: -2105721768
       objectReference: {fileID: 0}
     - target: {fileID: 8334727942531066475, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: sequences.Array.data[0].steps.Array.data[5].fmodEventRef.Guid.Data1
@@ -32395,6 +32901,26 @@ PrefabInstance:
       value: ContainerInteractable_Drawer
       objectReference: {fileID: 0}
     - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: containerSFX.Path
+      value: event:/SFX/SFX_Enviroment/SFX_Schublade
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: containerSFX.Guid.Data1
+      value: 1779871610
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: containerSFX.Guid.Data2
+      value: 1193377456
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: containerSFX.Guid.Data3
+      value: 379582599
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
+      propertyPath: containerSFX.Guid.Data4
+      value: -1729472379
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923332934719268576, guid: 1b90ee29d4f8f48408452ced94754ffd, type: 3}
       propertyPath: slots.Array.data[5].item
       value: 
       objectReference: {fileID: 11400000, guid: 132e64596dd5d0a4bb841f9e9484a8d9, type: 2}
@@ -32666,12 +33192,32 @@ PrefabInstance:
       value: -2.54
       objectReference: {fileID: 0}
     - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Path
+      value: event:/SFX/DOOR/DoorOpen
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
       propertyPath: targetRoomId
       value: 2F_Corridor
       objectReference: {fileID: 0}
     - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
       propertyPath: targetEntryPoint
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Guid.Data1
+      value: -289347047
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Guid.Data2
+      value: 1114336161
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Guid.Data3
+      value: 1429589943
+      objectReference: {fileID: 0}
+    - target: {fileID: 2939974021750296964, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: doorSFX.Guid.Data4
+      value: 2123725152
       objectReference: {fileID: 0}
     - target: {fileID: 4906421770882425302, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x

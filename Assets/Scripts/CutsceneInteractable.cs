@@ -1,8 +1,9 @@
-﻿using DigitalRuby.Tween;
+﻿using System.Collections;
+using DigitalRuby.Tween;
 using FMOD.Studio;
 using FMODUnity;
-using System.Collections;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class CutsceneInteractable : Interactable
 {
@@ -121,30 +122,34 @@ public class CutsceneInteractable : Interactable
             switch (step.stepType)
             {
                 case CutsceneStepType.JEKKOSPAWN:
+                    SubtitleUI.Instance.Show(step.subtitleText);
                     SpawnSideCharacter();
-                    PlayFMOD(ei);
+                    PlayFMOD(step.fmodEventRef);
                     break;
 
                 case CutsceneStepType.JEKKODESPAWN:
                     DespawnSideCharacter();
-                    PlayFMOD(ei);
+                    SubtitleUI.Instance.Show(step.subtitleText);
+                    PlayFMOD(step.fmodEventRef);
                     break;
 
                 case CutsceneStepType.DIALOGUE:
                     SubtitleUI.Instance.Show(step.subtitleText);
-                    PlayFMOD(ei);
+                    PlayFMOD(step.fmodEventRef);
                     break;
             }
 
-            if (stepSkipRequested)
-            {
-                StopFMOD(ei);
-                stepSkipRequested = false;
-                continue;
-            }
-            else yield return new WaitForSeconds(step.duration);
+            //if (stepSkipRequested)
+            //{
+            //    //StopFMOD(ei);
+            //    stepSkipRequested = false;
+            //    continue;
+            //}
+            //else yield return new WaitForSeconds(step.duration);
 
-            StopFMOD(ei); 
+            yield return new WaitForSeconds(step.duration);
+
+            //StopFMOD(ei); 
 
             stepSkipRequested = false;
         }
@@ -227,11 +232,13 @@ public class CutsceneInteractable : Interactable
         );
     }
 
-    private void PlayFMOD(EventInstance ei)
+    private void PlayFMOD(EventReference eventRef)
     {
-        //FMODUnity.RuntimeManager.PlayOneShot(eventRef, Camera.main.transform.position);
+        if (eventRef.IsNull) return;
 
-        ei.start();
+        FMODUnity.RuntimeManager.PlayOneShot(eventRef, Camera.main.transform.position);
+
+        //ei.start();
     }
 
     private void StopFMOD(EventInstance ei)

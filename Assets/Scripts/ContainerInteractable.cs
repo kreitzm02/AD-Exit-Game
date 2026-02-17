@@ -1,3 +1,4 @@
+using FMODUnity;
 using UnityEngine;
 
 public class ContainerInteractable : Interactable
@@ -13,6 +14,9 @@ public class ContainerInteractable : Interactable
 
     [Header("SETINGS")]
     [SerializeField] private bool isStorageRoom = false;
+
+    [Header("CONTAINER AUDIO")]
+    [SerializeField] private EventReference containerSFX;
 
     public ContainerSlot[] Slots => slots;
 
@@ -42,6 +46,8 @@ public class ContainerInteractable : Interactable
         isOpen = true;
         OnExitRange();
 
+        if (!containerSFX.IsNull) RuntimeManager.PlayOneShot(containerSFX, Camera.main.transform.position);
+
         if (!isStorageRoom) ContainerUI.Instance.Open(this);
         else StorageRoomUI.Instance.Open(this);
     }
@@ -49,6 +55,5 @@ public class ContainerInteractable : Interactable
     public void CloseFromUI()
     {
         isOpen = false;
-        //ContainerUI.Instance.Close();
     }
 }

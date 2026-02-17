@@ -1443,6 +1443,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-5541416275052366002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/DOOR/DoorClosed
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/DOOR/DoorClosed
+  Guid:
+    Data1: 1419486007
+    Data2: 1178900647
+    Data3: 377863829
+    Data4: 678252719
+  Banks:
+  - {fileID: -4732840969234988701}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3950
 --- !u!114 &-5488218672993947061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1721,10 +1748,10 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/SFX_Enviroment.bank
   Name: SFX_Enviroment
   StudioPath: bank:/SFX_Enviroment
-  lastModified: 639069411076325129
+  lastModified: 639069427675573478
   FileSizes:
   - Name: Desktop
-    Value: 3818944
+    Value: 4020096
   Exists: 1
 --- !u!114 &-4717871736453980954
 MonoBehaviour:
@@ -1874,6 +1901,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-4517713187657342033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/DOOR/DoorHeavy
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/DOOR/DoorHeavy
+  Guid:
+    Data1: 1683634209
+    Data2: 1222539262
+    Data3: 1626895755
+    Data4: 46596607
+  Banks:
+  - {fileID: -4732840969234988701}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5622
 --- !u!114 &-4423858969525807698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4473,13 +4527,16 @@ MonoBehaviour:
   - {fileID: 4663203605828058626}
   - {fileID: -4399503817252897183}
   - {fileID: 8112834182698479256}
+  - {fileID: 145522884776716345}
+  - {fileID: -4517713187657342033}
+  - {fileID: -5541416275052366002}
   EditorParameters: []
   MasterBanks:
   - {fileID: 7352589515833197727}
   StringsBanks:
   - {fileID: 1780205026478963321}
   cacheVersion: 131857
-  cacheTime: 639069411076325129
+  cacheTime: 639069427675573478
   SerializableEventsDict:
   - key: event:/SC 1/SC 1.10 living
     index: 0
@@ -5037,6 +5094,12 @@ MonoBehaviour:
     index: 276
   - key: event:/SFX/SFX_Enviroment/SFX_Scary
     index: 277
+  - key: event:/SFX/DOOR/DoorOpen
+    index: 278
+  - key: event:/SFX/DOOR/DoorHeavy
+    index: 279
+  - key: event:/SFX/DOOR/DoorClosed
+    index: 280
 --- !u!114 &1003675556007509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5118,6 +5181,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &145522884776716345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/DOOR/DoorOpen
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/DOOR/DoorOpen
+  Guid:
+    Data1: -289347047
+    Data2: 1114336161
+    Data3: 1429589943
+    Data4: 2123725152
+  Banks:
+  - {fileID: -4732840969234988701}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3051
 --- !u!114 &215535624429071575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5234,7 +5324,7 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/MC_SFX.bank
   Name: MC_SFX
   StudioPath: bank:/MC_SFX
-  lastModified: 639069411073537391
+  lastModified: 639069427673351838
   FileSizes:
   - Name: Desktop
     Value: 30464
@@ -6117,10 +6207,10 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639069411073149327
+  lastModified: 639069427672648263
   FileSizes:
   - Name: Desktop
-    Value: 12398
+    Value: 12526
   Exists: 1
 --- !u!114 &1807061391133301315
 MonoBehaviour:
@@ -8666,7 +8756,7 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639069411073139021
+  lastModified: 639069427672627108
   FileSizes:
   - Name: Desktop
     Value: 1074

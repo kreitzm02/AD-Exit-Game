@@ -1,3 +1,4 @@
+using FMODUnity;
 using UnityEngine;
 
 public class DoorInteractable : Interactable
@@ -5,6 +6,9 @@ public class DoorInteractable : Interactable
     [Header("ROOM TARGET")]
     [SerializeField] private string targetRoomId;
     [SerializeField] private int targetEntryPoint;
+
+    [Header("DOOR AUDIO")]
+    [SerializeField] private EventReference doorSFX;
 
     [Header("TRIGGER MODE")]
     [SerializeField] private InteractionTriggerMode triggerMode = InteractionTriggerMode.MANUAL;
@@ -43,6 +47,8 @@ public class DoorInteractable : Interactable
             RoomManager.Instance.ChangeRoom(targetRoomId, targetEntryPoint);
         else
             RoomManager.Instance.ChangeRoomNoFade(targetRoomId, targetEntryPoint);
+
+        if (!doorSFX.IsNull) RuntimeManager.PlayOneShot(doorSFX, Camera.main.transform.position);
 
         if (!string.IsNullOrEmpty(levelTriggerId) && LevelManager.Instance != null)
         {
