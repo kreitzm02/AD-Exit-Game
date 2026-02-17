@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.03.00">
 	<object class="AudioFile" id="{35b61325-e0fd-4174-9e03-f4a8b8e66174}">
 		<property name="assetPath">
-			<value>SFX_Stair_Up_Schublade-St_1.wav</value>
+			<value>Others/SFX_Stair_Up_Schublade-St_1.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
