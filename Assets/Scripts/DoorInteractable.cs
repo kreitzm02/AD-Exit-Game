@@ -20,7 +20,7 @@ public class DoorInteractable : Interactable
         if (triggerMode != InteractionTriggerMode.MANUAL)
             return;
 
-        TryUseDoor();\
+        TryUseDoor();
     }
 
     public override void OnEnterRange()
