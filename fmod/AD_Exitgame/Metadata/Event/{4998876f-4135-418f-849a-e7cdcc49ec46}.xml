@@ -84,8 +84,7 @@
 	</object>
 	<object class="MultiSound" id="{5d2eda0b-871e-47f0-b1b8-ce86f03d816a}">
 		<relationship name="sounds">
-			<destination>{a49f0e4e-44e3-4457-acdf-b5122b79e02c}</destination>
-			<destination>{9ef6cc73-5cc2-44bc-9e3f-a63d30f1a725}</destination>
+			<destination>{5bcf81ba-2587-44d6-8a0a-8b2d4f9d133f}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{86e291be-e866-4b08-a2d0-2f1aabb9ab0c}">
@@ -100,16 +99,25 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{84111237-32f7-4dca-9b3a-cacef07864a3}" />
-	<object class="SingleSound" id="{a49f0e4e-44e3-4457-acdf-b5122b79e02c}">
-		<relationship name="audioFile">
-			<destination>{ceb5236b-0e1c-49ec-8e25-0c0a0c2e50e8}</destination>
-		</relationship>
-	</object>
-	<object class="SingleSound" id="{9ef6cc73-5cc2-44bc-9e3f-a63d30f1a725}">
-		<relationship name="audioFile">
-			<destination>{f166297a-7268-4930-bbeb-0fb90d13d094}</destination>
+	<object class="MultiSound" id="{5bcf81ba-2587-44d6-8a0a-8b2d4f9d133f}">
+		<property name="playlistMode">
+			<value>1</value>
+		</property>
+		<relationship name="sounds">
+			<destination>{a6c5c04d-9e58-47b4-a253-c8639729f0b2}</destination>
+			<destination>{c809e7e3-2e18-4eb1-b702-7d1408424ec2}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{66442225-f5f2-4375-9b52-a9867a69f3c7}" />
 	<object class="MixerBusFader" id="{25392204-78e0-4b2e-a9ea-a327fb16b931}" />
+	<object class="SingleSound" id="{a6c5c04d-9e58-47b4-a253-c8639729f0b2}">
+		<relationship name="audioFile">
+			<destination>{ceb5236b-0e1c-49ec-8e25-0c0a0c2e50e8}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{c809e7e3-2e18-4eb1-b702-7d1408424ec2}">
+		<relationship name="audioFile">
+			<destination>{f166297a-7268-4930-bbeb-0fb90d13d094}</destination>
+		</relationship>
+	</object>
 </objects>
