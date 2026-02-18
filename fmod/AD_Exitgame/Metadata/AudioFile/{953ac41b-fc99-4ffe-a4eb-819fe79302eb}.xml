@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
-	<object class="AudioFile" id="{2d3fc627-a78a-485a-afda-4c6543564c99}">
+	<object class="AudioFile" id="{953ac41b-fc99-4ffe-a4eb-819fe79302eb}">
 		<property name="assetPath">
-			<value>SC 3.3.0.wav</value>
+			<value>SC 3.4.0.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
@@ -11,7 +14,7 @@
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>5.5573333333333332</value>
+			<value>47.823999999999998</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{8df95a15-10a1-4de4-a352-82e3faeba350}</destination>
