@@ -40,6 +40,8 @@ public class CutsceneInteractable : Interactable
     private int currentSequenceIndex = 0;
     private bool isPlaying;
     private bool stepSkipRequested = false;
+    private EventInstance currentAudio;
+    private bool hasCurrentAudio;
 
     private Tween<Vector3> jekkoMoveTween;
     private Tween<Vector3> jekkoScaleTween;
@@ -117,41 +119,42 @@ public class CutsceneInteractable : Interactable
 
         foreach (var step in sequence.steps)
         {
-            EventInstance ei = new();
-            if (!step.fmodEventRef.IsNull) ei = RuntimeManager.CreateInstance(step.fmodEventRef);
+            // StopStepAudio(immediate: false);
+
             switch (step.stepType)
             {
                 case CutsceneStepType.JEKKOSPAWN:
                     SubtitleUI.Instance.Show(step.subtitleText);
                     SpawnSideCharacter();
-                    PlayFMOD(step.fmodEventRef);
+                    StartStepAudio(step.fmodEventRef);
                     break;
 
                 case CutsceneStepType.JEKKODESPAWN:
                     DespawnSideCharacter();
                     SubtitleUI.Instance.Show(step.subtitleText);
-                    PlayFMOD(step.fmodEventRef);
+                    StartStepAudio(step.fmodEventRef);
                     break;
 
                 case CutsceneStepType.DIALOGUE:
                     SubtitleUI.Instance.Show(step.subtitleText);
-                    PlayFMOD(step.fmodEventRef);
+                    StartStepAudio(step.fmodEventRef);
                     break;
             }
 
-            //if (stepSkipRequested)
-            //{
-            //    //StopFMOD(ei);
-            //    stepSkipRequested = false;
-            //    continue;
-            //}
-            //else yield return new WaitForSeconds(step.duration);
+            float t = 0f;
+            while (t < step.duration)
+            {
+                if (IsSkipStepRequested())
+                {
+                    StopStepAudio(immediate: true);
+                    break;
+                }
 
-            yield return new WaitForSeconds(step.duration);
+                t += Time.deltaTime;
+                yield return null;
+            }
 
-            //StopFMOD(ei); 
-
-            stepSkipRequested = false;
+            // StopStepAudio(immediate: false);
         }
 
         SubtitleUI.Instance.Hide();
@@ -162,6 +165,8 @@ public class CutsceneInteractable : Interactable
         {
             LevelManager.Instance.NotifyTriggerCompleted(levelTriggerId);
         }
+
+        //StopStepAudio(immediate: false);
 
         isPlaying = false;
     }
@@ -232,19 +237,36 @@ public class CutsceneInteractable : Interactable
         );
     }
 
-    private void PlayFMOD(EventReference eventRef)
+    private void StartStepAudio(EventReference eventRef)
     {
+        StopStepAudio(immediate: false);
+
         if (eventRef.IsNull) return;
 
-        FMODUnity.RuntimeManager.PlayOneShot(eventRef, Camera.main.transform.position);
+        currentAudio = RuntimeManager.CreateInstance(eventRef);
 
-        //ei.start();
+        var pos = Camera.main ? Camera.main.transform.position : Vector3.zero;
+        currentAudio.set3DAttributes(RuntimeUtils.To3DAttributes(pos));
+
+        currentAudio.start();
+        hasCurrentAudio = true;
     }
 
-    private void StopFMOD(EventInstance ei)
+    private void StopStepAudio(bool immediate)
     {
-        ei.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-        ei.release();
+        if (!hasCurrentAudio) return;
+
+        currentAudio.stop(immediate ? FMOD.Studio.STOP_MODE.IMMEDIATE : FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        currentAudio.release();
+
+        hasCurrentAudio = false;
+    }
+
+    private bool IsSkipStepRequested()
+    {
+        if (!stepSkipRequested) return false;
+        stepSkipRequested = false;
+        return true;
     }
 }
 
