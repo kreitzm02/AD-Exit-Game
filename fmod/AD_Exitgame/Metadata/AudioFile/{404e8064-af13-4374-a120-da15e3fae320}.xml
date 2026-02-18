@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{404e8064-af13-4374-a120-da15e3fae320}">
+		<property name="assetPath">
+			<value>SFX/money/Money,Coins,Drop In Cash Register.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>96</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>1.3545104166666666</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8df95a15-10a1-4de4-a352-82e3faeba350}</destination>
+		</relationship>
+	</object>
+</objects>
