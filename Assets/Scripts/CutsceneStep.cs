@@ -11,6 +11,9 @@ public class CutsceneStep
 
     public float duration = 2f;
     public EventReference fmodEventRef;
+
+    public Transform focusTarget;
+    public Vector2 focusOffset;
 }
 
 public enum CutsceneStepType

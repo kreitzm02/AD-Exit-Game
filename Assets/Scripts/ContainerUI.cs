@@ -7,7 +7,7 @@ public class ContainerUI : MonoBehaviour
     public static ContainerUI Instance;
 
     [Header("ROOT")]
-    [SerializeField] private GameObject root;
+    [SerializeField] private Canvas root;
 
     [Header("SLOTS (6 Buttons)")]
     [SerializeField] private Button[] slotButtons;
@@ -16,10 +16,10 @@ public class ContainerUI : MonoBehaviour
     private ContainerInteractable currentContainer;
     private PlayerController player;
 
-    private void Awake()
+    private void Start()
     {
         Instance = this;
-        root.SetActive(false);
+        root.enabled = false;
 
         player = FindObjectOfType<PlayerController>();
 
@@ -36,13 +36,13 @@ public class ContainerUI : MonoBehaviour
         player.LockInput(true);
         Time.timeScale = 0.0f;
 
-        root.SetActive(true);
+        root.enabled = true;
         RefreshUI();
     }
 
     public void Close()
     {
-        root.SetActive(false);
+        root.enabled = false;
         player.LockInput(false);
         currentContainer.CloseFromUI();
         currentContainer = null;
@@ -99,7 +99,7 @@ public class ContainerUI : MonoBehaviour
 
     private void OpenReadableFromContainer(ReadablePage[] pages)
     {
-        root.SetActive(false);
+        root.enabled = false;
 
         ReadableUI.Instance.Closed += OnReadableClosed;
 
@@ -111,6 +111,6 @@ public class ContainerUI : MonoBehaviour
         ReadableUI.Instance.Closed -= OnReadableClosed;
 
         if (currentContainer != null)
-            root.SetActive(true);
+            root.enabled = true;
     }
 }

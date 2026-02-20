@@ -12,10 +12,10 @@ public class LevelStep
     [Header("DEACTIVATE THESE OBJECTS")]
     public GameObject[] deactivateObjects;
 
-    [Header("OPTIONAL ITEM REQUIREMENT")]
+    [Header("OPTIONAL ITEM REQUIREMENT TO CONTINUE")]
     public string requiredItemId;
 
-    [Header("OPTIONAL TRIGGER REQUIREMENT")]
+    [Header("OPTIONAL TRIGGER REQUIREMENT TO CONTINUE")]
     public string requiredTriggerId;
 
     [Header("OPTIONAL QUEST TEXT")]

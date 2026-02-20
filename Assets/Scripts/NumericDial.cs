@@ -38,7 +38,7 @@ public class NumericDial : MonoBehaviour
     public void SetValue(int newValue, bool notify = true)
     {
         newValue = ((newValue % 10) + 10) % 10;
-        if (newValue == value) return;
+        //if (newValue == value) return;
 
         value = newValue;
         if (valueText) valueText.text = value.ToString();

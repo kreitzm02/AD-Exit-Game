@@ -16,17 +16,18 @@ public class BlackScreenInteractable : Interactable
     [SerializeField] private InteractionTriggerMode triggerMode = InteractionTriggerMode.MANUAL;
 
     [Header("TIMING")]
-    [Tooltip("Optionaler Delay vor der Aktion (Sekunden).")]
     [SerializeField] private float startDelay = 0f;
 
-    [Tooltip("Wenn true: sofort (ohne Fade). Wenn false: Fade verwenden.")]
-    [SerializeField] private bool instant = false;
+    [SerializeField] private bool instantNoFade = false;
 
-    [Tooltip("Fade-Dauer in Sekunden (nur wenn instant=false).")]
     [SerializeField] private float fadeDuration = 0.8f;
 
+    [Header("OPTIONAL TEXT SEQUENCE")]
+    [SerializeField] private bool playTextSequence = false;
+
+    [SerializeField] private BlackScreenTextStep[] textSteps;
+
     [Header("LEVEL TRIGGER (OPTIONAL)")]
-    [Tooltip("Wenn gesetzt: LevelManager bekommt den Trigger nach Abschluss (instant: sofort nach Set; fade: nach fadeDuration).")]
     [SerializeField] private string levelTriggerId;
 
     private bool isRunning;
@@ -68,12 +69,15 @@ public class BlackScreenInteractable : Interactable
     {
         isRunning = true;
 
+        PlayerController player = FindFirstObjectByType<PlayerController>();
+        player.LockInput(true);
+
         if (startDelay > 0f)
             yield return new WaitForSeconds(startDelay);
 
         bool turnOn = (action == BlackScreenAction.BLACK_ON);
 
-        if (instant)
+        if (instantNoFade)
         {
             BlackFadeManager.Instance.SetBlackInstant(turnOn);
         }
@@ -88,10 +92,21 @@ public class BlackScreenInteractable : Interactable
                 yield return new WaitForSeconds(fadeDuration);
         }
 
+        if (playTextSequence && textSteps != null && textSteps.Length > 0)
+        {
+            yield return BlackFadeManager.Instance.PlayOverlayTextSequence(textSteps);
+        }
+        else
+        {
+            BlackFadeManager.Instance.ClearOverlayTextInstant();
+        }
+
         if (!string.IsNullOrEmpty(levelTriggerId) && LevelManager.Instance != null)
         {
             LevelManager.Instance.NotifyTriggerCompleted(levelTriggerId);
         }
+
+        player.LockInput(false);
 
         isRunning = false;
     }

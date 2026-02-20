@@ -10,7 +10,7 @@ public class ReadableUI : MonoBehaviour
     public event Action Closed;
 
     [Header("ROOT")]
-    [SerializeField] private GameObject root;
+    [SerializeField] private Canvas root;
 
     [Header("TEXT")]
     [SerializeField] private TextMeshProUGUI textField;
@@ -27,10 +27,10 @@ public class ReadableUI : MonoBehaviour
 
     private PlayerController player;
 
-    private void Awake()
+    private void Start()
     {
         Instance = this;
-        root.SetActive(false);
+        root.enabled = false;
 
         if (nextButton)
             nextButton.onClick.AddListener(NextPage);
@@ -53,13 +53,13 @@ public class ReadableUI : MonoBehaviour
 
         if (lockPlayer) player.LockInput(true);
 
-        root.SetActive(true);
+        root.enabled = true;
         UpdatePage();
     }
 
     public void Close()
     {
-        root.SetActive(false);
+        root.enabled = false;
 
         if (player == null)
             player = FindObjectOfType<PlayerController>();

@@ -41,8 +41,8 @@ public class RoomManager : MonoBehaviour
         if (rooms.Count > 0)
             LoadInitialRoom(rooms[0], 0);
 
-        SetFadeAlpha(1.0f);
-        StartCoroutine(BlackHoldThenFadeOut());
+        //SetFadeAlpha(1.0f);
+        //StartCoroutine(BlackHoldThenFadeOut());
     }
 
     private void LoadInitialRoom(RoomData room, int entryIndex)
