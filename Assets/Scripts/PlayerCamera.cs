@@ -28,6 +28,13 @@ public class PlayerCamera : MonoBehaviour
     private float halfWidth;
     private float noiseTime;
 
+    private Transform overrideTarget;
+
+    private Vector2 overrideOffset;
+
+    private bool followSuspended;
+    private Tween<Vector3> moveTween;
+
     private void Start()
     {
         Camera cam = Camera.main;
@@ -42,9 +49,14 @@ public class PlayerCamera : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!target) return;
+        if (followSuspended) return;
 
-        Vector3 targetPos = target.position + (Vector3)offset;
+        Transform currentTarget = overrideTarget ? overrideTarget : target;
+        if (!currentTarget) return;
+
+        Vector2 extra = overrideTarget ? overrideOffset : Vector2.zero;
+
+        Vector3 targetPos = currentTarget.position + (Vector3)(offset + extra);
         targetPos.z = transform.position.z;
 
         Vector3 smoothPos = Vector3.SmoothDamp(
@@ -88,16 +100,81 @@ public class PlayerCamera : MonoBehaviour
 
     public void SnapToTarget()
     {
-        if (!target) return;
+        Transform currentTarget = overrideTarget ? overrideTarget : target;
+        if (!currentTarget) return;
 
-        Vector3 snapPos = target.position + (Vector3)offset;
+        Vector2 extra = overrideTarget ? overrideOffset : Vector2.zero;
+
+        Vector3 snapPos = currentTarget.position + (Vector3)(offset + extra);
         snapPos.z = transform.position.z;
 
         transform.position = snapPos;
 
         velocity = Vector3.zero;
-
         noiseTime = 0f;
+    }
+
+    public void FocusOn(Transform focus, Vector2 focusOffset, bool smooth, float duration = 0.4f)
+    {
+        overrideTarget = focus;
+        overrideOffset = focusOffset;
+
+        if (!focus)
+            return;
+
+        MoveToTarget(focus, smooth, duration);
+    }
+
+    public void ClearFocus(bool smooth, float duration = 0.4f)
+    {
+        overrideTarget = null;
+        overrideOffset = Vector2.zero;
+
+        if (!target)
+            return;
+
+        MoveToTarget(target, smooth, duration);
+    }
+
+    private void MoveToTarget(Transform t, bool smooth, float duration)
+    {
+        if (!t)
+            return;
+
+        Vector2 extra = overrideTarget ? overrideOffset : Vector2.zero;
+
+        Vector3 targetPos = t.position + (Vector3)(offset + extra);
+        targetPos.z = transform.position.z;
+
+        if (!smooth || duration <= 0f)
+        {
+            moveTween?.Stop(TweenStopBehavior.DoNotModify);
+            followSuspended = false;
+            transform.position = targetPos;
+            velocity = Vector3.zero;
+            return;
+        }
+
+        moveTween?.Stop(TweenStopBehavior.DoNotModify);
+
+        followSuspended = true;
+
+        moveTween = gameObject.Tween(
+            "CameraMoveToTarget",
+            transform.position,
+            targetPos,
+            duration,
+            TweenScaleFunctions.QuadraticEaseOut,
+            tw =>
+            {
+                transform.position = tw.CurrentValue;
+            },
+            tw =>
+            {
+                followSuspended = false;
+                velocity = Vector3.zero;
+            }
+        );
     }
 
     public void ZoomTo(float targetZoom, bool smooth, float duration = 0.4f)

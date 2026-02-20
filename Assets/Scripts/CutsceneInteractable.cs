@@ -17,12 +17,15 @@ public class CutsceneInteractable : Interactable
     [SerializeField] private InteractionTriggerMode triggerMode = InteractionTriggerMode.MANUAL;
 
     [Header("CAMERA")]
-    [SerializeField] private Transform focusPoint;
     [SerializeField] private float zoomSize = 3.5f;
 
     [Header("ZOOM SETTINGS")]
     [SerializeField] private bool smoothZoom = true;
     [SerializeField] private float zoomDuration = 0.4f;
+
+    [Header("FOCUS SETTINGS")]
+    [SerializeField] private bool smoothFocus = true;
+    [SerializeField] private float focusDuration = 0.4f;
 
     [Header("JEKKO SETTINGS")]
     [SerializeField] private bool useJekko = false;
@@ -119,7 +122,10 @@ public class CutsceneInteractable : Interactable
 
         foreach (var step in sequence.steps)
         {
-            // StopStepAudio(immediate: false);
+            if (step.focusTarget)
+                cam.FocusOn(step.focusTarget, step.focusOffset, smoothFocus, focusDuration);
+            else
+                cam.ClearFocus(smoothFocus, focusDuration);
 
             switch (step.stepType)
             {
@@ -153,11 +159,12 @@ public class CutsceneInteractable : Interactable
                 t += Time.deltaTime;
                 yield return null;
             }
-
-            // StopStepAudio(immediate: false);
         }
 
         SubtitleUI.Instance.Hide();
+
+        cam.ClearFocus(smoothFocus, focusDuration);
+
         cam.ResetZoom(smoothZoom, zoomDuration);
         player.LockInput(false);
 
@@ -165,8 +172,6 @@ public class CutsceneInteractable : Interactable
         {
             LevelManager.Instance.NotifyTriggerCompleted(levelTriggerId);
         }
-
-        //StopStepAudio(immediate: false);
 
         isPlaying = false;
     }
@@ -239,7 +244,7 @@ public class CutsceneInteractable : Interactable
 
     private void StartStepAudio(EventReference eventRef)
     {
-        StopStepAudio(immediate: false);
+        //StopStepAudio(immediate: false);
 
         if (eventRef.IsNull) return;
 

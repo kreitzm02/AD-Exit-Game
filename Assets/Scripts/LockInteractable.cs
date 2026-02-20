@@ -1,5 +1,6 @@
 using FMODUnity;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class LockInteractable : Interactable
@@ -22,6 +23,9 @@ public class LockInteractable : Interactable
 
     [Header("AUDIO")]
     [SerializeField] private EventReference solvedSFX;
+
+    [Header("SETTINGS")]
+    [SerializeField] private bool isDummyLock;
 
     private bool isOpen;
     private bool solved;
@@ -50,7 +54,7 @@ public class LockInteractable : Interactable
         isOpen = true;
         OnExitRange();
 
-        LockUI.Instance.Open(this, startA, startB, startC, correctA, correctB, correctC);
+        LockUI.Instance.Open(this, startA, startB, startC, correctA, correctB, correctC, isDummyLock);
     }
 
     public void CloseFromUI()

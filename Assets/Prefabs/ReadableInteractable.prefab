@@ -371,10 +371,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PolygonHighlight
   sourcePolygon: {fileID: 2810036324077339991}
-  fillColor: {r: 1, g: 1, b: 1, a: 0.30588236}
+  fillColor: {r: 1, g: 1, b: 1, a: 0.039215688}
   outlineColor: {r: 0, g: 0, b: 0, a: 0.9}
-  outlineWidth: 0.05
-  zOffset: -7
+  outlineWidth: 0.125
+  zOffset: -9.5
   billboardToCamera: 0
 --- !u!1 &8742581073905590520
 GameObject:

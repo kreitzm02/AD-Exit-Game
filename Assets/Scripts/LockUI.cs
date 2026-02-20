@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,7 +7,7 @@ public class LockUI : MonoBehaviour
     public static LockUI Instance;
 
     [Header("ROOT")]
-    [SerializeField] private GameObject root;
+    [SerializeField] private Canvas root;
 
     [Header("LOCK LOGIC")]
     [SerializeField] private NumberLock numberLock;
@@ -17,11 +18,12 @@ public class LockUI : MonoBehaviour
 
     private LockInteractable currentLock;
     private PlayerController player;
+    private bool isDummyLock = false;
 
-    private void Awake()
+    private void Start()
     {
         Instance = this;
-        root.SetActive(false);
+        root.enabled = false;
 
         player = FindObjectOfType<PlayerController>();
 
@@ -34,14 +36,13 @@ public class LockUI : MonoBehaviour
 
     public void Open(LockInteractable lockInteractable,
         int startA, int startB, int startC,
-        int correctA, int correctB, int correctC)
+        int correctA, int correctB, int correctC, bool isDummy = false)
     {
         currentLock = lockInteractable;
 
         player.LockInput(true);
-        Time.timeScale = 0.0f;
 
-        root.SetActive(true);
+        root.enabled = true;
 
         dials[0].SetValue(startA, notify: false);
         dials[1].SetValue(startB, notify: false);
@@ -50,12 +51,17 @@ public class LockUI : MonoBehaviour
         numberLock.SetCode(correctA, correctB, correctC);
 
         numberLock.ResetLock();
+
+        isDummyLock = isDummy;
+
         numberLock.Check();
+
+        Time.timeScale = 0.0f;
     }
 
     public void Close()
     {
-        root.SetActive(false);
+        root.enabled = false;
         player.LockInput(false);
 
         if (currentLock != null)
@@ -67,9 +73,17 @@ public class LockUI : MonoBehaviour
 
     private void OnSolved()
     {
-        if (currentLock == null) return;
+        if (currentLock == null || isDummyLock) return;
 
+        StartCoroutine(OnSolvedCoroutine());
+    }
+
+    private IEnumerator OnSolvedCoroutine()
+    {
         currentLock.NotifySolved();
+
+        yield return new WaitForSecondsRealtime(2.0f);
+
         Close();
     }
 }

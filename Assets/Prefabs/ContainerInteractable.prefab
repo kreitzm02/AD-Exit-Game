@@ -239,6 +239,13 @@ MonoBehaviour:
     readableIcon: {fileID: 0}
   levelTriggerId: 
   isStorageRoom: 0
+  containerSFX:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!1 &8845737493607951872
 GameObject:
   m_ObjectHideFlags: 0
@@ -395,8 +402,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PolygonHighlight
   sourcePolygon: {fileID: 2963392375946773920}
-  fillColor: {r: 1, g: 1, b: 1, a: 0.30588236}
+  fillColor: {r: 1, g: 1, b: 1, a: 0.039215688}
   outlineColor: {r: 0, g: 0, b: 0, a: 0.9}
-  outlineWidth: 0.05
+  outlineWidth: 0.125
   zOffset: -7
   billboardToCamera: 0
