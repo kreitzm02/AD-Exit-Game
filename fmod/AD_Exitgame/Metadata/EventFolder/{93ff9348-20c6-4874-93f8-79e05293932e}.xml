@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.03.00">
-	<object class="EventFolder" id="{9b607d58-dcd0-47ce-b2e0-4782db9aa831}">
+	<object class="EventFolder" id="{93ff9348-20c6-4874-93f8-79e05293932e}">
 		<property name="name">
-			<value>lock</value>
+			<value>Diary Entry</value>
 		</property>
 		<relationship name="folder">
 			<destination>{5001193e-1f30-43f1-a5fa-2e95f719e390}</destination>
