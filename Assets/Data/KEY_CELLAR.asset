@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9c25f0f5a0691bb44b3ff90558cd47d2, type: 3}
-  m_Name: BROKEN_KEY2
+  m_Name: KEY_CELLAR
   m_EditorClassIdentifier: Assembly-CSharp::UniqueItem_SO
-  itemId: BROKEN_KEY2
-  displayName: "Teil eines zerbrochenen Schl\xFCssels"
-  description: "Ein Teil eines zerbrochenen Schl\xFCssels. Ich brauche irgendetwas,
-    um diesen wieder ganz zu bekommen."
-  icon: {fileID: 4815476061570213978, guid: c673af7dfa180a2448c103266652b0bb, type: 3}
+  itemId: KEY_CELLAR
+  displayName: "Kellerschl\xFCssel"
+  description: "Das ist der Kellerschl\xFCssel, den Papa immer bei sich hatte, weil
+    ich Angst vor dem Keller hatte."
+  icon: {fileID: 21300000, guid: e753226021e29554ea8836edc6b25a9a, type: 3}

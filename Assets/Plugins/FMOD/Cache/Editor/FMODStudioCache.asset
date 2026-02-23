@@ -1066,6 +1066,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 506
   Exists: 1
+--- !u!114 &-7037068972013360117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/fridge/fridge open
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/fridge/fridge open
+  Guid:
+    Data1: 801021614
+    Data2: 1306547809
+    Data3: 1261227700
+    Data4: -984006837
+  Banks:
+  - {fileID: 2179623241149136165}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-6973679346901243466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1315,6 +1342,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-6439669722795880512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Diary Entry/diary closed
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/Diary Entry/diary closed
+  Guid:
+    Data1: -1226467478
+    Data2: 1234492428
+    Data3: -1856668227
+    Data4: -1812915902
+  Banks:
+  - {fileID: 2179623241149136165}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 580
 --- !u!114 &-6356426128966832662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1662,9 +1716,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/FS/SFX_FS_MC_Sprint_02
+  m_Name: event:/SFX/fS/SFX_FS_MC_Sprint_02
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/SFX/FS/SFX_FS_MC_Sprint_02
+  Path: event:/SFX/fS/SFX_FS_MC_Sprint_02
   Guid:
     Data1: 302728675
     Data2: 1295875047
@@ -2758,6 +2812,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-3653434542459652408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/fridge/fridge close
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/fridge/fridge close
+  Guid:
+    Data1: -662448588
+    Data2: 1183739085
+    Data3: -1722089288
+    Data4: 1998903970
+  Banks:
+  - {fileID: 2179623241149136165}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1100
 --- !u!114 &-3624440739095780613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2928,10 +3009,10 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/MC_SFX.bank
   Name: MC_SFX
   StudioPath: bank:/MC_SFX
-  lastModified: 639071142069645474
+  lastModified: 639072180309726991
   FileSizes:
   - Name: Desktop
-    Value: 101568
+    Value: 94368
   Exists: 1
 --- !u!114 &-2967430848848522584
 MonoBehaviour:
@@ -3371,6 +3452,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-2398446034298603409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Drawer/SFX_Chest_Close
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/Drawer/SFX_Chest_Close
+  Guid:
+    Data1: 100838651
+    Data2: 1211827320
+    Data3: -1293595742
+    Data4: 177502882
+  Banks:
+  - {fileID: 2179623241149136165}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-2296476459310666793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3472,33 +3580,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-2240035844602433847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/DOOR/DoorRattle
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/SFX/DOOR/DoorRattle
-  Guid:
-    Data1: 323374754
-    Data2: 1340826001
-    Data3: -788397429
-    Data4: 498750496
-  Banks:
-  - {fileID: 2179623241149136165}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 15470
 --- !u!114 &-2228854186999452137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4001,9 +4082,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/FS/SFX_FS_MC_Sprint_01
+  m_Name: event:/SFX/fS/SFX_FS_MC_Sprint_01
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/SFX/FS/SFX_FS_MC_Sprint_01
+  Path: event:/SFX/fS/SFX_FS_MC_Sprint_01
   Guid:
     Data1: -1194460073
     Data2: 1136128247
@@ -4136,9 +4217,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/FS/SFX_FS_MC_Sprint_03
+  m_Name: event:/SFX/fS/SFX_FS_MC_Sprint_03
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/SFX/FS/SFX_FS_MC_Sprint_03
+  Path: event:/SFX/fS/SFX_FS_MC_Sprint_03
   Guid:
     Data1: 1257535652
     Data2: 1171203985
@@ -4362,6 +4443,33 @@ MonoBehaviour:
     Data4: 1949270183
   Banks:
   - {fileID: -5956165803274578339}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-497982610138367668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/DOOR/SFX_Knocking_Door
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/DOOR/SFX_Knocking_Door
+  Guid:
+    Data1: 1836402982
+    Data2: 1177334514
+    Data3: -2144470638
+    Data4: 2079196096
+  Banks:
+  - {fileID: 2179623241149136165}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -4741,16 +4849,13 @@ MonoBehaviour:
   - {fileID: -4097417343038620274}
   - {fileID: 7377435631116859479}
   - {fileID: 8485569236932050735}
-  - {fileID: 1737784106534497604}
   - {fileID: 2938631738920345225}
   - {fileID: -2809194035730462982}
   - {fileID: -6598564540777874228}
   - {fileID: -4246214899316196877}
   - {fileID: -2758453237559726826}
   - {fileID: -1825970815427628894}
-  - {fileID: -2240035844602433847}
   - {fileID: 5826919397737383060}
-  - {fileID: 977370783323689895}
   - {fileID: -4398130334895623200}
   - {fileID: 8560925508053694189}
   - {fileID: 6181909098910089613}
@@ -4831,15 +4936,24 @@ MonoBehaviour:
   - {fileID: -93182453365086410}
   - {fileID: -2228854186999452137}
   - {fileID: 1225282761085311412}
-  - {fileID: 6071128271898392095}
   - {fileID: 4399897672096227897}
+  - {fileID: 2172433474676607443}
+  - {fileID: -497982610138367668}
+  - {fileID: 3518254822822322764}
+  - {fileID: -3653434542459652408}
+  - {fileID: -6439669722795880512}
+  - {fileID: 228871372667940016}
+  - {fileID: -7037068972013360117}
+  - {fileID: 1417720335582422721}
+  - {fileID: 6923103179325158512}
+  - {fileID: -2398446034298603409}
   EditorParameters: []
   MasterBanks:
   - {fileID: 7352589515833197727}
   StringsBanks:
   - {fileID: 1780205026478963321}
   cacheVersion: 131857
-  cacheTime: 639071142074610914
+  cacheTime: 639072180315928871
   SerializableEventsDict:
   - key: event:/MC 1/MC 1.4.1
     index: 0
@@ -5223,17 +5337,17 @@ MonoBehaviour:
     index: 189
   - key: event:/Foleys/Stomach Growling 4
     index: 190
-  - key: event:/SFX/FS/SFX_FS_MC_Sprint_01
+  - key: event:/SFX/fS/SFX_FS_MC_Sprint_01
     index: 191
-  - key: event:/SFX/FS/SFX_FS_MC_02
+  - key: event:/SFX/fS/SFX_FS_MC_02
     index: 192
-  - key: event:/SFX/FS/SFX_Stair_Up
+  - key: event:/SFX/fS/SFX_Stair_Up
     index: 193
-  - key: event:/SFX/FS/SFX_FS_MC_Sprint_03
+  - key: event:/SFX/fS/SFX_FS_MC_Sprint_03
     index: 194
-  - key: event:/SFX/FS/SFX_FS_MC_01
+  - key: event:/SFX/fS/SFX_FS_MC_01
     index: 195
-  - key: event:/SFX/FS/SFX_FS_MC_Sprint_02
+  - key: event:/SFX/fS/SFX_FS_MC_Sprint_02
     index: 196
   - key: event:/SFX/SFX_Enviroment/Basement is Changing 2
     index: 197
@@ -5245,190 +5359,202 @@ MonoBehaviour:
     index: 200
   - key: event:/SFX/DOOR/DoorHeavy
     index: 201
-  - key: event:/SFX/SFX_Enviroment/SFX_Knocking_Door
-    index: 202
   - key: event:/SFX/SFX_Enviroment/SFX_Chest open
-    index: 203
+    index: 202
   - key: event:/SFX/DOOR/DoorClosed
-    index: 204
+    index: 203
   - key: event:/SFX/SFX_Enviroment/SFX_Pen
-    index: 205
+    index: 204
   - key: event:/SFX/SFX_Enviroment/SFX_Schublade
-    index: 206
+    index: 205
   - key: event:/SFX/SFX_Enviroment/Scary Void
-    index: 207
+    index: 206
   - key: event:/SFX/SFX_Enviroment/Scary Scream
-    index: 208
-  - key: event:/SFX/DOOR/DoorRattle
-    index: 209
+    index: 207
   - key: event:/SFX/SFX_Enviroment/Scary Sweep
-    index: 210
-  - key: event:/SFX/SFX_Enviroment/SFX_Chest_Close
-    index: 211
+    index: 208
   - key: event:/Atmos/Atmos - Disturbing
-    index: 212
+    index: 209
   - key: event:/SFX/SFX_Enviroment/SFX_Scary
-    index: 213
+    index: 210
   - key: event:/MC 3/MC 3.12.0
-    index: 214
+    index: 211
   - key: event:/MC 3/MC 3.6.3
-    index: 215
+    index: 212
   - key: event:/SC 3/SC 3.3.0
-    index: 216
+    index: 213
   - key: event:/MC 3/MC 3.25.0
-    index: 217
+    index: 214
   - key: event:/SC 3/SC 3.15.0
-    index: 218
+    index: 215
   - key: event:/MC 3/MC 3.25.2
-    index: 219
+    index: 216
   - key: event:/MC 3/MC 3.19.0
-    index: 220
+    index: 217
   - key: event:/MC 3/MC 3.3.1
-    index: 221
+    index: 218
   - key: event:/MC 3/MC 3.23.0
-    index: 222
+    index: 219
   - key: event:/SC 3/SC 3.11.0
-    index: 223
+    index: 220
   - key: event:/SC 3/SC 3.1.0
-    index: 224
+    index: 221
   - key: event:/MC 3/MC 3.16.0
-    index: 225
+    index: 222
   - key: event:/MC 3/MC 3.15.0
-    index: 226
+    index: 223
   - key: event:/MC 3/MC 3.6.0
-    index: 227
+    index: 224
   - key: event:/MC 3/MC 3.10.1
-    index: 228
+    index: 225
   - key: event:/MC 3/MC 3.17.1
-    index: 229
+    index: 226
   - key: event:/MC 3/MC 3.11.1
-    index: 230
+    index: 227
   - key: event:/SC 3/SC 3.7.1
-    index: 231
+    index: 228
   - key: event:/MC 3/MC 3.24.0
-    index: 232
+    index: 229
   - key: event:/MC 3/MC 3.25.1
-    index: 233
+    index: 230
   - key: event:/MC 3/MC 3.23.1
-    index: 234
+    index: 231
   - key: event:/SC 3/SC 3.12.0
-    index: 235
+    index: 232
   - key: event:/MC 3/MC 3.5.0
-    index: 236
+    index: 233
   - key: event:/MC 3/MC 3.9.0
-    index: 237
+    index: 234
   - key: event:/MC 3/MC 3.6.4
-    index: 238
+    index: 235
   - key: event:/MC 3/MC 3.8.0
-    index: 239
+    index: 236
   - key: event:/SC 3/SC 3.18.0
-    index: 240
+    index: 237
   - key: event:/MC 3/MC 3.15.1
-    index: 241
+    index: 238
   - key: event:/MC 3/MC 3.24.1
-    index: 242
+    index: 239
   - key: event:/MC 3/MC 3.24.2
-    index: 243
+    index: 240
   - key: event:/SC 3/SC 3.10.1
-    index: 244
+    index: 241
   - key: event:/MC 3/MC 3.1.0
-    index: 245
+    index: 242
   - key: event:/MC 3/MC 3.13.0
-    index: 246
+    index: 243
   - key: event:/MC 3/MC 3.14.0
-    index: 247
+    index: 244
   - key: event:/MC 3/MC 3.10.0
-    index: 248
+    index: 245
   - key: event:/SC 3/SC 3.2.0
-    index: 249
+    index: 246
   - key: event:/MC 3/MC 3.14.1
-    index: 250
+    index: 247
   - key: event:/SC 3/SC 3.10.0
-    index: 251
+    index: 248
   - key: event:/MC 3/MC 3.21.0
-    index: 252
+    index: 249
   - key: event:/MC 3/MC 3.22.0
-    index: 253
+    index: 250
   - key: event:/MC 3/MC 3.6.1
-    index: 254
+    index: 251
   - key: event:/MC 3/MC 3.10.2
-    index: 255
+    index: 252
   - key: event:/SC 3/SC 3.13.0
-    index: 256
+    index: 253
   - key: event:/MC 3/MC 3.17.0
-    index: 257
+    index: 254
   - key: event:/SC 3/SC 3.17.0
-    index: 258
+    index: 255
   - key: event:/MC 3/MC 3.11.0
-    index: 259
+    index: 256
   - key: event:/MC 3/MC 3.22.1
-    index: 260
+    index: 257
   - key: event:/SC 3/SC 3.16.0
-    index: 261
+    index: 258
   - key: event:/MC 3/MC 3.11.2
-    index: 262
+    index: 259
   - key: event:/MC 3/MC 3.6.5
-    index: 263
+    index: 260
   - key: event:/MC 3/MC 3.2.0
-    index: 264
+    index: 261
   - key: event:/MC 3/MC 3.12.1
-    index: 265
+    index: 262
   - key: event:/SC 3/SC 3.7.0
-    index: 266
+    index: 263
   - key: event:/SC 3/SC 3.7.2
-    index: 267
+    index: 264
   - key: event:/MC 3/MC 3.2.1
-    index: 268
+    index: 265
   - key: event:/SC 3/SC 3.11.1
-    index: 269
+    index: 266
   - key: event:/MC 3/MC 3..3.0
-    index: 270
+    index: 267
   - key: event:/MC 3/MC 3.7.0
-    index: 271
+    index: 268
   - key: event:/SC 3/SC 3.19.0
-    index: 272
+    index: 269
   - key: event:/SC 3/SC 3.4.0
-    index: 273
+    index: 270
   - key: event:/SC 3/SC 3.13.1
-    index: 274
+    index: 271
   - key: event:/SC 3/SC 3.7.3
-    index: 275
+    index: 272
   - key: event:/SC 3/SC 3.21.0
-    index: 276
+    index: 273
   - key: event:/MC 3/MC 3.7.4
-    index: 277
+    index: 274
   - key: event:/MC 3/MC 3.7.1
-    index: 278
+    index: 275
   - key: event:/SC 3/SC 3.19.1
-    index: 279
+    index: 276
   - key: event:/MC 3/MC 3.6.2
-    index: 280
+    index: 277
   - key: event:/MC 3/MC 3.7.2
-    index: 281
+    index: 278
   - key: event:/SC 3/SC 3.20.1
-    index: 282
+    index: 279
   - key: event:/SC 3/SC 3.5.0
-    index: 283
+    index: 280
   - key: event:/SC 3/SC 3.20.0
-    index: 284
+    index: 281
   - key: event:/SFX/MC_moves/bodyfall cellar
-    index: 285
+    index: 282
   - key: event:/SFX/MC_moves/bodyfall corrdior
-    index: 286
+    index: 283
   - key: event:/SFX/Drawer/Drawer close
-    index: 287
+    index: 284
   - key: event:/SFX/item/item found
-    index: 288
+    index: 285
   - key: event:/SFX/Drawer/Drawer close 2
-    index: 289
+    index: 286
   - key: event:/SFX/Drawer/Drawer open 2
-    index: 290
+    index: 287
   - key: event:/SFX/DOOR/knocking
-    index: 291
-  - key: event:/SFX/SFX_Enviroment/getting Key
-    index: 292
+    index: 288
   - key: event:/SFX/Drawer/Drawer open
+    index: 289
+  - key: event:/SFX/fridge/fridge sound
+    index: 290
+  - key: event:/SFX/DOOR/SFX_Knocking_Door
+    index: 291
+  - key: event:/SFX/Diary Entry/diary open
+    index: 292
+  - key: event:/SFX/fridge/fridge close
     index: 293
+  - key: event:/SFX/Diary Entry/diary closed
+    index: 294
+  - key: event:/SFX/DOOR/DoorLocked
+    index: 295
+  - key: event:/SFX/fridge/fridge open
+    index: 296
+  - key: event:/SFX/lock/turn numbers
+    index: 297
+  - key: event:/SFX/Keys/getting Key
+    index: 298
+  - key: event:/SFX/Drawer/SFX_Chest_Close
+    index: 299
 --- !u!114 &81114512317812944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5611,6 +5737,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1074
   Exists: 1
+--- !u!114 &228871372667940016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/DOOR/DoorLocked
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/DOOR/DoorLocked
+  Guid:
+    Data1: 323374754
+    Data2: 1340826001
+    Data3: -788397429
+    Data4: 498750496
+  Banks:
+  - {fileID: 2179623241149136165}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2212
 --- !u!114 &230052478266540225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5842,33 +5995,6 @@ MonoBehaviour:
   - {fileID: -6767420105136510100}
   IsStream: 0
   Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &977370783323689895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/SFX_Enviroment/SFX_Chest_Close
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/SFX/SFX_Enviroment/SFX_Chest_Close
-  Guid:
-    Data1: 100838651
-    Data2: 1211827320
-    Data3: -1293595742
-    Data4: 177502882
-  Banks:
-  - {fileID: 2179623241149136165}
-  IsStream: 0
-  Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
@@ -6130,6 +6256,33 @@ MonoBehaviour:
   - Name: Desktop
     Value: 4905952
   Exists: 1
+--- !u!114 &1417720335582422721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/lock/turn numbers
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/lock/turn numbers
+  Guid:
+    Data1: -1579557167
+    Data2: 1263460045
+    Data3: -1547316301
+    Data4: 909926784
+  Banks:
+  - {fileID: 2179623241149136165}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 95
 --- !u!114 &1419928600097613906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6258,33 +6411,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &1737784106534497604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/SFX_Enviroment/SFX_Knocking_Door
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/SFX/SFX_Enviroment/SFX_Knocking_Door
-  Guid:
-    Data1: 1836402982
-    Data2: 1177334514
-    Data3: -2144470638
-    Data4: 2079196096
-  Banks:
-  - {fileID: 2179623241149136165}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &1780205026478963321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6300,10 +6426,10 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639071142068673779
+  lastModified: 639072180309006978
   FileSizes:
   - Name: Desktop
-    Value: 13108
+    Value: 13420
   Exists: 1
 --- !u!114 &1822696456489533124
 MonoBehaviour:
@@ -6487,6 +6613,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &2172433474676607443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/fridge/fridge sound
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/fridge/fridge sound
+  Guid:
+    Data1: -1418090995
+    Data2: 1095184175
+    Data3: -1042569054
+    Data4: 1035536567
+  Banks:
+  - {fileID: 2179623241149136165}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &2179623241149136165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6502,10 +6655,10 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/SFX_Enviroment.bank
   Name: SFX_Enviroment
   StudioPath: bank:/SFX_Enviroment
-  lastModified: 639071142074610914
+  lastModified: 639072180315928871
   FileSizes:
   - Name: Desktop
-    Value: 5325888
+    Value: 5370336
   Exists: 1
 --- !u!114 &2328657284777436148
 MonoBehaviour:
@@ -7215,6 +7368,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &3518254822822322764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Diary Entry/diary open
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/Diary Entry/diary open
+  Guid:
+    Data1: 1193017387
+    Data2: 1094628539
+    Data3: -1252765528
+    Data4: -23655535
+  Banks:
+  - {fileID: 2179623241149136165}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1120
 --- !u!114 &3656625241291459458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7765,9 +7945,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/FS/SFX_FS_MC_02
+  m_Name: event:/SFX/fS/SFX_FS_MC_02
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/SFX/FS/SFX_FS_MC_02
+  Path: event:/SFX/fS/SFX_FS_MC_02
   Guid:
     Data1: 944465010
     Data2: 1146495588
@@ -8517,33 +8697,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &6071128271898392095
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/SFX_Enviroment/getting Key
-  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/SFX/SFX_Enviroment/getting Key
-  Guid:
-    Data1: 291733736
-    Data2: 1258127535
-    Data3: -546014054
-    Data4: -1945542182
-  Banks:
-  - {fileID: 2179623241149136165}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 520
 --- !u!114 &6104987163971175921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8908,6 +9061,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &6923103179325158512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX/Keys/getting Key
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/SFX/Keys/getting Key
+  Guid:
+    Data1: 291733736
+    Data2: 1258127535
+    Data3: -546014054
+    Data4: -1945542182
+  Banks:
+  - {fileID: 2179623241149136165}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 520
 --- !u!114 &6955493478175596196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9058,7 +9238,7 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639071142068663493
+  lastModified: 639072180308971578
   FileSizes:
   - Name: Desktop
     Value: 1074
@@ -9100,9 +9280,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/FS/SFX_FS_MC_01
+  m_Name: event:/SFX/fS/SFX_FS_MC_01
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/SFX/FS/SFX_FS_MC_01
+  Path: event:/SFX/fS/SFX_FS_MC_01
   Guid:
     Data1: 787324897
     Data2: 1102492483
@@ -9127,9 +9307,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX/FS/SFX_Stair_Up
+  m_Name: event:/SFX/fS/SFX_Stair_Up
   m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
-  Path: event:/SFX/FS/SFX_Stair_Up
+  Path: event:/SFX/fS/SFX_Stair_Up
   Guid:
     Data1: -1742589541
     Data2: 1085263506

@@ -1,0 +1,702 @@
+fileFormatVersion: 2
+guid: eb876f125f493ca4daced35bad55cdd2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6514192011411965506
+    second: Keller_Meat(7)_0
+  - first:
+      213: -8678167204325097026
+    second: Keller_Meat(7)_1
+  - first:
+      213: 510133330510687644
+    second: Keller_Meat(7)_2
+  - first:
+      213: 9214933586687932608
+    second: Keller_Meat(7)_3
+  - first:
+      213: 7139395337597044726
+    second: Keller_Meat(7)_4
+  - first:
+      213: -4623917268424376383
+    second: Keller_Meat(7)_5
+  - first:
+      213: -1213916794533805510
+    second: Keller_Meat(7)_6
+  - first:
+      213: -7730242509170963860
+    second: Keller_Meat(7)_7
+  - first:
+      213: 8253053689807132705
+    second: Keller_Meat(7)_8
+  - first:
+      213: -7068212449318209148
+    second: Keller_Meat(7)_9
+  - first:
+      213: -88456266229397680
+    second: Keller_Meat(7)_10
+  - first:
+      213: -7442882380509759447
+    second: Keller_Meat(7)_11
+  - first:
+      213: -5586416690018829697
+    second: Keller_Meat(7)_12
+  - first:
+      213: -7263552516308701730
+    second: Keller_Meat(7)_13
+  - first:
+      213: 7090213776686601975
+    second: Keller_Meat(7)_14
+  - first:
+      213: -8975769869369874271
+    second: Keller_Meat(7)_15
+  - first:
+      213: -9166272917943835643
+    second: Keller_Meat(7)_16
+  - first:
+      213: 2941325250181988461
+    second: Keller_Meat(7)_17
+  - first:
+      213: 1822274339687235923
+    second: Keller_Meat(7)_18
+  - first:
+      213: 1035409869075292227
+    second: Keller_Meat(7)_19
+  - first:
+      213: 88333649030680082
+    second: Keller_Meat(7)_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Keller_Meat(7)_0
+      rect:
+        serializedVersion: 2
+        x: 5368
+        y: 1002
+        width: 392
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb93a1911e0f895a0800000000000000
+      internalID: -6514192011411965506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keller_Meat(7)_1
+      rect:
+        serializedVersion: 2
+        x: 5596
+        y: 852
+        width: 380
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb102c418e4f09780800000000000000
+      internalID: -8678167204325097026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keller_Meat(7)_2
+      rect:
+        serializedVersion: 2
+        x: 6003
+        y: 947
+        width: 198
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9d2d21bf8b541700800000000000000
+      internalID: 510133330510687644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keller_Meat(7)_3
+      rect:
+        serializedVersion: 2
+        x: 6200
+        y: 951
+        width: 243
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c8b957364502ef70800000000000000
+      internalID: 9214933586687932608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keller_Meat(7)_4
+      rect:
+        serializedVersion: 2
+        x: 5005
+        y: 839
+        width: 168
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f74d80cb3a341360800000000000000
+      internalID: 7139395337597044726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keller_Meat(7)_5
+      rect:
+        serializedVersion: 2
+        x: 5186
+        y: 847
+        width: 97
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cf35c03ebb84dfb0800000000000000
+      internalID: -4623917268424376383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keller_Meat(7)_6
+      rect:
+        serializedVersion: 2
+        x: 5288
+        y: 872
+        width: 113
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a328ee26b1d472fe0800000000000000
+      internalID: -1213916794533805510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keller_Meat(7)_7
+      rect:
+        serializedVersion: 2
+        x: 5288
+        y: 806
+        width: 230
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6a8d3df469a8b490800000000000000
+      internalID: -7730242509170963860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keller_Meat(7)_8
+      rect:
+        serializedVersion: 2
+        x: 5406
+        y: 896
+        width: 244
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1285e25ba9cb88270800000000000000
+      internalID: 8253053689807132705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keller_Meat(7)_9
+      rect:
+        serializedVersion: 2
+        x: 6119
+        y: 807
+        width: 94
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 489f461f93aa8ed90800000000000000
+      internalID: -7068212449318209148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keller_Meat(7)_10
+      rect:
+        serializedVersion: 2
+        x: 6219
+        y: 840
+        width: 382
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0574d399e7db5cef0800000000000000
+      internalID: -88456266229397680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keller_Meat(7)_11
+      rect:
+        serializedVersion: 2
+        x: 5137
+        y: 757
+        width: 153
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 928b3b4b8e195b890800000000000000
+      internalID: -7442882380509759447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keller_Meat(7)_12
+      rect:
+        serializedVersion: 2
+        x: 5143
+        y: 332
+        width: 375
+        height: 496
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7a3d185e9f0972b0800000000000000
+      internalID: -5586416690018829697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keller_Meat(7)_13
+      rect:
+        serializedVersion: 2
+        x: 6259
+        y: 784
+        width: 411
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edd660a687da23b90800000000000000
+      internalID: -7263552516308701730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keller_Meat(7)_14
+      rect:
+        serializedVersion: 2
+        x: 4825
+        y: 596
+        width: 228
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f65cf44ddf756260800000000000000
+      internalID: 7090213776686601975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keller_Meat(7)_15
+      rect:
+        serializedVersion: 2
+        x: 5065
+        y: 635
+        width: 98
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a8ed860cd8af6380800000000000000
+      internalID: -8975769869369874271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keller_Meat(7)_16
+      rect:
+        serializedVersion: 2
+        x: 6257
+        y: 651
+        width: 102
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 504acab985bdac080800000000000000
+      internalID: -9166272917943835643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keller_Meat(7)_17
+      rect:
+        serializedVersion: 2
+        x: 6354
+        y: 612
+        width: 91
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d600cf13bbfa1d820800000000000000
+      internalID: 2941325250181988461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keller_Meat(7)_18
+      rect:
+        serializedVersion: 2
+        x: 6437
+        y: 494
+        width: 291
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3510e5c6bd40a4910800000000000000
+      internalID: 1822274339687235923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keller_Meat(7)_19
+      rect:
+        serializedVersion: 2
+        x: 4971
+        y: 374
+        width: 358
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 340aa234ac38e5e00800000000000000
+      internalID: 1035409869075292227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keller_Meat(7)_20
+      rect:
+        serializedVersion: 2
+        x: 6117
+        y: 413
+        width: 529
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21e003c5cf2d93100800000000000000
+      internalID: 88333649030680082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Keller_Meat(7)_0: -6514192011411965506
+      Keller_Meat(7)_1: -8678167204325097026
+      Keller_Meat(7)_10: -88456266229397680
+      Keller_Meat(7)_11: -7442882380509759447
+      Keller_Meat(7)_12: -5586416690018829697
+      Keller_Meat(7)_13: -7263552516308701730
+      Keller_Meat(7)_14: 7090213776686601975
+      Keller_Meat(7)_15: -8975769869369874271
+      Keller_Meat(7)_16: -9166272917943835643
+      Keller_Meat(7)_17: 2941325250181988461
+      Keller_Meat(7)_18: 1822274339687235923
+      Keller_Meat(7)_19: 1035409869075292227
+      Keller_Meat(7)_2: 510133330510687644
+      Keller_Meat(7)_20: 88333649030680082
+      Keller_Meat(7)_3: 9214933586687932608
+      Keller_Meat(7)_4: 7139395337597044726
+      Keller_Meat(7)_5: -4623917268424376383
+      Keller_Meat(7)_6: -1213916794533805510
+      Keller_Meat(7)_7: -7730242509170963860
+      Keller_Meat(7)_8: 8253053689807132705
+      Keller_Meat(7)_9: -7068212449318209148
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

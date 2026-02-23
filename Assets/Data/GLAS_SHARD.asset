@@ -15,4 +15,4 @@ MonoBehaviour:
   itemId: GLAS_SHARD
   displayName: Glasscherbe
   description: Eine Glasscherbe. Ich muss aufpassen, das ich mich nicht daran schneide.
-  icon: {fileID: 4815476061570213978, guid: c673af7dfa180a2448c103266652b0bb, type: 3}
+  icon: {fileID: 21300000, guid: 3f3e0280695c338448cfa57d6e0317f1, type: 3}

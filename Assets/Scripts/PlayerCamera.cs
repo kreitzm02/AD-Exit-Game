@@ -19,8 +19,10 @@ public class PlayerCamera : MonoBehaviour
     [SerializeField] private float noiseStrength = 0.08f;
     [SerializeField] private float noiseSpeed = 0.4f;
 
-    private Vector3 velocity;
+    [Header("BOUNDS RETURN")]
+    [SerializeField] private float boundsReturnDuration = 0.25f;
 
+    private Vector3 velocity;
     private Tween<float> zoomTween;
 
     private float minX;
@@ -29,22 +31,23 @@ public class PlayerCamera : MonoBehaviour
     private float noiseTime;
 
     private Transform overrideTarget;
-
     private Vector2 overrideOffset;
 
+    private bool cameraBoundsActive = true;
     private bool followSuspended;
+
     private Tween<Vector3> moveTween;
+    private Tween<float> returnTween;
+
+    private Camera cam;
 
     private void Start()
     {
-        Camera cam = Camera.main;
-        halfWidth = cam.orthographicSize * cam.aspect;
+        cam = GetComponent<Camera>();
+        if (!cam) cam = Camera.main;
 
-        if (cameraBounds)
-        {
-            minX = cameraBounds.bounds.min.x + halfWidth;
-            maxX = cameraBounds.bounds.max.x - halfWidth;
-        }
+        RefreshHalfWidthFromCurrentZoom();
+        RecalculateBounds();
     }
 
     private void FixedUpdate()
@@ -66,7 +69,7 @@ public class PlayerCamera : MonoBehaviour
             smoothTime
         );
 
-        if (cameraBounds)
+        if (cameraBounds && cameraBoundsActive)
         {
             smoothPos.x = Mathf.Clamp(smoothPos.x, minX, maxX);
         }
@@ -90,12 +93,89 @@ public class PlayerCamera : MonoBehaviour
         RecalculateBounds();
     }
 
+    public void SetCameraBoundsActive(bool value)
+    {
+        SetCameraBoundsActive(value, smoothReturn: true, duration: boundsReturnDuration);
+    }
+
+    public void SetCameraBoundsActive(bool value, bool smoothReturn, float duration)
+    {
+        if (!value)
+        {
+            cameraBoundsActive = false;
+            return;
+        }
+
+        if (!cameraBounds)
+        {
+            cameraBoundsActive = true;
+            return;
+        }
+
+        RefreshHalfWidthFromCurrentZoom();
+        RecalculateBounds();
+
+        Vector3 start = transform.position;
+        Vector3 clamped = ClampToBoundsForCurrentZoom(start);
+
+        if (!smoothReturn || duration <= 0f || Mathf.Approximately(start.x, clamped.x))
+        {
+            cameraBoundsActive = true;
+            return;
+        }
+
+        moveTween?.Stop(TweenStopBehavior.DoNotModify);
+        followSuspended = true;
+        cameraBoundsActive = false;
+
+        moveTween = gameObject.Tween(
+            "CameraReturnToBounds",
+            start,
+            clamped,
+            duration,
+            TweenScaleFunctions.QuadraticEaseOut,
+            tw => { transform.position = tw.CurrentValue; },
+            tw =>
+            {
+                followSuspended = false;
+                velocity = Vector3.zero;
+                cameraBoundsActive = true;
+            }
+        );
+    }
+
+    private void RefreshHalfWidthFromCurrentZoom()
+    {
+        if (!cam) cam = GetComponent<Camera>();
+        if (!cam) cam = Camera.main;
+        if (!cam) return;
+
+        halfWidth = cam.orthographicSize * cam.aspect;
+    }
+
     private void RecalculateBounds()
     {
         if (!cameraBounds) return;
 
         minX = cameraBounds.bounds.min.x + halfWidth;
         maxX = cameraBounds.bounds.max.x - halfWidth;
+    }
+
+    private Vector3 ClampToBoundsForCurrentZoom(Vector3 pos)
+    {
+        if (!cameraBounds) return pos;
+        pos.x = Mathf.Clamp(pos.x, minX, maxX);
+        return pos;
+    }
+
+    private float ClampXForZoom(float x, float zoom)
+    {
+        if (!cameraBounds || !cam) return x;
+
+        float hw = zoom * cam.aspect;
+        float min = cameraBounds.bounds.min.x + hw;
+        float max = cameraBounds.bounds.max.x - hw;
+        return Mathf.Clamp(x, min, max);
     }
 
     public void SnapToTarget()
@@ -119,8 +199,7 @@ public class PlayerCamera : MonoBehaviour
         overrideTarget = focus;
         overrideOffset = focusOffset;
 
-        if (!focus)
-            return;
+        if (!focus) return;
 
         MoveToTarget(focus, smooth, duration);
     }
@@ -130,16 +209,21 @@ public class PlayerCamera : MonoBehaviour
         overrideTarget = null;
         overrideOffset = Vector2.zero;
 
-        if (!target)
-            return;
+        if (!target) return;
 
         MoveToTarget(target, smooth, duration);
     }
 
+    public void ClearFocusInstant()
+    {
+        overrideTarget = null;
+        overrideOffset = Vector2.zero;
+        velocity = Vector3.zero;
+    }
+
     private void MoveToTarget(Transform t, bool smooth, float duration)
     {
-        if (!t)
-            return;
+        if (!t) return;
 
         Vector2 extra = overrideTarget ? overrideOffset : Vector2.zero;
 
@@ -165,10 +249,7 @@ public class PlayerCamera : MonoBehaviour
             targetPos,
             duration,
             TweenScaleFunctions.QuadraticEaseOut,
-            tw =>
-            {
-                transform.position = tw.CurrentValue;
-            },
+            tw => { transform.position = tw.CurrentValue; },
             tw =>
             {
                 followSuspended = false;
@@ -179,11 +260,15 @@ public class PlayerCamera : MonoBehaviour
 
     public void ZoomTo(float targetZoom, bool smooth, float duration = 0.4f)
     {
-        Camera cam = GetComponent<Camera>();
+        if (!cam) cam = GetComponent<Camera>();
+        if (!cam) cam = Camera.main;
+        if (!cam) return;
 
         if (!smooth)
         {
             cam.orthographicSize = targetZoom;
+            RefreshHalfWidthFromCurrentZoom();
+            RecalculateBounds();
             return;
         }
 
@@ -198,6 +283,8 @@ public class PlayerCamera : MonoBehaviour
             t =>
             {
                 cam.orthographicSize = t.CurrentValue;
+                RefreshHalfWidthFromCurrentZoom();
+                RecalculateBounds();
             }
         );
     }
@@ -205,5 +292,120 @@ public class PlayerCamera : MonoBehaviour
     public void ResetZoom(bool smooth, float duration = 0.4f)
     {
         ZoomTo(defaultZoom, smooth, duration);
+    }
+
+    public void ReturnToPlayerAndBounds(bool smooth, float duration)
+    {
+        if (!cam) cam = GetComponent<Camera>();
+        if (!cam) cam = Camera.main;
+        if (!cam) return;
+
+        moveTween?.Stop(TweenStopBehavior.DoNotModify);
+        zoomTween?.Stop(TweenStopBehavior.DoNotModify);
+        returnTween?.Stop(TweenStopBehavior.DoNotModify);
+
+        followSuspended = true;
+        cameraBoundsActive = false;
+
+        if (!target)
+        {
+            ReturnToBoundsOnly(smooth, duration);
+            return;
+        }
+
+        float startZoom = cam.orthographicSize;
+        float endZoom = defaultZoom;
+
+        Vector3 startPos = transform.position;
+
+        Vector3 desiredEndPos = target.position + (Vector3)offset;
+        desiredEndPos.z = startPos.z;
+
+        desiredEndPos.x = ClampXForZoom(desiredEndPos.x, endZoom);
+
+        if (!smooth || duration <= 0f)
+        {
+            cam.orthographicSize = endZoom;
+            transform.position = desiredEndPos;
+
+            RefreshHalfWidthFromCurrentZoom();
+            RecalculateBounds();
+
+            velocity = Vector3.zero;
+            followSuspended = false;
+            cameraBoundsActive = true;
+            return;
+        }
+
+        returnTween = gameObject.Tween(
+            "CameraReturnToPlayerAndBounds",
+            0f,
+            1f,
+            duration,
+            TweenScaleFunctions.QuadraticEaseOut,
+            tw =>
+            {
+                float s = tw.CurrentValue;
+
+                cam.orthographicSize = Mathf.Lerp(startZoom, endZoom, s);
+                transform.position = Vector3.Lerp(startPos, desiredEndPos, s);
+            },
+            tw =>
+            {
+                cam.orthographicSize = endZoom;
+                transform.position = desiredEndPos;
+
+                RefreshHalfWidthFromCurrentZoom();
+                RecalculateBounds();
+
+                velocity = Vector3.zero;
+                followSuspended = false;
+                cameraBoundsActive = true;
+            }
+        );
+    }
+
+    private void ReturnToBoundsOnly(bool smooth, float duration)
+    {
+        float startZoom = cam.orthographicSize;
+        float endZoom = defaultZoom;
+
+        Vector3 startPos = transform.position;
+        Vector3 endPos = startPos;
+        endPos.x = ClampXForZoom(startPos.x, endZoom);
+
+        if (!smooth || duration <= 0f)
+        {
+            cam.orthographicSize = endZoom;
+            transform.position = endPos;
+            RefreshHalfWidthFromCurrentZoom();
+            RecalculateBounds();
+            followSuspended = false;
+            cameraBoundsActive = true;
+            return;
+        }
+
+        returnTween = gameObject.Tween(
+            "CameraReturnBoundsOnly",
+            0f,
+            1f,
+            duration,
+            TweenScaleFunctions.QuadraticEaseOut,
+            tw =>
+            {
+                float s = tw.CurrentValue;
+                cam.orthographicSize = Mathf.Lerp(startZoom, endZoom, s);
+                transform.position = Vector3.Lerp(startPos, endPos, s);
+            },
+            tw =>
+            {
+                cam.orthographicSize = endZoom;
+                transform.position = endPos;
+                RefreshHalfWidthFromCurrentZoom();
+                RecalculateBounds();
+                followSuspended = false;
+                cameraBoundsActive = true;
+            }
+        );
     }
 }

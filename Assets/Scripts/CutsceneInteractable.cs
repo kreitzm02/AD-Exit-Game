@@ -64,7 +64,6 @@ public class CutsceneInteractable : Interactable
         if (stepSkipRequested == false && Input.GetKeyDown(KeyCode.Space))
         {
             stepSkipRequested = true;
-            Debug.Log("Step Skip Requested");
         }
     }
 
@@ -116,6 +115,8 @@ public class CutsceneInteractable : Interactable
 
         player.LockInput(true);
 
+        cam.SetCameraBoundsActive(false);
+
         cam.ZoomTo(zoomSize, smoothZoom, zoomDuration);
 
         yield return new WaitForSeconds(zoomDuration * 0.3f);
@@ -163,9 +164,13 @@ public class CutsceneInteractable : Interactable
 
         SubtitleUI.Instance.Hide();
 
-        cam.ClearFocus(smoothFocus, focusDuration);
+        cam.ClearFocusInstant();
 
-        cam.ResetZoom(smoothZoom, zoomDuration);
+        cam.ReturnToPlayerAndBounds(
+            smooth: true,
+            duration: Mathf.Max(zoomDuration, focusDuration, 0.25f)
+        );
+
         player.LockInput(false);
 
         if (!string.IsNullOrEmpty(levelTriggerId))
@@ -244,8 +249,6 @@ public class CutsceneInteractable : Interactable
 
     private void StartStepAudio(EventReference eventRef)
     {
-        //StopStepAudio(immediate: false);
-
         if (eventRef.IsNull) return;
 
         currentAudio = RuntimeManager.CreateInstance(eventRef);
@@ -277,6 +280,6 @@ public class CutsceneInteractable : Interactable
 
 public enum InteractionSequenceMode
 {
-    SEQUENTIAL,   
-    RANDOM,        
+    SEQUENTIAL,
+    RANDOM,
 }

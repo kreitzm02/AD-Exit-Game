@@ -15,4 +15,4 @@ MonoBehaviour:
   itemId: KEY_LIVING_DRAWER
   displayName: "Schl\xFCssel f\xFCr Schrank im Wohnzimmer"
   description: "Dieser Schl\xFCssel passt zu einem Schrank im Wohnzimmer."
-  icon: {fileID: 21300000, guid: 61c2878d262601b47bccec61f02d86f7, type: 3}
+  icon: {fileID: 21300000, guid: e753226021e29554ea8836edc6b25a9a, type: 3}

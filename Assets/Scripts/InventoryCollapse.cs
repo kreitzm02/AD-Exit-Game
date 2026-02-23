@@ -1,6 +1,5 @@
 using DigitalRuby.Tween;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class InventoryCollapse : MonoBehaviour
 {
@@ -8,17 +7,16 @@ public class InventoryCollapse : MonoBehaviour
     [SerializeField] private RectTransform uiElement;
 
     [Header("Positions")]
-    [SerializeField] private Vector2 positionA;
-    [SerializeField] private Vector2 positionB;
+    [SerializeField] private Vector2 positionA; 
+    [SerializeField] private Vector2 positionB; 
 
     [Header("Settings")]
     [SerializeField] private float moveDuration = 0.3f;
 
-    private bool isMoving;
+    public bool IsOpen { get; private set; } = true;
+    public event System.Action<bool> StateChanged;
 
-    private void Awake()
-    {
-    }
+    private bool isMoving;
 
     public void Toggle()
     {
@@ -30,21 +28,25 @@ public class InventoryCollapse : MonoBehaviour
         float distToB = Vector2.Distance(current, positionB);
 
         Vector2 target = (distToA < distToB) ? positionB : positionA;
+
+        bool nextOpen = (target == positionA);
+        IsOpen = nextOpen;
+        StateChanged?.Invoke(IsOpen);
+
         MoveTo(target);
     }
 
     private void MoveTo(Vector2 target)
     {
         isMoving = true;
-
         Vector2 start = uiElement.anchoredPosition;
 
         TweenFactory.Tween("UIToggleSlide", start, target, moveDuration, TweenScaleFunctions.CubicEaseInOut,
-            (ITween<Vector2> tween) =>               
+            (ITween<Vector2> tween) =>
             {
                 uiElement.anchoredPosition = tween.CurrentValue;
             },
-            (ITween<Vector2> tween) =>               
+            (ITween<Vector2> tween) =>
             {
                 uiElement.anchoredPosition = target;
                 isMoving = false;

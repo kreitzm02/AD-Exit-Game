@@ -15,4 +15,4 @@ MonoBehaviour:
   itemId: PIZZA_NUMBER
   displayName: Flyer von der Pizzeria
   description: Hier ist die Telefonnummer der Pizzeria drauf,
-  icon: {fileID: -459460482350777455, guid: 8002d0278c514954499654ebf2c0a700, type: 3}
+  icon: {fileID: 21300000, guid: b26dae8daef13714999d97287c6a40ae, type: 3}

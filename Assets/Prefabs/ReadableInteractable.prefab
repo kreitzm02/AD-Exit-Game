@@ -403,7 +403,7 @@ Transform:
   m_GameObject: {fileID: 8742581073905590520}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -28.61, y: -2.37, z: -10}
+  m_LocalPosition: {x: -28.61, y: -2.37, z: -9}
   m_LocalScale: {x: 8.58, y: 8.58, z: 8.58}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -473,6 +473,7 @@ MonoBehaviour:
   uiAnchor: {fileID: 8766099444597163427}
   highlight: {fileID: 4578671109445409419}
   triggerMode: 0
+  pageMode: 0
   pages:
   - text: '19. Juni 2009
 
@@ -501,5 +502,9 @@ MonoBehaviour:
       kein zweites gekauft. Papa ist wohl Hellseher. Danach sind wir danach noch
       zum Buchladen gegangen und ich durfte mir noch etwas aussuchen. So kam es dazu,
       dass ich jetzt hier reinschreiben kann.
+  fullText: 
+  charLimitPerPage: 480
+  preserveWords: 1
+  fontSize: 22.5
   levelTriggerId: 
   closeButton: {fileID: 0}

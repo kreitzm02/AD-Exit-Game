@@ -15,4 +15,4 @@ MonoBehaviour:
   itemId: DADS_WALLET
   displayName: Papas Brieftasche
   description: Die Brieftasche von Papa. Viel Geld ist da nicht drin.
-  icon: {fileID: 670249401811028567, guid: c9fae976408ca6a4583cb660b363bec1, type: 3}
+  icon: {fileID: 21300000, guid: 2b927815a45f9a0468e79dca18f00d7c, type: 3}

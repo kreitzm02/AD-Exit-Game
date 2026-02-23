@@ -15,4 +15,4 @@ MonoBehaviour:
   itemId: SUPER_GLUE
   displayName: Sekundenkleber
   description: "Das ist Sekundenkleber. Blo\xDF nicht auf die Finger bekommen."
-  icon: {fileID: 4815476061570213978, guid: c673af7dfa180a2448c103266652b0bb, type: 3}
+  icon: {fileID: 21300000, guid: 56b191785ca216a479fc120ad478dbfe, type: 3}

@@ -1,5 +1,6 @@
 using FMOD.Studio;
 using FMODUnity;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -9,9 +10,10 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float moveSpeed = 3.0f;
 
     [Header("ANIMATION")]
-    [SerializeField] private Sprite idleSprite;
+    [SerializeField] private Sprite[] idleSprites;
     [SerializeField] private Sprite[] walkSprites;
     [SerializeField, Min(1f)] private float walkFps = 10f;
+    [SerializeField, Min(1f)] private float idleFps = 10f;
 
     [Header("FOOTSTEPS")]
     [SerializeField] private EventReference[] footstepEvents;
@@ -31,10 +33,14 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Rigidbody2D rb;
 
+    private readonly HashSet<Interactable> interactablesInRange = new HashSet<Interactable>();
     private Interactable currentInteractable;
 
     private int walkFrameIndex;
     private float walkFrameTimer;
+
+    private int idleFrameIndex;
+    private float idleFrameTimer;
 
     private float footstepTimer;
     private float nextFootstepInterval;
@@ -61,15 +67,14 @@ public class PlayerController : MonoBehaviour
 
         interactAction.action.performed -= OnInteract;
         interactAction.action.Disable();
+
+        ForceExitAllInteractables();
     }
 
     private void Start()
     {
-        if (!idleSprite && spriteRenderer)
-            idleSprite = spriteRenderer.sprite;
-
-        SetIdleSprite();
         ResetFootstepTimer();
+        UpdateCurrentInteractable();
     }
 
     private void Update()
@@ -93,7 +98,7 @@ public class PlayerController : MonoBehaviour
         {
             input = 0f;
             isMoving = false;
-            SetIdleSprite();
+            //SetIdleSprite();
             ResetFootstepTimer();
         }
     }
@@ -121,29 +126,47 @@ public class PlayerController : MonoBehaviour
 
     private void HandleSpriteAnimation()
     {
-        if (!spriteRenderer)
-            return;
+        if (!spriteRenderer) return;
 
-        if (!isMoving || walkSprites == null || walkSprites.Length == 0)
+        if (isMoving && walkSprites != null && walkSprites.Length > 0)
         {
-            SetIdleSprite();
-            walkFrameTimer = 0f;
-            walkFrameIndex = 0;
+            idleFrameTimer = 0f;
+            idleFrameIndex = 0;
+
+            walkFrameTimer += Time.deltaTime;
+            float frameDuration = 1f / walkFps;
+
+            while (walkFrameTimer >= frameDuration)
+            {
+                walkFrameTimer -= frameDuration;
+                walkFrameIndex = (walkFrameIndex + 1) % walkSprites.Length;
+            }
+
+            Sprite s = walkSprites[walkFrameIndex];
+            if (s) spriteRenderer.sprite = s;
+
             return;
         }
 
-        walkFrameTimer += Time.deltaTime;
-        float frameDuration = 1f / walkFps;
+        walkFrameTimer = 0f;
+        walkFrameIndex = 0;
 
-        while (walkFrameTimer >= frameDuration)
+        if (idleSprites == null || idleSprites.Length == 0)
         {
-            walkFrameTimer -= frameDuration;
-            walkFrameIndex = (walkFrameIndex + 1) % walkSprites.Length;
+            return;
         }
 
-        Sprite s = walkSprites[walkFrameIndex];
-        if (s)
-            spriteRenderer.sprite = s;
+        idleFrameTimer += Time.deltaTime;
+        float idleFrameDuration = 1f / idleFps;
+
+        while (idleFrameTimer >= idleFrameDuration)
+        {
+            idleFrameTimer -= idleFrameDuration;
+            idleFrameIndex = (idleFrameIndex + 1) % idleSprites.Length;
+        }
+
+        Sprite idle = idleSprites[idleFrameIndex];
+        if (idle) spriteRenderer.sprite = idle;
     }
 
     private void HandleFootsteps()
@@ -164,13 +187,12 @@ public class PlayerController : MonoBehaviour
             PlayRandomFootstep();
             footstepTimer = 0f;
             nextFootstepInterval = ComputeNextFootstepInterval();
-            Debug.Log("FOOTSTEP AFTER INTERVALL");
         }
         else if (footstepTimer <= 0.1f)
         {
             PlayRandomFootstep();
             footstepTimer = 0.11f;
-            Debug.Log("FOOTSTEP first");
+            // Debug.Log("FOOTSTEP first");
         }
     }
 
@@ -220,8 +242,11 @@ public class PlayerController : MonoBehaviour
 
     private void SetIdleSprite()
     {
-        if (spriteRenderer && idleSprite)
-            spriteRenderer.sprite = idleSprite;
+        if (!spriteRenderer) return;
+        if (idleSprites == null || idleSprites.Length == 0) return;
+
+        if (idleSprites[0])
+            spriteRenderer.sprite = idleSprites[0];
     }
 
     private void OnInteract(InputAction.CallbackContext ctx)
@@ -234,25 +259,76 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Interactable interactable = other.GetComponent<Interactable>();
+        Interactable interactable = other.GetComponentInParent<Interactable>();
         if (!interactable)
             return;
 
-        currentInteractable = interactable;
-        interactable.OnEnterRange();
+        if (interactablesInRange.Add(interactable))
+            interactable.OnEnterRange();
+
+        UpdateCurrentInteractable();
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (currentInteractable == null)
+        Interactable interactable = other.GetComponentInParent<Interactable>();
+        if (!interactable)
             return;
 
-        Interactable interactable = other.GetComponent<Interactable>();
-
-        if (interactable == currentInteractable)
-        {
+        if (interactablesInRange.Remove(interactable))
             interactable.OnExitRange();
+
+        if (currentInteractable == interactable)
             currentInteractable = null;
+
+        UpdateCurrentInteractable();
+    }
+
+    private void UpdateCurrentInteractable()
+    {
+        CleanupInteractables();
+
+        Interactable best = null;
+        float bestDistSq = float.PositiveInfinity;
+        Vector2 p = rb ? rb.position : (Vector2)transform.position;
+
+        foreach (var i in interactablesInRange)
+        {
+            if (!i) continue;
+
+            float d = (((Vector2)i.transform.position) - p).sqrMagnitude;
+            if (d < bestDistSq)
+            {
+                bestDistSq = d;
+                best = i;
+            }
         }
+
+        currentInteractable = best;
+
+        if (currentInteractable != null && currentInteractable.UiAnchor != null)
+            InteractionUI.Instance.Show(currentInteractable.UiAnchor);
+        else
+            InteractionUI.Instance.Hide();
+    }
+
+    private void ForceExitAllInteractables()
+    {
+        foreach (var i in interactablesInRange)
+        {
+            if (i) i.OnExitRange();
+        }
+
+        interactablesInRange.Clear();
+        currentInteractable = null;
+
+        if (InteractionUI.Instance != null)
+            InteractionUI.Instance.Hide();
+    }
+
+    private void CleanupInteractables()
+    {
+        interactablesInRange.RemoveWhere(i =>
+            i == null || !i.isActiveAndEnabled || !i.gameObject.activeInHierarchy);
     }
 }

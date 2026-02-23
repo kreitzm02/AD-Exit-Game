@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BROKEN_KEY1
   m_EditorClassIdentifier: Assembly-CSharp::UniqueItem_SO
   itemId: BROKEN_KEY1
-  displayName: "Teil eines zerbrochenen Schl\xFCssels"
+  displayName: "Ein zerbrochener Schl\xFCssel"
   description: "Ein Teil eines zerbrochenen Schl\xFCssels. Ich brauche irgendetwas,
     um diesen wieder ganz zu bekommen."
-  icon: {fileID: 4815476061570213978, guid: c673af7dfa180a2448c103266652b0bb, type: 3}
+  icon: {fileID: 21300000, guid: 6d0b907a101a3c34c9a72fd4c3c5aecb, type: 3}

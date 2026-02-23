@@ -10,17 +10,17 @@ public abstract class Interactable : MonoBehaviour
 
     protected bool isPlayerInRange;
 
+    public Transform UiAnchor => uiAnchor;
+
     public virtual void OnEnterRange()
     {
         isPlayerInRange = true;
-        InteractionUI.Instance.Show(uiAnchor);
         if (highlight) highlight.SetVisible(true);
     }
 
     public virtual void OnExitRange()
     {
         isPlayerInRange = false;
-        InteractionUI.Instance.Hide();
         if (highlight) highlight.SetVisible(false);
     }
 
@@ -29,6 +29,6 @@ public abstract class Interactable : MonoBehaviour
 
 public enum InteractionTriggerMode
 {
-    MANUAL,     
-    AUTO,   
+    MANUAL,
+    AUTO,
 }

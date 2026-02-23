@@ -13,6 +13,9 @@ public class AudioManager : MonoBehaviour
     [Header("MUSIC CROSSFADE")]
     [SerializeField] private float musicFadeDuration = 1.5f;
 
+    [Header("General Sfx")]
+    [SerializeField] private EventReference buttonClickSfx;
+
     private EventInstance currentMusic;
     private EventInstance nextMusic;
 
@@ -135,5 +138,10 @@ public class AudioManager : MonoBehaviour
 
         activeSnapshot.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         activeSnapshot.release();
+    }
+
+    public void PlayButtonSound()
+    {
+        PlaySFX(buttonClickSfx);
     }
 }

@@ -18,6 +18,11 @@ public class ContainerInteractable : Interactable
     [Header("CONTAINER AUDIO")]
     [SerializeField] private EventReference containerSFX;
 
+    [Header("READABLE TEXT STYLE")]
+    [SerializeField, Min(1f)] private float readableFontSize = 22.5f;
+
+    public float ReadableFontSize => readableFontSize;
+
     public ContainerSlot[] Slots => slots;
 
     private bool isOpen;
@@ -42,6 +47,8 @@ public class ContainerInteractable : Interactable
     {
         if (isOpen || !isPlayerInRange)
             return;
+
+        Debug.Log("CONTAINER");
 
         isOpen = true;
         OnExitRange();

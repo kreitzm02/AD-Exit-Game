@@ -15,4 +15,4 @@ MonoBehaviour:
   itemId: PHONE_CABLE
   displayName: Telefonkabel
   description: Das Kabel vom Telefon. Ohne dieses Kabel wird das Telefon nicht funktionieren.
-  icon: {fileID: -4360449926242239971, guid: 34482dc3a3778234d9d50a21b2dc3f82, type: 3}
+  icon: {fileID: 21300000, guid: 202395fcf50c4f5478f36245119360ba, type: 3}

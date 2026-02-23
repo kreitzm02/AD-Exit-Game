@@ -15,4 +15,4 @@ MonoBehaviour:
   itemId: NAIL_SCISSORS
   displayName: Nagelschere
   description: "Eine Nagelschere. Damit k\xF6nnte man etwas zerschneiden."
-  icon: {fileID: -5465438861507733107, guid: cf33af81d8441ba4eaf6caf4a38dbcda, type: 3}
+  icon: {fileID: 21300000, guid: dc37d35378ae13e43a801889f7cb7691, type: 3}

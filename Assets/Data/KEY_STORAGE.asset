@@ -15,4 +15,4 @@ MonoBehaviour:
   itemId: KEY_STORAGE
   displayName: "Schl\xFCssel f\xFCr Abstellkammer"
   description: "Das sieht nach dem Schl\xFCssel f\xFCr die Abstelkammer aus."
-  icon: {fileID: 21300000, guid: aa321bbe31280d1498677593466e3473, type: 3}
+  icon: {fileID: 21300000, guid: 1227d61ef343dde498bb17047c3d5c07, type: 3}

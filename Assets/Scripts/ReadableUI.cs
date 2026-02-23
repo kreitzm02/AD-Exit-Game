@@ -1,3 +1,4 @@
+using FMODUnity;
 using System;
 using TMPro;
 using UnityEngine;
@@ -19,6 +20,10 @@ public class ReadableUI : MonoBehaviour
     [SerializeField] private Button nextButton;
     [SerializeField] private Button prevButton;
     [SerializeField] private Button closeButton;
+
+    [Header("SFX")]
+    [SerializeField] private EventReference pageFlipSound;
+    [SerializeField] private EventReference closeSound;
 
     private bool lockPlayer = true;
 
@@ -42,11 +47,12 @@ public class ReadableUI : MonoBehaviour
             closeButton.onClick.AddListener(Close);
     }
 
-    public void Open(ReadablePage[] newPages, bool lockPl = true)
+    public void Open(ReadablePage[] newPages, float fontSize, bool lockPl = true)
     {
         pages = newPages;
         currentPage = 0;
         lockPlayer = lockPl;
+        textField.fontSize = fontSize;
 
         if (player == null)
             player = FindObjectOfType<PlayerController>();
@@ -66,6 +72,8 @@ public class ReadableUI : MonoBehaviour
 
         if (lockPlayer) player.LockInput(false);
 
+        AudioManager.Instance.PlaySFX(closeSound);
+
         Closed?.Invoke();
     }
 
@@ -76,6 +84,8 @@ public class ReadableUI : MonoBehaviour
 
         currentPage++;
         UpdatePage();
+
+        AudioManager.Instance.PlaySFX(pageFlipSound);
     }
 
     public void PreviousPage()
@@ -85,6 +95,8 @@ public class ReadableUI : MonoBehaviour
 
         currentPage--;
         UpdatePage();
+
+        AudioManager.Instance.PlaySFX(pageFlipSound);
     }
 
     private void UpdatePage()

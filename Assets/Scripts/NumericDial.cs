@@ -1,3 +1,4 @@
+using FMODUnity;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
@@ -9,6 +10,9 @@ public class NumericDial : MonoBehaviour
     [SerializeField] private Button incrementButton;
     [SerializeField] private Button decrementButton;
     [SerializeField] private int value;
+
+    [Header("SFX")]
+    [SerializeField] private EventReference pageFlipSound;
 
     public UnityEvent<int> OnValueChanged;
 
@@ -28,11 +32,13 @@ public class NumericDial : MonoBehaviour
     public void Increment()
     {
         SetValue((value + 1) % 10);
+        AudioManager.Instance.PlaySFX(pageFlipSound);
     }
 
     public void Decrement()
     {
         SetValue((value + 9) % 10);
+        AudioManager.Instance.PlaySFX(pageFlipSound);
     }
 
     public void SetValue(int newValue, bool notify = true)

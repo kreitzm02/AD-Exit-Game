@@ -80,7 +80,7 @@ public class StorageRoomUI : MonoBehaviour
 
         if (!slot.HasItem && slot.HasReadable)
         {
-            OpenReadableFromContainer(slot.readablePages);
+            OpenReadableFromContainer(slot.GetReadablePages());
             return;
         }
 
@@ -102,7 +102,7 @@ public class StorageRoomUI : MonoBehaviour
 
         ReadableUI.Instance.Closed += OnReadableClosed;
 
-        ReadableUI.Instance.Open(pages, false);
+        ReadableUI.Instance.Open(pages, currentContainer.ReadableFontSize, false);
     }
 
     private void OnReadableClosed()

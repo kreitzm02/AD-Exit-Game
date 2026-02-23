@@ -35,11 +35,35 @@ public class PlayerInventory : MonoBehaviour
         Debug.Log("[PlayerInventory] Collected Item: " + item.displayName);
 
         InventoryChanged?.Invoke();
+
+        if (ItemNotificationUI.Instance != null)
+            ItemNotificationUI.Instance.Show(item);
+
         return true;
     }
 
     public IReadOnlyList<UniqueItem_SO> GetAllItems()
     {
         return collectedItems;
+    }
+
+    public bool RemoveItem(string itemId)
+    {
+        if (string.IsNullOrEmpty(itemId)) return false;
+        if (!collectedItemIds.Contains(itemId)) return false;
+
+        collectedItemIds.Remove(itemId);
+
+        for (int i = collectedItems.Count - 1; i >= 0; i--)
+        {
+            if (collectedItems[i] != null && collectedItems[i].itemId == itemId)
+            {
+                collectedItems.RemoveAt(i);
+                break;
+            }
+        }
+
+        InventoryChanged?.Invoke();
+        return true;
     }
 }

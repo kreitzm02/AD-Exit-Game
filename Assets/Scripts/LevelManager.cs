@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using Unity.VisualScripting;
+using Unity.VisualScripting.AssemblyQualifiedNameParser;
+using System;
 
 public class LevelManager : MonoBehaviour
 {
@@ -10,6 +13,9 @@ public class LevelManager : MonoBehaviour
 
     [Header("START MODE")]
     [SerializeField] private bool debugBypassLevelSystem = false;
+
+    [Header("SIDE CHARACTER")]
+    [SerializeField] private JekkoFloat sideChar;
 
     private int currentStepIndex = -1;   
 
@@ -63,6 +69,11 @@ public class LevelManager : MonoBehaviour
 
         foreach (var go in step.deactivateObjects)
             if (go) go.SetActive(false);
+
+        int levelIndex = Int32.Parse(step.stepName[0].ToString());
+        Debug.Log(levelIndex);
+
+        if (sideChar) sideChar.SetLevel(levelIndex);
 
         if (step.updateQuestText && !string.IsNullOrEmpty(step.newQuestText))
         {
