@@ -15,10 +15,8 @@ public class BlackFadeManager : MonoBehaviour
     [SerializeField] private Image blackImage;
 
     [Header("Optional Text Overlay")]
-    [Tooltip("If set, text can be faded in/out on top of the black screen.")]
     [SerializeField] private TMP_Text overlayText;
 
-    [Tooltip("CanvasGroup for overlayText. If not set, alpha will be applied via the TMP_Text color.")]
     [SerializeField] private CanvasGroup overlayTextGroup;
 
     [Header("Defaults")]
@@ -171,7 +169,7 @@ public class BlackFadeManager : MonoBehaviour
             overlayText.text = string.Empty;
         }
 
-        StopStepAudio(immediate: false);
+        // StopStepAudio(immediate: false);
         SetTextAlpha(0f);
     }
 

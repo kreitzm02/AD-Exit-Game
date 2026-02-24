@@ -75,7 +75,13 @@ public class BlackScreenInteractable : Interactable
         if (startDelay > 0f)
             yield return new WaitForSeconds(startDelay);
 
-        bool turnOn = (action == BlackScreenAction.BLACK_ON);
+        bool turnOn = true;
+
+        if (action == BlackScreenAction.BLACK_ON)
+        {
+            turnOn = true;
+        }
+        else turnOn = false;
 
         if (instantNoFade)
         {

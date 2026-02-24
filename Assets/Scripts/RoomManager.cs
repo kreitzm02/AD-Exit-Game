@@ -14,6 +14,7 @@ public class RoomManager : MonoBehaviour
     [Header("REFERENCES")]
     [SerializeField] private Transform player;
     [SerializeField] private PlayerCamera playerCamera;
+    [SerializeField] private BoxCollider2D mainMenuBounds;
 
     [Header("FADE UI")]
     [SerializeField] private Image fadeImage;
@@ -38,8 +39,10 @@ public class RoomManager : MonoBehaviour
         foreach (var room in rooms)
             room.roomParent.SetActive(false);
 
-        if (rooms.Count > 0)
-            LoadInitialRoom(rooms[0], 0);
+        playerCamera.SetNewBounds(mainMenuBounds);
+
+        //if (rooms.Count > 0)
+        //    LoadInitialRoom(rooms[0], 0);
 
         //SetFadeAlpha(1.0f);
         //StartCoroutine(BlackHoldThenFadeOut());
@@ -70,7 +73,7 @@ public class RoomManager : MonoBehaviour
 
         StartFade(0f, 1f, () =>
         {
-            currentRoom.roomParent.SetActive(false);
+            if (currentRoom != null) currentRoom.roomParent.SetActive(false);
             targetRoom.roomParent.SetActive(true);
 
             player.position = targetRoom.entryPoints[targetEntryPointIndex].position;
@@ -158,6 +161,40 @@ public class RoomManager : MonoBehaviour
         {
             isTransitioning = false;
         });
+    }
+
+    public string GetCurrentRoomId()
+    {
+        return currentRoom != null ? currentRoom.roomId : string.Empty;
+    }
+
+    public bool LoadRoomByIdAndPositionNoFade(string targetRoomId, Vector3 worldPosition)
+    {
+        if (isTransitioning)
+        {
+            Debug.LogWarning("[RoomManager] LoadRoomByIdAndPositionNoFade ignored because transitioning.");
+            return false;
+        }
+
+        RoomData targetRoom = rooms.Find(r => r.roomId == targetRoomId);
+        if (targetRoom == null)
+        {
+            Debug.LogError("[RoomManager] Room does not exist: " + targetRoomId);
+            return false;
+        }
+
+        if (currentRoom != null && currentRoom != targetRoom)
+            currentRoom.roomParent.SetActive(false);
+
+        targetRoom.roomParent.SetActive(true);
+
+        player.position = worldPosition;
+        playerCamera.SetNewBounds(targetRoom.cameraBounds);
+        playerCamera.SnapToTarget();
+
+        currentRoom = targetRoom;
+
+        return true;
     }
 }
 

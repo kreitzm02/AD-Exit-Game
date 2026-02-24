@@ -7,8 +7,11 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance;
 
-    [Header("START MUSIC")]
-    [SerializeField] private EventReference startMusic;
+    [Header("MUSIC")]
+    [SerializeField] private EventReference menuMusic;
+    [SerializeField] private EventReference lvl1Music;
+    [SerializeField] private EventReference lvl2Music;
+    [SerializeField] private EventReference lvl3Music;
 
     [Header("MUSIC CROSSFADE")]
     [SerializeField] private float musicFadeDuration = 1.5f;
@@ -33,12 +36,6 @@ public class AudioManager : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
-    }
-
-    private void Start()
-    {
-        if (!startMusic.IsNull)
-            PlayMusic(startMusic);
     }
 
     public void PlayMusic(EventReference musicEvent)
@@ -73,6 +70,7 @@ public class AudioManager : MonoBehaviour
         nextMusic = RuntimeManager.CreateInstance(newMusic);
         nextMusic.setVolume(0f);
         nextMusic.start();
+        currentMusic.setVolume(0.1f);
 
         StartCoroutine(FadeMusicRoutine());
     }
@@ -143,5 +141,29 @@ public class AudioManager : MonoBehaviour
     public void PlayButtonSound()
     {
         PlaySFX(buttonClickSfx);
+    }
+
+    public void PlayMenuMusic()
+    {
+        if (menuMusic.IsNull) return;
+        CrossfadeMusic(menuMusic);
+    }
+
+    public void PlayLvl1Music()
+    {
+        if (lvl1Music.IsNull) return;
+        CrossfadeMusic(lvl1Music);
+    }
+
+    public void PlayLvl2Music()
+    {
+        if (lvl2Music.IsNull) return;
+        CrossfadeMusic(lvl2Music);
+    }
+
+    public void PlayLvl3Music()
+    {
+        if (lvl3Music.IsNull) return;
+        CrossfadeMusic(lvl3Music);
     }
 }

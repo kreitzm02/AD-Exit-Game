@@ -24,7 +24,7 @@ public class PlayerInventory : MonoBehaviour
         return collectedItemIds.Contains(itemId);
     }
 
-    public bool AddItem(UniqueItem_SO item)
+    public bool AddItem(UniqueItem_SO item, bool showNotification)
     {
         if (item == null || collectedItemIds.Contains(item.itemId))
             return false;
@@ -36,15 +36,54 @@ public class PlayerInventory : MonoBehaviour
 
         InventoryChanged?.Invoke();
 
-        if (ItemNotificationUI.Instance != null)
+        if (showNotification && ItemNotificationUI.Instance != null)
             ItemNotificationUI.Instance.Show(item);
 
         return true;
     }
 
+    public bool AddItem(UniqueItem_SO item)
+    {
+        return AddItem(item, true);
+    }
+
     public IReadOnlyList<UniqueItem_SO> GetAllItems()
     {
         return collectedItems;
+    }
+
+    public List<string> GetAllItemIds()
+    {
+        return new List<string>(collectedItemIds);
+    }
+
+    public void ClearInventory(bool notify = true)
+    {
+        collectedItemIds.Clear();
+        collectedItems.Clear();
+
+        if (notify)
+            InventoryChanged?.Invoke();
+
+        Debug.Log("[PlayerInventory] Inventory cleared.");
+    }
+
+    public void RestoreInventory(IEnumerable<UniqueItem_SO> items, bool showNotifications = false)
+    {
+        collectedItemIds.Clear();
+        collectedItems.Clear();
+
+        if (items != null)
+        {
+            foreach (var item in items)
+            {
+                if (item == null) continue;
+                AddItem(item, showNotifications);
+            }
+        }
+
+        InventoryChanged?.Invoke();
+        Debug.Log("[PlayerInventory] Inventory restored.");
     }
 
     public bool RemoveItem(string itemId)

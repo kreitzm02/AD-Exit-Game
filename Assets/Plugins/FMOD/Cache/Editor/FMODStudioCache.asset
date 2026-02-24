@@ -4947,13 +4947,15 @@ MonoBehaviour:
   - {fileID: 1417720335582422721}
   - {fileID: 6923103179325158512}
   - {fileID: -2398446034298603409}
+  - {fileID: 2079264333002807359}
+  - {fileID: 6707942795492566338}
   EditorParameters: []
   MasterBanks:
   - {fileID: 7352589515833197727}
   StringsBanks:
   - {fileID: 1780205026478963321}
   cacheVersion: 131857
-  cacheTime: 639072180315928871
+  cacheTime: 639074662283501511
   SerializableEventsDict:
   - key: event:/MC 1/MC 1.4.1
     index: 0
@@ -5555,6 +5557,10 @@ MonoBehaviour:
     index: 298
   - key: event:/SFX/Drawer/SFX_Chest_Close
     index: 299
+  - key: "event:/Music/Men\xFC_Musik"
+    index: 300
+  - key: event:/Music/2026-02-08 Games Audio Musik 2
+    index: 301
 --- !u!114 &81114512317812944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6426,10 +6432,10 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639072180309006978
+  lastModified: 639074662283501511
   FileSizes:
   - Name: Desktop
-    Value: 13420
+    Value: 13534
   Exists: 1
 --- !u!114 &1822696456489533124
 MonoBehaviour:
@@ -6580,6 +6586,33 @@ MonoBehaviour:
   Banks:
   - {fileID: -5956165803274578339}
   IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &2079264333002807359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Music/Men\xFC_Musik"
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: "event:/Music/Men\xFC_Musik"
+  Guid:
+    Data1: 282788432
+    Data2: 1129735639
+    Data3: -863968871
+    Data4: 1290167881
+  Banks:
+  - {fileID: 7352589515833197727}
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
@@ -9061,6 +9094,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &6707942795492566338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/2026-02-08 Games Audio Musik 2
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Music/2026-02-08 Games Audio Musik 2
+  Guid:
+    Data1: 241455866
+    Data2: 1188126738
+    Data3: 1509802896
+    Data4: 143539336
+  Banks:
+  - {fileID: 7352589515833197727}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &6923103179325158512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9238,10 +9298,10 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639072180308971578
+  lastModified: 639074662283486446
   FileSizes:
   - Name: Desktop
-    Value: 1074
+    Value: 2733728
   Exists: 1
 --- !u!114 &7377435631116859479
 MonoBehaviour:
