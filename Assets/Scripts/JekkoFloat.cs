@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum JekkoType { NORMAL, BLOOD, DEMON };
+
 public class JekkoFloat : MonoBehaviour
 {
     [SerializeField] private float floatAmplitude = 0.15f;
@@ -8,7 +10,7 @@ public class JekkoFloat : MonoBehaviour
 
     [Header("Idle Animation")]
     [SerializeField, Min(1f)] private float idleFps = 3f;
-    [SerializeField] private int startLevel = 1;
+    [SerializeField] private JekkoType startType = JekkoType.NORMAL;
 
     [SerializeField] private List<Sprite> jekkoIdleSpritesLvl1 = new();
     [SerializeField] private List<Sprite> jekkoIdleSpritesLvl2 = new();
@@ -19,7 +21,7 @@ public class JekkoFloat : MonoBehaviour
     private Vector3 startPos;
     private float t;
 
-    private int currentLevel = 1;
+    private JekkoType currentJekkoType;
     private List<Sprite> activeIdleSprites;
 
     private int idleFrameIndex;
@@ -64,15 +66,15 @@ public class JekkoFloat : MonoBehaviour
         if (s) spriteRenderer.sprite = s;
     }
 
-    public void SetLevel(int level)
+    public void SetJekkoType(JekkoType type)
     {
-        currentLevel = Mathf.Clamp(level, 1, 3);
+        currentJekkoType = type;
 
-        switch (currentLevel)
+        switch (currentJekkoType)
         {
-            case 1: activeIdleSprites = jekkoIdleSpritesLvl1; break;
-            case 2: activeIdleSprites = jekkoIdleSpritesLvl2; break;
-            case 3: activeIdleSprites = jekkoIdleSpritesLvl3; break;
+            case JekkoType.NORMAL: activeIdleSprites = jekkoIdleSpritesLvl1; break;
+            case JekkoType.BLOOD: activeIdleSprites = jekkoIdleSpritesLvl2; break;
+            case JekkoType.DEMON: activeIdleSprites = jekkoIdleSpritesLvl3; break;
             default: activeIdleSprites = jekkoIdleSpritesLvl1; break;
         }
 

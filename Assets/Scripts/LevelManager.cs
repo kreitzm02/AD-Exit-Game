@@ -102,15 +102,7 @@ public class LevelManager : MonoBehaviour
         foreach (var go in step.deactivateObjects)
             if (go) go.SetActive(false);
 
-        if (!string.IsNullOrEmpty(step.stepName))
-        {
-            int levelIndex;
-            if (int.TryParse(step.stepName[0].ToString(), out levelIndex))
-            {
-                Debug.Log(levelIndex);
-                if (sideChar) sideChar.SetLevel(levelIndex);
-            }
-        }
+        if (sideChar) sideChar.SetJekkoType(step.jekkoType);
 
         if (step.updateQuestText && !string.IsNullOrEmpty(step.newQuestText))
         {

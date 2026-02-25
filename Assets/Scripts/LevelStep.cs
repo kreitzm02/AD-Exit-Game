@@ -23,4 +23,7 @@ public class LevelStep
 
     [TextArea(2, 3)]
     public string newQuestText;
+
+    [Header("JEKKO TYPE")]
+    public JekkoType jekkoType = JekkoType.NORMAL;
 }
