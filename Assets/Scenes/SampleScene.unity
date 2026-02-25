@@ -980,6 +980,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BlackscreenInteractable_RealCellarOff
       objectReference: {fileID: 0}
+    - target: {fileID: 1845386907396055971, guid: 1dcf4e9129e00d441a58ae863c7eefbc, type: 3}
+      propertyPath: m_Size.x
+      value: 72.72328
+      objectReference: {fileID: 0}
+    - target: {fileID: 1845386907396055971, guid: 1dcf4e9129e00d441a58ae863c7eefbc, type: 3}
+      propertyPath: m_Offset.x
+      value: 11.251114
+      objectReference: {fileID: 0}
     - target: {fileID: 3228329024092894383, guid: 1dcf4e9129e00d441a58ae863c7eefbc, type: 3}
       propertyPath: action
       value: 1
@@ -7313,11 +7321,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3318201049648963277, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: m_Size.x
-      value: 2.4806364
+      value: 8.64407
       objectReference: {fileID: 0}
     - target: {fileID: 3318201049648963277, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: m_Offset.x
-      value: 0.41267514
+      value: 1.2954868
       objectReference: {fileID: 0}
     - target: {fileID: 6631327675976444661, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
@@ -10382,6 +10390,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &215391494
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 215391495}
+  m_Layer: 0
+  m_Name: DOORINTERACTABLE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &215391495
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215391494}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 873934622}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &220120206
 GameObject:
   m_ObjectHideFlags: 0
@@ -17808,6 +17847,37 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 876252101412659270, guid: 307d27db2f1214c4eb213dbaf626ac5c, type: 3}
   m_PrefabInstance: {fileID: 390780185}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &391084723
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 391084724}
+  m_Layer: 0
+  m_Name: CONTAINERINTERACTABLE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &391084724
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391084723}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 873934622}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &396578513 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 244591142335918563, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
@@ -18213,7 +18283,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &403386083
 Transform:
   m_ObjectHideFlags: 0
@@ -29180,6 +29250,46 @@ PrefabInstance:
       propertyPath: doorSFX.Guid.Data4
       value: 2123725152
       objectReference: {fileID: 0}
+    - target: {fileID: 4906421770882425302, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
+      value: 25.799631
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906421770882425302, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].y
+      value: 7.462151
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906421770882425302, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].x
+      value: 25.78788
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906421770882425302, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].y
+      value: -0.7869184
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906421770882425302, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].x
+      value: 27.101814
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906421770882425302, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[2].y
+      value: -2.0009341
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906421770882425302, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].x
+      value: 26.850952
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906421770882425302, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[3].y
+      value: 3.1346529
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906421770882425302, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[4].x
+      value: 26.962498
+      objectReference: {fileID: 0}
+    - target: {fileID: 4906421770882425302, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[4].y
+      value: 8.0478735
+      objectReference: {fileID: 0}
     - target: {fileID: 5500192259178787275, guid: 7239706fbec5d3c45951305b1c19506e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11.4523115
@@ -39562,13 +39672,19 @@ Transform:
   - {fileID: 856245536}
   - {fileID: 1694046261}
   - {fileID: 626717596}
-  - {fileID: 148232777}
-  - {fileID: 1097996391}
+  - {fileID: 1910370697}
   - {fileID: 390780186}
+  - {fileID: 1239120665}
   - {fileID: 766509652}
+  - {fileID: 1262187928}
   - {fileID: 27461968}
+  - {fileID: 391084724}
   - {fileID: 1952309619}
+  - {fileID: 215391495}
   - {fileID: 1227210874}
+  - {fileID: 1376394526}
+  - {fileID: 1097996391}
+  - {fileID: 148232777}
   m_Father: {fileID: 25352071}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &873979490
@@ -47721,7 +47837,7 @@ MonoBehaviour:
     requiredTriggerId: '3_1_STARTCSFIN '
     updateQuestText: 0
     newQuestText: 
-    jekkoType: 0
+    jekkoType: 2
   - stepName: '3_1_PREPARECELLARLONG '
     activateObjects:
     - {fileID: 347937530}
@@ -47737,7 +47853,7 @@ MonoBehaviour:
     requiredTriggerId: '3_1_STARTPT2FIN '
     updateQuestText: 1
     newQuestText: Erkunde den Keller.
-    jekkoType: 0
+    jekkoType: 2
   - stepName: '3_1_STARTPT2FIN '
     activateObjects: []
     deactivateObjects:
@@ -47746,7 +47862,7 @@ MonoBehaviour:
     requiredTriggerId: '3_1_UNLOCKCLOSET4 '
     updateQuestText: 0
     newQuestText: 
-    jekkoType: 0
+    jekkoType: 2
   - stepName: 3_1_UNLOCKCLOSET4
     activateObjects:
     - {fileID: 1599955161}
@@ -47756,7 +47872,7 @@ MonoBehaviour:
     requiredTriggerId: 
     updateQuestText: 0
     newQuestText: 
-    jekkoType: 0
+    jekkoType: 2
   - stepName: '3_1_FLESH_BSON '
     activateObjects:
     - {fileID: 599391511}
@@ -47765,7 +47881,7 @@ MonoBehaviour:
     requiredTriggerId: '3_1_FLESHBSON '
     updateQuestText: 0
     newQuestText: 
-    jekkoType: 0
+    jekkoType: 2
   - stepName: '3_1_FLESHTELEPORT '
     activateObjects:
     - {fileID: 1761920114}
@@ -47775,7 +47891,7 @@ MonoBehaviour:
     requiredTriggerId: '3_1_FLESHTELEPORT '
     updateQuestText: 0
     newQuestText: 
-    jekkoType: 0
+    jekkoType: 2
   - stepName: 3_2_FLESH_BSOFF
     activateObjects:
     - {fileID: 396578513}
@@ -47786,7 +47902,7 @@ MonoBehaviour:
     requiredTriggerId: '3_2_SHARDOBTFIN '
     updateQuestText: 0
     newQuestText: 
-    jekkoType: 0
+    jekkoType: 2
   - stepName: '3_2_SHARDOBTFIN '
     activateObjects:
     - {fileID: 1878871291}
@@ -47800,7 +47916,7 @@ MonoBehaviour:
     requiredTriggerId: '3_2_SKINDOOROPENED '
     updateQuestText: 1
     newQuestText: Erkunde den "Keller".
-    jekkoType: 0
+    jekkoType: 2
   - stepName: '3_2_SKINDOORBSON '
     activateObjects:
     - {fileID: 1001777871}
@@ -47811,7 +47927,7 @@ MonoBehaviour:
     requiredTriggerId: '3_2_SKINBSON '
     updateQuestText: 0
     newQuestText: 
-    jekkoType: 0
+    jekkoType: 2
   - stepName: 3_2_SKINDOORBSOFF
     activateObjects:
     - {fileID: 1960721412}
@@ -55350,7 +55466,7 @@ Transform:
   m_GameObject: {fileID: 1198368570}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 36.03, y: -0.85, z: -10}
+  m_LocalPosition: {x: 36.03, y: -2.37, z: -10}
   m_LocalScale: {x: 8.58, y: 8.58, z: 8.58}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -56992,6 +57108,37 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 68.35531, y: 13.436735}
   m_EdgeRadius: 0
+--- !u!1 &1239120664
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1239120665}
+  m_Layer: 0
+  m_Name: OBTAINITEMINTERACTABLE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1239120665
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1239120664}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 873934622}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1243621887
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57770,6 +57917,37 @@ Transform:
   m_Children:
   - {fileID: 989178088}
   m_Father: {fileID: 1423615015}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1262187927
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1262187928}
+  m_Layer: 0
+  m_Name: BLACKSCREENINTERACTABLE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1262187928
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1262187927}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 873934622}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1266921696
 GameObject:
@@ -62264,6 +62442,37 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2.1294823, y: 14.574921}
   m_EdgeRadius: 0
+--- !u!1 &1376394525
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1376394526}
+  m_Layer: 0
+  m_Name: STORYINTERACTABLE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1376394526
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1376394525}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 873934622}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1392320969
 GameObject:
   m_ObjectHideFlags: 0
@@ -83696,6 +83905,37 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 244591142335918563, guid: c3b9b1aeebcb3e0438dfc54c33fc39d4, type: 3}
   m_PrefabInstance: {fileID: 1909103902}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1910370696
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1910370697}
+  m_Layer: 0
+  m_Name: DRAGITEMZONE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1910370697
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910370696}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 873934622}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1918469096
 GameObject:
   m_ObjectHideFlags: 0
