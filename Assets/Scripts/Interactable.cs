@@ -16,6 +16,8 @@ public abstract class Interactable : MonoBehaviour
     {
         isPlayerInRange = true;
         if (highlight) highlight.SetVisible(true);
+
+        LevelManager.Instance.SaveCurrentGame();
     }
 
     public virtual void OnExitRange()
