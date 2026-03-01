@@ -1088,10 +1088,10 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/Level 2 MU.bank
   Name: Level 2 MU
   StudioPath: bank:/Level 2 MU
-  lastModified: 639075705090024624
+  lastModified: 639077237516790196
   FileSizes:
   - Name: Desktop
-    Value: 506
+    Value: 1691392
   Exists: 1
 --- !u!114 &-7037068972013360117
 MonoBehaviour:
@@ -1337,7 +1337,7 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/SC_SFX.bank
   Name: SC_SFX
   StudioPath: bank:/SC_SFX
-  lastModified: 639075705197341548
+  lastModified: 639077237521466451
   FileSizes:
   - Name: Desktop
     Value: 506
@@ -1411,7 +1411,7 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/Level 2 ATMO.bank
   Name: Level 2 ATMO
   StudioPath: bank:/Level 2 ATMO
-  lastModified: 639075705074257183
+  lastModified: 639077237486052561
   FileSizes:
   - Name: Desktop
     Value: 506
@@ -1728,7 +1728,7 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/Level 2 DIA.bank
   Name: Level 2 DIA
   StudioPath: bank:/Level 2 DIA
-  lastModified: 639075705089837220
+  lastModified: 639077237488483583
   FileSizes:
   - Name: Desktop
     Value: 3534720
@@ -2335,7 +2335,7 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/Levl 1 ATMO.bank
   Name: Levl 1 ATMO
   StudioPath: bank:/Levl 1 ATMO
-  lastModified: 639075705151447058
+  lastModified: 639077237520427572
   FileSizes:
   - Name: Desktop
     Value: 506
@@ -2382,7 +2382,7 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/Level 3 MU.bank
   Name: Level 3 MU
   StudioPath: bank:/Level 3 MU
-  lastModified: 639075705148155335
+  lastModified: 639077237519545764
   FileSizes:
   - Name: Desktop
     Value: 1832512
@@ -3117,7 +3117,7 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/MC_SFX.bank
   Name: MC_SFX
   StudioPath: bank:/MC_SFX
-  lastModified: 639075705197291395
+  lastModified: 639077237521400605
   FileSizes:
   - Name: Desktop
     Value: 94368
@@ -3272,7 +3272,7 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/Level 1 DIA.bank
   Name: Level 1 DIA
   StudioPath: bank:/Level 1 DIA
-  lastModified: 639075704999156679
+  lastModified: 639077237462248867
   FileSizes:
   - Name: Desktop
     Value: 5481344
@@ -3373,7 +3373,7 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/Level 2 SFX.bank
   Name: Level 2 SFX
   StudioPath: bank:/Level 2 SFX
-  lastModified: 639075705090064587
+  lastModified: 639077237516856226
   FileSizes:
   - Name: Desktop
     Value: 506
@@ -3656,7 +3656,7 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/Level 4 DIA.bank
   Name: Level 4 DIA
   StudioPath: bank:/Level 4 DIA
-  lastModified: 639075705151173984
+  lastModified: 639077237520256005
   FileSizes:
   - Name: Desktop
     Value: 506
@@ -3784,7 +3784,7 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/Level 3 SFX.bank
   Name: Level 3 SFX
   StudioPath: bank:/Level 3 SFX
-  lastModified: 639075705151076422
+  lastModified: 639077237520143474
   FileSizes:
   - Name: Desktop
     Value: 166368
@@ -5061,13 +5061,14 @@ MonoBehaviour:
   - {fileID: -4999304199143635996}
   - {fileID: -6031909529093200050}
   - {fileID: 4881953580860656247}
+  - {fileID: 7904910081247133664}
   EditorParameters: []
   MasterBanks:
   - {fileID: 7352589515833197727}
   StringsBanks:
   - {fileID: 1780205026478963321}
   cacheVersion: 131857
-  cacheTime: 639075705252131349
+  cacheTime: 639077237531518170
   SerializableEventsDict:
   - key: event:/MC 1/MC 1.4.1
     index: 0
@@ -5681,6 +5682,8 @@ MonoBehaviour:
     index: 304
   - key: event:/SFX/button/button
     index: 305
+  - key: event:/Music/2026-20-24 Game Audio Level 2 Remake
+    index: 306
 --- !u!114 &81114512317812944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6013,7 +6016,7 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/Level 3 ATMO.bank
   Name: Level 3 ATMO
   StudioPath: bank:/Level 3 ATMO
-  lastModified: 639075705090090744
+  lastModified: 639077237516909007
   FileSizes:
   - Name: Desktop
     Value: 506
@@ -6377,7 +6380,7 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/Level 3 DIA.bank
   Name: Level 3 DIA
   StudioPath: bank:/Level 3 DIA
-  lastModified: 639075705110092096
+  lastModified: 639077237519173843
   FileSizes:
   - Name: Desktop
     Value: 4905952
@@ -6552,10 +6555,10 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639075705194633574
+  lastModified: 639077237520770018
   FileSizes:
   - Name: Desktop
-    Value: 13746
+    Value: 13816
   Exists: 1
 --- !u!114 &1822696456489533124
 MonoBehaviour:
@@ -6808,10 +6811,10 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/SFX_Enviroment.bank
   Name: SFX_Enviroment
   StudioPath: bank:/SFX_Enviroment
-  lastModified: 639075705252131349
+  lastModified: 639077237531518170
   FileSizes:
   - Name: Desktop
-    Value: 6084736
+    Value: 6084704
   Exists: 1
 --- !u!114 &2328657284777436148
 MonoBehaviour:
@@ -7219,7 +7222,7 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/Level 1 SFX.bank
   Name: Level 1 SFX
   StudioPath: bank:/Level 1 SFX
-  lastModified: 639075705074217205
+  lastModified: 639077237485996175
   FileSizes:
   - Name: Desktop
     Value: 1763360
@@ -8184,7 +8187,7 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/Level 4 ATMO.bank
   Name: Level 4 ATMO
   StudioPath: bank:/Level 4 ATMO
-  lastModified: 639075705151143965
+  lastModified: 639077237520210127
   FileSizes:
   - Name: Desktop
     Value: 506
@@ -8663,7 +8666,7 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/Level 4 SFX.bank
   Name: Level 4 SFX
   StudioPath: bank:/Level 4 SFX
-  lastModified: 639075705151407080
+  lastModified: 639077237520371615
   FileSizes:
   - Name: Desktop
     Value: 506
@@ -9209,7 +9212,7 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/Level 4 MU.bank
   Name: Level 4 MU
   StudioPath: bank:/Level 4 MU
-  lastModified: 639075705151251601
+  lastModified: 639077237520313914
   FileSizes:
   - Name: Desktop
     Value: 506
@@ -9418,7 +9421,7 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639075705194568291
+  lastModified: 639077237520754991
   FileSizes:
   - Name: Desktop
     Value: 1953504
@@ -9666,6 +9669,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &7904910081247133664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/2026-20-24 Game Audio Level 2 Remake
+  m_EditorClassIdentifier: FMODUnityEditor::FMODUnity.EditorEventRef
+  Path: event:/Music/2026-20-24 Game Audio Level 2 Remake
+  Guid:
+    Data1: -2131303512
+    Data2: 1273994826
+    Data3: -980842359
+    Data4: -1399400701
+  Banks:
+  - {fileID: -7058255893735660693}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 176117
 --- !u!114 &8000386038176970131
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10113,7 +10143,7 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/Level 1 MU.bank
   Name: Level 1 MU
   StudioPath: bank:/Level 1 MU
-  lastModified: 639075705038023707
+  lastModified: 639077237485599098
   FileSizes:
   - Name: Desktop
     Value: 1415360

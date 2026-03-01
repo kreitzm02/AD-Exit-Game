@@ -25,7 +25,7 @@ public static class GameSaveSystem
         PlayerPrefs.SetString(SaveKey, json);
         PlayerPrefs.Save();
 
-        // Debug.Log("[SaveSystem] Saved: " + json);
+        Debug.Log("[SaveSystem] Saved: " + json);
     }
 
     public static bool HasSave()

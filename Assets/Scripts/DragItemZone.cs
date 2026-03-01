@@ -71,7 +71,7 @@ public class DragItemZone : MonoBehaviour
         if (consumeItemOnDrop && PlayerInventory.Instance != null)
             PlayerInventory.Instance.RemoveItem(item.itemId);
 
-        LevelManager.Instance.SaveCurrentGame();
+        // LevelManager.Instance.SaveCurrentGame();
 
         return true;
     }

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum JekkoType { NORMAL, BLOOD, DEMON };
+public enum JekkoType { NORMAL = 0, BLOOD = 1, DEMON = 2 };
 
 public class JekkoFloat : MonoBehaviour
 {

@@ -28,12 +28,12 @@ public class InteractionUI : MonoBehaviour
     public void Show(Transform anchor)
     {
         currentAnchor = anchor;
-        gameObject.SetActive(true);
+        //gameObject.SetActive(true);
     }
 
     public void Hide()
     {
         currentAnchor = null;
-        gameObject.SetActive(false);
+        //gameObject.SetActive(false);
     }
 }
