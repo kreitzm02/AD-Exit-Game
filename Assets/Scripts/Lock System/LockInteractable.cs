@@ -67,8 +67,7 @@ public class LockInteractable : Interactable
         if (solved) return;
         solved = true;
 
-        if (!solvedSFX.IsNull)
-            RuntimeManager.PlayOneShot(solvedSFX, Camera.main.transform.position);
+        AudioManager.Instance.PlaySFX(solvedSFX);
 
         if (!string.IsNullOrEmpty(levelTriggerId) && LevelManager.Instance != null)
             LevelManager.Instance.NotifyTriggerCompleted(levelTriggerId);

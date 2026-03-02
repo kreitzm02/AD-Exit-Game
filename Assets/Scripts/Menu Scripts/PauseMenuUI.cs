@@ -1,7 +1,8 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class PauseMenuUI : MonoBehaviour
+public class PauseMenuUI : MonoBehaviour // TODO refactor this
 {
     [SerializeField] private Canvas pauseCanvas;
     [SerializeField] private Button continueButton;
@@ -19,8 +20,7 @@ public class PauseMenuUI : MonoBehaviour
 
     void Update()
     {
-        if (!mainMenuUI.GetComponent<Canvas>().enabled && !pauseCanvas.enabled && !controlsRoot.activeSelf && !creditsRoot.activeSelf && 
-            subtitleUI.GetComponent<CanvasGroup>().alpha < 1.0f) pauseMenuCanBeOpened = true;
+        if (!mainMenuUI.GetComponent<Canvas>().enabled && !pauseCanvas.enabled && !controlsRoot.activeSelf && !creditsRoot.activeSelf) pauseMenuCanBeOpened = true;
         else pauseMenuCanBeOpened = false;
 
         if (Input.GetKeyDown(KeyCode.Escape) && pauseMenuCanBeOpened)
@@ -44,20 +44,21 @@ public class PauseMenuUI : MonoBehaviour
         player.LockInput(true);
 
         Time.timeScale = 0.0f;
+
+        GameEvents.PauseMenuIsOpen(true);
     }
 
     private void OnMainMenuButtonClicked()
     {
-
-        debugController.DeactivateEverything();
-        mainMenuUI.OpenMainMenu();
-        pauseCanvas.enabled = false;
-        player.LockInput(false);
         Time.timeScale = 1.0f;
-        RoomManager.Instance.DeactivateAllRooms();
-        PlayerInventory.Instance.ClearInventory();
 
         AudioManager.Instance.PlayButtonSound();
+
+        AudioManager.Instance.StopMusicImmediate();
+
+        GameEvents.PauseMenuIsOpen(false);
+
+        SceneManager.LoadScene(0);
     }
 
     private void OnContinueButtonClicked()
@@ -68,6 +69,8 @@ public class PauseMenuUI : MonoBehaviour
 
         AudioManager.Instance.PlayButtonSound();
         player.LockInput(false);
+
+        GameEvents.PauseMenuIsOpen(false);
     }
 
     private void OnControlsButtonClicked()

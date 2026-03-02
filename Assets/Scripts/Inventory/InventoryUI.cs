@@ -40,6 +40,11 @@ public class InventoryUI : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        GameEvents.OnMainMenuOpened += HideDragGhost;
+    }
+
     private void OnDestroy()
     {
         if (inventoryCollapse != null)

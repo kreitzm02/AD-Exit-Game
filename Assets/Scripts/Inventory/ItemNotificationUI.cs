@@ -47,7 +47,7 @@ public class ItemNotificationUI : MonoBehaviour
         SetVisible(true, instant: false);
         yield return Fade(canvasGroup, canvasGroup.alpha, 1f, fadeInDuration);
 
-        yield return new WaitForSeconds(displayDuration);
+        yield return new WaitForSecondsRealtime(displayDuration);
 
         yield return Fade(canvasGroup, canvasGroup.alpha, 0f, fadeOutDuration);
         SetVisible(false, instant: true);

@@ -53,6 +53,8 @@ public class TraceInteractable : Interactable
         solved = solved || wasSolved;
 
         var cam = Camera.main.GetComponent<PlayerCamera>();
+        cam.ClearFocusInstant();
+        cam.SetCameraBoundsActive(true);
         cam.ReturnToPlayerAndBounds(smooth, cameraDuration);
 
         if (solved && !string.IsNullOrEmpty(levelTriggerId) && LevelManager.Instance != null)

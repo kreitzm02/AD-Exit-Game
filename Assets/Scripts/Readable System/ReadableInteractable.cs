@@ -6,8 +6,8 @@ public class ReadableInteractable : Interactable
 {
     public enum PageMode
     {
-        ManualPages,   // alter Modus: pages[] im Inspector
-        AutoSplit      // neuer Modus: fullText wird gesplittet
+        ManualPages,
+        AutoSplit
     }
 
     [Header("TRIGGER MODE")]

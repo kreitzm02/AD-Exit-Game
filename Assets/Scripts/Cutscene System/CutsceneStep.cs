@@ -11,6 +11,8 @@ public class CutsceneStep
 
     public float duration = 2f;
     public EventReference fmodEventRef;
+    public float startAudioAtSecond = 0.0f;
+    public bool audioIsVoice = true;
 
     public Transform focusTarget;
     public Vector2 focusOffset;

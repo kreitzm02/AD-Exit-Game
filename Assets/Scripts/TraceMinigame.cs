@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using FMODUnity;
 using FMOD.Studio;
+using UnityEngine.UI;
 
 public class TraceMinigame : MonoBehaviour
 {
@@ -47,6 +48,10 @@ public class TraceMinigame : MonoBehaviour
     [SerializeField] private EventReference strokeDoneSfx;
     [SerializeField] private EventReference letterDoneSfx;
 
+    [Header("UI")]
+    [SerializeField] private Canvas traceMinigameUICanvas;
+    [SerializeField] private Button closeButton;
+
     private TraceInteractable owner;
     private int letterIndex;
 
@@ -66,6 +71,8 @@ public class TraceMinigame : MonoBehaviour
 
     private EventInstance drawLoopInstance;
 
+    private PlayerController player;
+
     private void Awake()
     {
         if (!inputCamera) inputCamera = Camera.main;
@@ -73,6 +80,10 @@ public class TraceMinigame : MonoBehaviour
         gameObject.SetActive(false);
 
         ClearUserTrace();
+
+        player = FindFirstObjectByType<PlayerController>();
+
+        traceMinigameUICanvas.enabled = false;
     }
 
     public void Open(TraceInteractable interactable)
@@ -83,12 +94,18 @@ public class TraceMinigame : MonoBehaviour
         if (!isSolved)
             ResetState(keepSolvedReveal: false);
 
+        player.LockInput(true);
+        player.GetComponent<SpriteRenderer>().enabled = false;
         gameObject.SetActive(true);
         UpdateGuidesVisibility();
         RefreshLetterReveal();
+
+        traceMinigameUICanvas.enabled = true;
+        closeButton.onClick.RemoveAllListeners();
+        closeButton.onClick.AddListener(Close);
     }
 
-    public void Close(bool viaBackButton)
+    public void Close()
     {
         StopDrawLoop();
 
@@ -97,20 +114,26 @@ public class TraceMinigame : MonoBehaviour
 
         isOpen = false;
         ClearCommittedLines();
+
+        player.LockInput(false);
+        player.GetComponent<SpriteRenderer>().enabled = true;
+
         gameObject.SetActive(false);
 
         owner?.CloseFromMinigame(isSolved);
         owner = null;
 
         ClearUserTrace();
+
+        traceMinigameUICanvas.enabled = false;
     }
 
     private void Update()
     {
         if (!isOpen || isSolved) return;
 
-        if (Input.GetKeyDown(KeyCode.Space))
-            Close(true);
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //    Close(true);
 
         bool down = Input.GetMouseButtonDown(0);
         bool held = Input.GetMouseButton(0);
@@ -199,8 +222,7 @@ public class TraceMinigame : MonoBehaviour
         isDrawing = false;
         StopDrawLoop();
 
-        if (strokeDoneSfx.IsNull == false)
-            RuntimeManager.PlayOneShot(strokeDoneSfx, inputCamera.transform.position);
+        AudioManager.Instance.PlaySFX(strokeDoneSfx);
 
         if (strokeCompleted != null && activeStrokeIndex >= 0 && activeStrokeIndex < strokeCompleted.Length)
             strokeCompleted[activeStrokeIndex] = true;
@@ -218,8 +240,7 @@ public class TraceMinigame : MonoBehaviour
             if (currentLetter != null && currentLetter.reveal)
                 currentLetter.reveal.enabled = true;
 
-            if (letterDoneSfx.IsNull == false)
-                RuntimeManager.PlayOneShot(letterDoneSfx, inputCamera.transform.position);
+            AudioManager.Instance.PlaySFX(letterDoneSfx);
 
             letterIndex++;
 
@@ -248,7 +269,7 @@ public class TraceMinigame : MonoBehaviour
             if (l.guidesRoot) l.guidesRoot.SetActive(false);
 
         ClearUserTrace();
-        Close(false);
+        Close();
     }
 
     private void ResetState(bool keepSolvedReveal)

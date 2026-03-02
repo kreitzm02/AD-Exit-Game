@@ -84,16 +84,7 @@ public class SpriteMoverInteractable : Interactable
         if (fadeInOnSpawn && renderers.Length > 0)
             SetAlpha(renderers, 0f);
 
-        EventInstance audioInstance = default;
-        bool hasAudio = false;
-
-        if (!startMoveAudio.IsNull)
-        {
-            audioInstance = RuntimeManager.CreateInstance(startMoveAudio);
-            audioInstance.set3DAttributes(RuntimeUtils.To3DAttributes(spawned.transform.position));
-            audioInstance.start();
-            hasAudio = true;
-        }
+        AudioManager.Instance.PlaySFX(startMoveAudio);
 
         if (fadeInOnSpawn && renderers.Length > 0 && fadeInDuration > 0f)
             yield return FadeAlpha(renderers, 0f, 1f, fadeInDuration);
@@ -111,9 +102,6 @@ public class SpriteMoverInteractable : Interactable
 
             spawned.transform.position = Vector3.Lerp(from, to, eased);
 
-            if (hasAudio)
-                audioInstance.set3DAttributes(RuntimeUtils.To3DAttributes(spawned.transform.position));
-
             yield return null;
         }
 
@@ -126,13 +114,6 @@ public class SpriteMoverInteractable : Interactable
                 yield return FadeAlpha(renderers, 1f, 0f, fadeOutDuration);
             else
                 SetAlpha(renderers, 0f);
-        }
-
-        if (hasAudio)
-        {
-            if (stopAudioOnFinish)
-                audioInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-            audioInstance.release();
         }
 
         Destroy(spawned);

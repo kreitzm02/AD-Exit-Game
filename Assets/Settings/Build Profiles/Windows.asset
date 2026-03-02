@@ -66,7 +66,7 @@ MonoBehaviour:
     - line: '|   - logo: {fileID: 10404, guid: 0000000000000000f000000000000000,
         type: 0}'
     - line: '|     duration: 2'
-    - line: '|   - logo: {fileID: 21300000, guid: 3426ee996b46c154d8de4edfd73ba6eb,
+    - line: '|   - logo: {fileID: 21300000, guid: 34452d35a9aecb8438f2d437d44a6100,
         type: 3}'
     - line: '|     duration: 2'
     - line: '|   m_VirtualRealitySplashScreen: {instanceID: 0}'
@@ -171,7 +171,7 @@ MonoBehaviour:
     - line: '|   loadStoreDebugModeEnabled: 0'
     - line: '|   visionOSBundleVersion: 1.0'
     - line: '|   tvOSBundleVersion: 1.0'
-    - line: '|   bundleVersion: 0.3'
+    - line: '|   bundleVersion: 0.4'
     - line: '|   preloadedAssets:'
     - line: '|   - {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100,
         type: 3}'
@@ -326,7 +326,7 @@ MonoBehaviour:
     - line: '|   - m_BuildTarget: '
     - line: '|     m_Icons:'
     - line: '|     - serializedVersion: 2'
-    - line: '|       m_Icon: {fileID: 2800000, guid: a57aea1933279414f8b101b56d05c791,
+    - line: '|       m_Icon: {fileID: 2800000, guid: c7f7b6d1ed8323246be19021fed1b902,
         type: 3}'
     - line: '|       m_Width: 128'
     - line: '|       m_Height: 128'

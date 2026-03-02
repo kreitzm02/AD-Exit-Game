@@ -69,7 +69,7 @@ public class InvDragCombineController : MonoBehaviour
         yield return new WaitForSecondsRealtime(reopenDelay);
 
         bool pending = (combinationUI != null && combinationUI.HasPendingItem);
-        if (!pending && inventoryCollapse != null && !inventoryCollapse.IsOpen)
+        if (pending && inventoryCollapse != null && !inventoryCollapse.IsOpen)
             inventoryCollapse.Toggle();
 
         reopenRoutine = null;

@@ -1,8 +1,9 @@
+using System;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MainMenuUI : MonoBehaviour
+public class MainMenuUI : MonoBehaviour // TODO refactor this
 {
     [SerializeField] private Button newGameButton;
     [SerializeField] private Button continueButton;
@@ -21,6 +22,7 @@ public class MainMenuUI : MonoBehaviour
     [SerializeField] private GameObject mainMenuScene;
     [SerializeField] private GameObject combineUIRoot;
     [SerializeField] private GameObject itemDetailsRoot;
+
 
     private void Start()
     {
@@ -57,6 +59,8 @@ public class MainMenuUI : MonoBehaviour
 
         BlackFadeManager.Instance.SetBlackInstant(true);
         BlackFadeManager.Instance.FadeFromBlack(() => { }, 2.0f);
+
+        GameEvents.MainMenuOpened();
     }
 
     public void OpenCreditsFromMainMenu()

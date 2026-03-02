@@ -14,6 +14,17 @@ public class TraceGuideLine : MonoBehaviour
         lr = GetComponent<LineRenderer>();
         lr.positionCount = 2;
         lr.textureMode = LineTextureMode.Tile;
+
+        Color colorA = Color.gray;
+        colorA.a = 125.0f;
+        Color colorB = Color.gray;
+        colorB.a = 125.0f;
+
+        lr.startColor = colorA;
+        lr.endColor = colorB;
+
+        lr.startWidth = 0.05f;
+        lr.endWidth = 0.05f;
     }
 
     private void LateUpdate()

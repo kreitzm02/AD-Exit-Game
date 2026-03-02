@@ -1,11 +1,13 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using DigitalRuby.Tween;
 using FMOD.Studio;
 using FMODUnity;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Rendering;
 
-public class CutsceneInteractable : Interactable
+public class CutsceneInteractable : Interactable // TODO use audiomanager for fmod audio instead of local methods.
 {
     [Header("SEQUENCES")]
     [SerializeField] private CutsceneSequence[] sequences;
@@ -59,6 +61,13 @@ public class CutsceneInteractable : Interactable
         }
     }
 
+    private void Start()
+    {
+        GameEvents.OnPauseMenuIsOpen += HandlePauseMenuOpened;
+
+        GameEvents.OnMainMenuOpened += HandleMainMenuOpened;
+    }
+
     private void Update()
     {
         if (stepSkipRequested == false && Input.GetKeyDown(KeyCode.Space))
@@ -90,7 +99,7 @@ public class CutsceneInteractable : Interactable
     {
         if (sequenceMode == InteractionSequenceMode.RANDOM)
         {
-            return sequences[Random.Range(0, sequences.Length)];
+            return sequences[UnityEngine.Random.Range(0, sequences.Length)];
         }
 
         CutsceneSequence seq = sequences[currentSequenceIndex];
@@ -107,6 +116,8 @@ public class CutsceneInteractable : Interactable
     {
         isPlaying = true;
         stepSkipRequested = false;
+
+        GameEvents.CutsceneRunning(isPlaying);
 
         if (cutsceneStartDelay > 0f)
             yield return new WaitForSeconds(cutsceneStartDelay);
@@ -149,12 +160,16 @@ public class CutsceneInteractable : Interactable
                     break;
             }
 
+            //if (step.audioIsVoice) AudioManager.Instance.PlayCSVoice(step.fmodEventRef, step.startAudioAtSecond);
+            //else AudioManager.Instance.PlaySFX(step.fmodEventRef);
+
             float t = 0f;
             while (t < step.duration)
             {
                 if (IsSkipStepRequested())
                 {
                     StopStepAudio(immediate: true);
+                    //AudioManager.Instance.StopCSVoice();
                     break;
                 }
 
@@ -164,6 +179,8 @@ public class CutsceneInteractable : Interactable
         }
 
         SubtitleUI.Instance.Hide();
+
+        AudioManager.Instance.ClearCSVoiceGUID();
 
         cam.ClearFocusInstant();
 
@@ -180,6 +197,7 @@ public class CutsceneInteractable : Interactable
         }
 
         isPlaying = false;
+        GameEvents.CutsceneRunning(isPlaying);
         stepSkipRequested = false;
     }
 
@@ -277,6 +295,16 @@ public class CutsceneInteractable : Interactable
         if (!stepSkipRequested) return false;
         stepSkipRequested = false;
         return true;
+    }
+
+    private void HandlePauseMenuOpened(bool isOpen)
+    {
+        currentAudio.setPaused(isOpen);
+    }
+
+    private void HandleMainMenuOpened()
+    {
+        currentAudio.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
     }
 }
 

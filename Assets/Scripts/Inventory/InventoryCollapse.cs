@@ -1,4 +1,5 @@
 using DigitalRuby.Tween;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class InventoryCollapse : MonoBehaviour
@@ -13,14 +14,22 @@ public class InventoryCollapse : MonoBehaviour
     [Header("Settings")]
     [SerializeField] private float moveDuration = 0.3f;
 
-    public bool IsOpen { get; private set; } = true;
+    public bool IsOpen { get; private set; } = false;
     public event System.Action<bool> StateChanged;
 
     private bool isMoving;
 
+    private bool forceClosed = false;
+
+    private void Start()
+    {
+        GameEvents.OnCutsceneRunning += HandleCutsceneRunning;
+        GameEvents.OnItemUsed += HandleItemUsed;
+    }
+
     public void Toggle()
     {
-        if (isMoving)
+        if (isMoving || forceClosed)
             return;
 
         var current = uiElement.anchoredPosition;
@@ -52,5 +61,17 @@ public class InventoryCollapse : MonoBehaviour
                 isMoving = false;
             }
         );
+    }
+
+    private void HandleCutsceneRunning(bool isRunning)
+    {
+        if (IsOpen && isRunning) Toggle();
+
+        forceClosed = isRunning;
+    }
+
+    private void HandleItemUsed()
+    {
+        if (IsOpen) Toggle();
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
@@ -22,8 +23,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private List<UniqueItem_SO> allUniqueItemsDatabase = new List<UniqueItem_SO>();
 
     [Header("REFERENCES")]
-    [SerializeField] private MainMenuUI mainMenuUI;
-    [SerializeField] private DebugController debugController; // we need this to deactivate everything again when leaving the game to main menu. (temp approach)
+    [SerializeField] private MainMenuUI mainMenuUI; // we need this ref to open the credits after the last step (TODO temp approach, maybe better use an event)
 
     private int currentStepIndex = -1;
     private bool suppressAutosave = false;
@@ -149,10 +149,7 @@ public class LevelManager : MonoBehaviour
 
     private void EndAndOpenCredits()
     {
-        debugController.DeactivateEverything();
-        mainMenuUI.OpenMainMenu();
-        mainMenuUI.OpenCreditsFromMainMenu();
-        RoomManager.Instance.DeactivateAllRooms();
+        SceneManager.LoadScene(0);
     }
 
     public void NotifyTriggerCompleted(string triggerId)

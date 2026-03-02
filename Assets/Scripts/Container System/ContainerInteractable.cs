@@ -1,4 +1,6 @@
 using FMODUnity;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class ContainerInteractable : Interactable
@@ -27,6 +29,17 @@ public class ContainerInteractable : Interactable
 
     private bool isOpen;
 
+    private void OnEnable()
+    {
+        for (int i = 0; i < slots.Length; i++)
+        {
+            if (slots[i].item != null && PlayerInventory.Instance.HasItem(slots[i].item.itemId))
+            {
+                slots[i].item = null;
+            }
+        }
+    }
+
     public override void OnEnterRange()
     {
         base.OnEnterRange();
@@ -53,7 +66,7 @@ public class ContainerInteractable : Interactable
         isOpen = true;
         OnExitRange();
 
-        if (!containerSFX.IsNull) RuntimeManager.PlayOneShot(containerSFX, Camera.main.transform.position);
+        AudioManager.Instance.PlaySFX(containerSFX);
 
         if (!isStorageRoom) ContainerUI.Instance.Open(this);
         else StorageRoomUI.Instance.Open(this);

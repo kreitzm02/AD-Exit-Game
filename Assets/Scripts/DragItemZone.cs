@@ -65,13 +65,14 @@ public class DragItemZone : MonoBehaviour
         if (!string.IsNullOrEmpty(levelTriggerId) && LevelManager.Instance != null)
             LevelManager.Instance.NotifyTriggerCompleted(levelTriggerId);
 
-        if (!dropSFX.IsNull)
-            RuntimeManager.PlayOneShot(dropSFX, transform.position);
+        AudioManager.Instance.PlaySFX(dropSFX);
 
         if (consumeItemOnDrop && PlayerInventory.Instance != null)
             PlayerInventory.Instance.RemoveItem(item.itemId);
 
         // LevelManager.Instance.SaveCurrentGame();
+
+        GameEvents.ItemUsed();
 
         return true;
     }

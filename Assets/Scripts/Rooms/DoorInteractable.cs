@@ -48,7 +48,7 @@ public class DoorInteractable : Interactable
         else
             RoomManager.Instance.ChangeRoomNoFade(targetRoomId, targetEntryPoint);
 
-        if (!doorSFX.IsNull) RuntimeManager.PlayOneShot(doorSFX, Camera.main.transform.position);
+        AudioManager.Instance.PlaySFX(doorSFX);
 
         if (!string.IsNullOrEmpty(levelTriggerId) && LevelManager.Instance != null)
         {

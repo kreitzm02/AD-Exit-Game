@@ -25,10 +25,11 @@ public class AudioManager : MonoBehaviour
 
     private EventInstance currentMusic;
     private EventInstance nextMusic;
+    private EventInstance currentCSVoice;
 
     private bool isFading;
 
-    private EventInstance activeSnapshot;
+    private FMOD.GUID lastUsedCSVoiceGUID;
 
     private Coroutine musicLoopRoutine;
 
@@ -46,6 +47,13 @@ public class AudioManager : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
+    }
+
+    private void Start()
+    {
+        GameEvents.OnPauseMenuIsOpen += HandlePauseMenuOpened;
+
+        GameEvents.OnMainMenuOpened += HandleMainMenuOpened;    
     }
 
     public void PlayMusic(EventReference musicEvent)
@@ -210,24 +218,40 @@ public class AudioManager : MonoBehaviour
         RuntimeManager.PlayOneShot(sound, Camera.main.transform.position);
     }
 
-    public void StartSnapshot(EventReference snapshot)
+    public void PlayCSVoice(EventReference csVoice, float startTime)
     {
-        if (snapshot.IsNull)
-            return;
+        if (csVoice.IsNull) return;
 
-        StopSnapshot();
+        int startMs = Mathf.RoundToInt(startTime * 1000.0f);
 
-        activeSnapshot = RuntimeManager.CreateInstance(snapshot);
-        activeSnapshot.start();
+        FMOD.GUID newGUID = csVoice.Guid;
+
+        if (newGUID == lastUsedCSVoiceGUID) return;
+
+        lastUsedCSVoiceGUID = newGUID;
+
+        currentCSVoice = RuntimeManager.CreateInstance(csVoice);
+        
+        currentCSVoice.start();
+        currentCSVoice.setTimelinePosition(startMs);
+        currentCSVoice.release();
     }
 
-    public void StopSnapshot()
+    public void StopCSVoice(bool immediate = true)
     {
-        if (!activeSnapshot.isValid())
+        if (!currentCSVoice.isValid())
             return;
 
-        activeSnapshot.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-        activeSnapshot.release();
+        if (immediate) currentCSVoice.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        else currentCSVoice.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        currentCSVoice.release();
+
+        ClearCSVoiceGUID();
+    }
+
+    public void ClearCSVoiceGUID()
+    {
+        lastUsedCSVoiceGUID = default;
     }
 
     public void PlayButtonSound()
@@ -257,5 +281,15 @@ public class AudioManager : MonoBehaviour
     {
         if (lvl3Music.IsNull) return;
         PlayMusic(lvl3Music);
+    }
+
+    private void HandlePauseMenuOpened(bool isOpen)
+    {
+        currentCSVoice.setPaused(isOpen);
+    }
+
+    private void HandleMainMenuOpened()
+    {
+        StopCSVoice();
     }
 }

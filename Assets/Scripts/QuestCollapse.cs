@@ -75,7 +75,7 @@ public class QuestCollapse : MonoBehaviour
 
     private System.Collections.IEnumerator AutoHideRoutine()
     {
-        yield return new WaitForSeconds(autoHideDelay);
+        yield return new WaitForSecondsRealtime(autoHideDelay);
         MoveTo(hiddenPosition);
     }
 
