@@ -210,13 +210,21 @@ public class AudioManager : MonoBehaviour
         currentMusic.release();
     }
 
-    public void PlaySFX(EventReference sound)
+    public void PlaySFX(EventReference sound) // TODO need to introduce a StopAllSFX method when we start to use the CSVoice system via AudioManager.
     {
         if (sound.IsNull)
             return;
 
         RuntimeManager.PlayOneShot(sound, Camera.main.transform.position);
     }
+
+    // CSVoice is unused for now. Need to ask the audio team to change all fmod voice line events
+    // from action to timeline and activate the "stream" button for each voice line asset.
+    // Otherwise we cannot use this system that will start the current voice line at the correct position
+    // when the subtitles shown are split in multiple parts, so that the player still hears the voice line
+    // at the correct position when he skips parts of it. This is because action events cannot only be started
+    // from beginning, so EventInstance.setTimelinePosition has no effect. For now we have to live with the
+    // fact that the current voice line disappears when a segment of it is skipped. ( big TODO )
 
     public void PlayCSVoice(EventReference csVoice, float startTime)
     {

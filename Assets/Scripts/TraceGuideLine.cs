@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(LineRenderer))]
-public class TraceGuideLine : MonoBehaviour
+public class TraceGuideLine : MonoBehaviour // TODO refactor this
 {
     [SerializeField] private Transform a;
     [SerializeField] private Transform b;

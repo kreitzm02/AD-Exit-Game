@@ -4,7 +4,7 @@ using System.Collections.Generic;
 [RequireComponent(typeof(MeshFilter), typeof(MeshRenderer))]
 public class PolygonHighlight : MonoBehaviour
 {
-    [Header("Authoring (optional)")]
+    [Header("Collider")]
     [SerializeField] private PolygonCollider2D sourcePolygon;
 
     [Header("Visuals")]

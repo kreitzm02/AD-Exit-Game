@@ -27,6 +27,14 @@ public class MainMenuUI : MonoBehaviour // TODO refactor this
     private void Start()
     {
         OpenMainMenu();
+
+        if (PlayerPrefs.GetInt("OPEN_CREDITS_ON_SCENE_LOAD", 0) == 1)
+        {
+            PlayerPrefs.DeleteKey("OPEN_CREDITS_ON_SCENE_LOAD");
+            PlayerPrefs.Save();
+
+            OpenCreditsFromMainMenu();
+        }
     }
 
     public void OpenMainMenu()

@@ -149,6 +149,8 @@ public class LevelManager : MonoBehaviour
 
     private void EndAndOpenCredits()
     {
+        PlayerPrefs.SetInt("OPEN_CREDITS_ON_SCENE_LOAD", 1);
+        PlayerPrefs.Save();
         SceneManager.LoadScene(0);
     }
 

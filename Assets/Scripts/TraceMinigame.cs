@@ -5,7 +5,7 @@ using FMODUnity;
 using FMOD.Studio;
 using UnityEngine.UI;
 
-public class TraceMinigame : MonoBehaviour
+public class TraceMinigame : MonoBehaviour // TODO dont touch this for now...
 {
     [Serializable]
     public class Stroke
