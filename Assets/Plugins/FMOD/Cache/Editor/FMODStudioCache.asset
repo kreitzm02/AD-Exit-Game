@@ -1088,10 +1088,10 @@ MonoBehaviour:
   Path: fmod/AD_Exitgame/Build/Desktop/Level 2 MU.bank
   Name: Level 2 MU
   StudioPath: bank:/Level 2 MU
-  lastModified: 639077237516790196
+  lastModified: 639081029214009667
   FileSizes:
   - Name: Desktop
-    Value: 1691392
+    Value: 1691648
   Exists: 1
 --- !u!114 &-7037068972013360117
 MonoBehaviour:
@@ -5068,7 +5068,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 1780205026478963321}
   cacheVersion: 131857
-  cacheTime: 639081000643644947
+  cacheTime: 639081029214009667
   SerializableEventsDict:
   - key: event:/MC 1/MC 1.4.1
     index: 0
@@ -9695,7 +9695,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 176117
+  Length: 0
 --- !u!114 &8000386038176970131
 MonoBehaviour:
   m_ObjectHideFlags: 0
